@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "id": "clase_01",
+  "fecha": "2026-10-11",
+  "urok": 1,
+  "titulo": "Vocales y primeras consonantes (Урок 1, pp. 7–12)",
+  "gramatica": [
+    {
+      "tema": "Vocales: а, о, у, э, ы, и",
+      "explicacion": "El ruso tiene seis sonidos vocálicos. а, о, у, э, и suenan casi como en español. La ы no existe en español: se dice como una «i» con la lengua retirada hacia atrás (Урок 1, Задание 1, p. 7).",
+      "ejemplos": [
+        "а-о, а-у, а-э, и-а",
+        "и-ы, у-ы",
+        "сын [сын]",
+        "мы, ты, вы"
+      ]
+    },
+    {
+      "tema": "Letra y sonido (буква и звук)",
+      "explicacion": "Una буква es lo que se escribe; un звук es lo que se oye. Cada letra tiene nombre propio (м = «эм», б = «бэ»…), ver el alfabeto de la p. 6.",
+      "ejemplos": [
+        "м — буква «эм», звук [м]",
+        "б — буква «бэ», звук [б]"
+      ]
+    },
+    {
+      "tema": "Consonantes м, н, п, б, ф, в, т, д, к, г, с, з",
+      "explicacion": "La в es labiodental como la v francesa o inglesa (no como la b española). La г siempre suena como en «gato». La з es una s sonora, como la z inglesa de «zoo». La с siempre es una s sorda (pp. 7–12).",
+      "ejemplos": [
+        "ва-фа, ва-ба",
+        "га-го-гу",
+        "са-за, со-зо",
+        "дом, кот, суп, зонт"
+      ]
+    },
+    {
+      "tema": "Sílaba y acento (ударение)",
+      "explicacion": "Cada vocal forma una sílaba. Una sílaba de cada palabra lleva el acento; el libro lo marca con una tilde sobre la vocal. Hay que aprender el acento con cada palabra, porque no sigue reglas fijas (p. 10, Запомните).",
+      "ejemplos": [
+        "до́м — una sílaba",
+        "ма́ма, па́па, А́нна — dos sílabas, la primera tónica",
+        "бана́н, Анто́н, Ива́н — dos sílabas, la segunda tónica"
+      ]
+    },
+    {
+      "tema": "Pares sonora–sorda y ensordecimiento final",
+      "explicacion": "Las consonantes forman parejas: б–п, в–ф, д–т, з–с, г–к. Al final de palabra la sonora se pronuncia como su pareja sorda (p. 12, Запомните y Задание 2).",
+      "ejemplos": [
+        "зуб [зуп]",
+        "гав [гаф]",
+        "год [гот]",
+        "газ [гас]",
+        "дог [док]"
+      ]
+    }
+  ],
+  "vocabulario": [
+    {
+      "id": "v_dom",
+      "ru": "дом",
+      "ru_acento": "до́м",
+      "es": "casa",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_mama",
+      "ru": "мама",
+      "ru_acento": "ма́ма",
+      "es": "mamá",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_papa",
+      "ru": "папа",
+      "ru_acento": "па́па",
+      "es": "papá",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Masculino aunque termina en -а."
+    },
+    {
+      "id": "v_banan",
+      "ru": "банан",
+      "ru_acento": "бана́н",
+      "es": "plátano, banana",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_komnata",
+      "ru": "комната",
+      "ru_acento": "ко́мната",
+      "es": "habitación",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "La о átona final se reduce: [ко́мната]."
+    },
+    {
+      "id": "v_kot",
+      "ru": "кот",
+      "ru_acento": "ко́т",
+      "es": "gato",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_bumaga",
+      "ru": "бумага",
+      "ru_acento": "бума́га",
+      "es": "papel",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_sok",
+      "ru": "сок",
+      "ru_acento": "со́к",
+      "es": "zumo, jugo",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_sup",
+      "ru": "суп",
+      "ru_acento": "су́п",
+      "es": "sopa",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_sumka",
+      "ru": "сумка",
+      "ru_acento": "су́мка",
+      "es": "bolso, bolsa",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_stakan",
+      "ru": "стакан",
+      "ru_acento": "стака́н",
+      "es": "vaso",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_syn",
+      "ru": "сын",
+      "ru_acento": "сы́н",
+      "es": "hijo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "ы: «i» con la lengua retraída."
+    },
+    {
+      "id": "v_most",
+      "ru": "мост",
+      "ru_acento": "мо́ст",
+      "es": "puente",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_bukva",
+      "ru": "буква",
+      "ru_acento": "бу́ква",
+      "es": "letra",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Lo que se escribe; звук es lo que se oye."
+    },
+    {
+      "id": "v_zvuk",
+      "ru": "звук",
+      "ru_acento": "зву́к",
+      "es": "sonido",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [звук]."
+    },
+    {
+      "id": "v_zont",
+      "ru": "зонт",
+      "ru_acento": "зо́нт",
+      "es": "paraguas",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_anton",
+      "ru": "Антон",
+      "ru_acento": "Анто́н",
+      "es": "Antón",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Nombre propio."
+    },
+    {
+      "id": "v_ivan",
+      "ru": "Иван",
+      "ru_acento": "Ива́н",
+      "es": "Iván",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Nombre propio."
+    },
+    {
+      "id": "v_anna",
+      "ru": "Анна",
+      "ru_acento": "А́нна",
+      "es": "Anna",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Nombre propio."
+    }
+  ],
+  "textos": [
+    {
+      "id": "t1",
+      "titulo": "Запомните (pp. 9–12)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "дом, Антон, мама, Иван, папа, Анна, банан.",
+          "ru_acento": "до́м, Анто́н, ма́ма, Ива́н, па́па, А́нна, бана́н.",
+          "es": "casa, Antón, mamá, Iván, papá, Anna, plátano.",
+          "tokens": [
+            {
+              "t": "дом",
+              "a": "до́м",
+              "lema": "дом",
+              "es": "casa",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_dom"
+            },
+            {
+              "t": "Антон",
+              "a": "Анто́н",
+              "lema": "Антон",
+              "es": "Antón",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_anton"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "Иван",
+              "a": "Ива́н",
+              "lema": "Иван",
+              "es": "Iván",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_ivan"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            },
+            {
+              "t": "Анна",
+              "a": "А́нна",
+              "lema": "Анна",
+              "es": "Anna",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_anna"
+            },
+            {
+              "t": "банан",
+              "a": "бана́н",
+              "lema": "банан",
+              "es": "plátano",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_banan"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "комната, кот.",
+          "ru_acento": "ко́мната, ко́т.",
+          "es": "habitación, gato.",
+          "tokens": [
+            {
+              "t": "комната",
+              "a": "ко́мната",
+              "lema": "комната",
+              "es": "habitación",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_komnata"
+            },
+            {
+              "t": "кот",
+              "a": "ко́т",
+              "lema": "кот",
+              "es": "gato",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_kot"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "бумага.",
+          "ru_acento": "бума́га.",
+          "es": "papel.",
+          "tokens": [
+            {
+              "t": "бумага",
+              "a": "бума́га",
+              "lema": "бумага",
+              "es": "papel",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_bumaga"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "сок, суп, сумка, стакан, сын, мост.",
+          "ru_acento": "со́к, су́п, су́мка, стака́н, сы́н, мо́ст.",
+          "es": "zumo, sopa, bolso, vaso, hijo, puente.",
+          "tokens": [
+            {
+              "t": "сок",
+              "a": "со́к",
+              "lema": "сок",
+              "es": "zumo, jugo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_sok"
+            },
+            {
+              "t": "суп",
+              "a": "су́п",
+              "lema": "суп",
+              "es": "sopa",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_sup"
+            },
+            {
+              "t": "сумка",
+              "a": "су́мка",
+              "lema": "сумка",
+              "es": "bolso",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_sumka"
+            },
+            {
+              "t": "стакан",
+              "a": "стака́н",
+              "lema": "стакан",
+              "es": "vaso",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_stakan"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "мост",
+              "a": "мо́ст",
+              "lema": "мост",
+              "es": "puente",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_most"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "буква, звук, зонт.",
+          "ru_acento": "бу́ква, зву́к, зо́нт.",
+          "es": "letra, sonido, paraguas.",
+          "tokens": [
+            {
+              "t": "буква",
+              "a": "бу́ква",
+              "lema": "буква",
+              "es": "letra",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_bukva"
+            },
+            {
+              "t": "звук",
+              "a": "зву́к",
+              "lema": "звук",
+              "es": "sonido",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [звук]",
+              "vocab_id": "v_zvuk"
+            },
+            {
+              "t": "зонт",
+              "a": "зо́нт",
+              "lema": "зонт",
+              "es": "paraguas",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_zont"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "titulo": "Правило чтения (p. 12)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "зуб, гав, год, газ, дог.",
+          "ru_acento": "зу́б, га́в, го́д, га́з, до́г.",
+          "es": "diente, guau, año, gas, gran danés.",
+          "tokens": [
+            {
+              "t": "зуб",
+              "a": "зу́б",
+              "lema": "зуб",
+              "es": "diente",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [зуп]"
+            },
+            {
+              "t": "гав",
+              "a": "га́в",
+              "lema": "гав",
+              "es": "guau",
+              "gram": "interjección (ladrido); se pronuncia [гаф]"
+            },
+            {
+              "t": "год",
+              "a": "го́д",
+              "lema": "год",
+              "es": "año",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [гот]"
+            },
+            {
+              "t": "газ",
+              "a": "га́з",
+              "lema": "газ",
+              "es": "gas",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [гас]"
+            },
+            {
+              "t": "дог",
+              "a": "до́г",
+              "lema": "дог",
+              "es": "gran danés (perro)",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [док]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frases_practica": [
+    {
+      "id": "p1",
+      "ru": "мама",
+      "ru_acento": "ма́ма",
+      "es": "mamá",
+      "alternativas_es": [
+        "madre"
+      ]
+    },
+    {
+      "id": "p2",
+      "ru": "папа",
+      "ru_acento": "па́па",
+      "es": "papá",
+      "alternativas_es": [
+        "padre"
+      ]
+    },
+    {
+      "id": "p3",
+      "ru": "дом",
+      "ru_acento": "до́м",
+      "es": "casa",
+      "alternativas_es": [
+        "hogar"
+      ]
+    },
+    {
+      "id": "p4",
+      "ru": "кот",
+      "ru_acento": "ко́т",
+      "es": "gato"
+    },
+    {
+      "id": "p5",
+      "ru": "сын",
+      "ru_acento": "сы́н",
+      "es": "hijo"
+    },
+    {
+      "id": "p6",
+      "ru": "суп",
+      "ru_acento": "су́п",
+      "es": "sopa"
+    },
+    {
+      "id": "p7",
+      "ru": "сок",
+      "ru_acento": "со́к",
+      "es": "zumo",
+      "alternativas_es": [
+        "jugo"
+      ]
+    },
+    {
+      "id": "p8",
+      "ru": "стакан",
+      "ru_acento": "стака́н",
+      "es": "vaso"
+    },
+    {
+      "id": "p9",
+      "ru": "комната",
+      "ru_acento": "ко́мната",
+      "es": "habitación",
+      "alternativas_es": [
+        "cuarto"
+      ]
+    },
+    {
+      "id": "p10",
+      "ru": "буква",
+      "ru_acento": "бу́ква",
+      "es": "letra"
+    },
+    {
+      "id": "p11",
+      "ru": "звук",
+      "ru_acento": "зву́к",
+      "es": "sonido"
+    },
+    {
+      "id": "p12",
+      "ru": "зонт",
+      "ru_acento": "зо́нт",
+      "es": "paraguas"
+    },
+    {
+      "id": "p13",
+      "ru": "мост",
+      "ru_acento": "мо́ст",
+      "es": "puente"
+    },
+    {
+      "id": "p14",
+      "ru": "сумка",
+      "ru_acento": "су́мка",
+      "es": "bolso",
+      "alternativas_es": [
+        "bolsa",
+        "cartera"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2312 @@
+{
+  "schema_version": 1,
+  "id": "clase_03",
+  "fecha": "2026-10-07",
+  "urok": 2,
+  "titulo": "Я, Ю, Е, Ё, consonantes blandas, мой/моя/моё y «Где?» (Урок 2, pp. 25–34)",
+  "gramatica": [
+    {
+      "tema": "Й y las vocales я, ю, е, ё",
+      "explicacion": "й es una «i» muy corta, como la y de «hoy». Al inicio de palabra o tras vocal: я = й+а, ю = й+у, е = й+э, ё = й+о. Tras consonante, esas letras ablandan la consonante. La ё siempre es tónica (pp. 25–27).",
+      "ejemplos": [
+        "мо́й, ча́й",
+        "я́блоко [йа́блака]",
+        "моя́ [майа́], моё [майо́]",
+        "мя́со [м’а́са]"
+      ]
+    },
+    {
+      "tema": "Consonantes duras y blandas; ь",
+      "explicacion": "Ante а, о, у, э, ы la consonante es dura; ante я, ё, ю, е, и, ь es blanda: la lengua sube hacia el paladar, como en la ñ española. La ь no suena: solo ablanda la consonante anterior (p. 28).",
+      "ejemplos": [
+        "сат [сат] — сят [с’ат]",
+        "сать [сат’] — сять [с’ат’]",
+        "пальто́ [пал’то́]",
+        "мя — una sola sílaba, no «mi-a»"
+      ]
+    },
+    {
+      "tema": "ч siempre blanda; ж y ш siempre duras",
+      "explicacion": "ач se lee igual que ачь. Tras ж y ш, la ь no cambia nada; же/ше suenan [жэ]/[шэ] y жё/шё suenan [жо]/[шо] (p. 30).",
+      "ejemplos": [
+        "до́чь [доч’]",
+        "мя́ч [м’ач’]",
+        "но́ж [нош], ложь [лош]"
+      ]
+    },
+    {
+      "tema": "Мой, моя́, моё",
+      "explicacion": "«Mi» concuerda con el género de lo que se posee: мой (masculino, он), моя́ (femenino, она́), моё (neutro, оно́) (p. 27).",
+      "ejemplos": [
+        "Э́то мо́й бра́т.",
+        "Э́то моя́ ма́ма.",
+        "Э́то моё я́блоко."
+      ]
+    },
+    {
+      "tema": "Género: он, она́, оно́",
+      "explicacion": "Consonante o -й: masculino. -а, -я: femenino. -о, -е: neutro. En -ь hay que aprenderlo (до́чь es f.). Excepción: па́па y де́душка son masculinos. No copies el género del español: кни́га es f., письмо́ es n. (pp. 25, 31–32).",
+      "ejemplos": [
+        "биле́т, музе́й — о́н",
+        "кни́га, кварти́ра — она́",
+        "зе́ркало, зда́ние — оно́",
+        "де́душка — о́н"
+      ]
+    },
+    {
+      "tema": "Где? — тут, здесь, там, вот",
+      "explicacion": "Где = dónde. Тут y здесь significan «aquí»; там, «allí». Вот presenta algo («aquí está»). En la respuesta se usa el pronombre del mismo género (p. 33, Задание 26).",
+      "ejemplos": [
+        "Где́ ма́ма? — Ма́ма та́м.",
+        "Где́ кни́га? — Во́т она́.",
+        "Где́ пальто́? — Во́т оно́.",
+        "Ма́ма спра́ва, сле́ва."
+      ]
+    },
+    {
+      "tema": "Pronombres personales",
+      "explicacion": "я — мы, ты — вы, он/она́/оно́ — они́. Вы es también el «usted» formal. Они́ vale para cualquier género (p. 34).",
+      "ejemplos": [
+        "Э́то я́. Э́то мы́.",
+        "Вы́ А́нна?",
+        "Где́ А́нна и Анто́н? — Они́ зде́сь."
+      ]
+    }
+  ],
+  "vocabulario": [
+    {
+      "id": "v_ya",
+      "ru": "я",
+      "ru_acento": "я́",
+      "es": "yo",
+      "tipo": "pronombre",
+      "nota": "Se pronuncia [йа]."
+    },
+    {
+      "id": "v_ty",
+      "ru": "ты",
+      "ru_acento": "ты́",
+      "es": "tú",
+      "tipo": "pronombre"
+    },
+    {
+      "id": "v_my",
+      "ru": "мы",
+      "ru_acento": "мы́",
+      "es": "nosotros, nosotras",
+      "tipo": "pronombre"
+    },
+    {
+      "id": "v_vy",
+      "ru": "вы",
+      "ru_acento": "вы́",
+      "es": "vosotros, usted",
+      "tipo": "pronombre",
+      "nota": "También es el «usted» formal."
+    },
+    {
+      "id": "v_oni",
+      "ru": "они",
+      "ru_acento": "они́",
+      "es": "ellos, ellas",
+      "tipo": "pronombre",
+      "nota": "Para cualquier género."
+    },
+    {
+      "id": "v_moy",
+      "ru": "мой",
+      "ru_acento": "мо́й",
+      "es": "mi, mío",
+      "tipo": "pronombre",
+      "nota": "мой (m), моя́ (f), моё (n). Урок 2, p. 27."
+    },
+    {
+      "id": "v_gde",
+      "ru": "где",
+      "ru_acento": "где́",
+      "es": "dónde",
+      "tipo": "adverbio"
+    },
+    {
+      "id": "v_zdes",
+      "ru": "здесь",
+      "ru_acento": "зде́сь",
+      "es": "aquí",
+      "tipo": "adverbio",
+      "nota": "Igual que тут."
+    },
+    {
+      "id": "v_von_tam",
+      "ru": "вон там",
+      "ru_acento": "во́н та́м",
+      "es": "allá",
+      "tipo": "expresion",
+      "nota": "Material de la clase."
+    },
+    {
+      "id": "v_sprava",
+      "ru": "справа",
+      "ru_acento": "спра́ва",
+      "es": "a la derecha",
+      "tipo": "adverbio"
+    },
+    {
+      "id": "v_sleva",
+      "ru": "слева",
+      "ru_acento": "сле́ва",
+      "es": "a la izquierda",
+      "tipo": "adverbio"
+    },
+    {
+      "id": "v_tozhe",
+      "ru": "тоже",
+      "ru_acento": "то́же",
+      "es": "también",
+      "tipo": "adverbio",
+      "nota": "Material de la clase."
+    },
+    {
+      "id": "v_chay",
+      "ru": "чай",
+      "ru_acento": "ча́й",
+      "es": "té",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_yabloko",
+      "ru": "яблоко",
+      "ru_acento": "я́блоко",
+      "es": "manzana",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [йа́блака]."
+    },
+    {
+      "id": "v_vilka",
+      "ru": "вилка",
+      "ru_acento": "ви́лка",
+      "es": "tenedor",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_konvert",
+      "ru": "конверт",
+      "ru_acento": "конве́рт",
+      "es": "sobre (de carta)",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_myaso",
+      "ru": "мясо",
+      "ru_acento": "мя́со",
+      "es": "carne",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [м’а́са]: una sola consonante blanda, no «mi-a»."
+    },
+    {
+      "id": "v_palto",
+      "ru": "пальто",
+      "ru_acento": "пальто́",
+      "es": "abrigo",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Palabra extranjera: no cambia nunca."
+    },
+    {
+      "id": "v_firma",
+      "ru": "фирма",
+      "ru_acento": "фи́рма",
+      "es": "empresa",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_doch",
+      "ru": "дочь",
+      "ru_acento": "до́чь",
+      "es": "hija",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Femenino en -ь. Se pronuncia [доч’]."
+    },
+    {
+      "id": "v_myach",
+      "ru": "мяч",
+      "ru_acento": "мя́ч",
+      "es": "pelota, balón",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [м’ач’]."
+    },
+    {
+      "id": "v_babushka",
+      "ru": "бабушка",
+      "ru_acento": "ба́бушка",
+      "es": "abuela",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_dedushka",
+      "ru": "дедушка",
+      "ru_acento": "де́душка",
+      "es": "abuelo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Masculino aunque termina en -а: мой де́душка."
+    },
+    {
+      "id": "v_viza",
+      "ru": "виза",
+      "ru_acento": "ви́за",
+      "es": "visado",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_grammatika",
+      "ru": "грамматика",
+      "ru_acento": "грамма́тика",
+      "es": "gramática",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_devochka",
+      "ru": "девочка",
+      "ru_acento": "де́вочка",
+      "es": "niña",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_devushka",
+      "ru": "девушка",
+      "ru_acento": "де́вушка",
+      "es": "chica, muchacha",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_malchik",
+      "ru": "мальчик",
+      "ru_acento": "ма́льчик",
+      "es": "niño",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_diktant",
+      "ru": "диктант",
+      "ru_acento": "дикта́нт",
+      "es": "dictado",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_zdanie",
+      "ru": "здание",
+      "ru_acento": "зда́ние",
+      "es": "edificio",
+      "tipo": "sustantivo",
+      "genero": "n"
+    },
+    {
+      "id": "v_kvartira",
+      "ru": "квартира",
+      "ru_acento": "кварти́ра",
+      "es": "piso, apartamento",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_kniga",
+      "ru": "книга",
+      "ru_acento": "кни́га",
+      "es": "libro",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Femenino, aunque «libro» es masculino en español."
+    },
+    {
+      "id": "v_student",
+      "ru": "студент",
+      "ru_acento": "студе́нт",
+      "es": "estudiante (hombre)",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_studentka",
+      "ru": "студентка",
+      "ru_acento": "студе́нтка",
+      "es": "estudiante (mujer)",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_uprazhnenie",
+      "ru": "упражнение",
+      "ru_acento": "упражне́ние",
+      "es": "ejercicio",
+      "tipo": "sustantivo",
+      "genero": "n"
+    },
+    {
+      "id": "v_uchebnik",
+      "ru": "учебник",
+      "ru_acento": "уче́бник",
+      "es": "libro de texto",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_gazeta",
+      "ru": "газета",
+      "ru_acento": "газе́та",
+      "es": "periódico",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_zerkalo",
+      "ru": "зеркало",
+      "ru_acento": "зе́ркало",
+      "es": "espejo",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [з’е́ркала]."
+    },
+    {
+      "id": "v_magazin",
+      "ru": "магазин",
+      "ru_acento": "магази́н",
+      "es": "tienda",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_muzey",
+      "ru": "музей",
+      "ru_acento": "музе́й",
+      "es": "museo",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_pismo",
+      "ru": "письмо",
+      "ru_acento": "письмо́",
+      "es": "carta",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Neutro, aunque «carta» es femenino en español."
+    },
+    {
+      "id": "v_kreslo",
+      "ru": "кресло",
+      "ru_acento": "кре́сло",
+      "es": "sillón",
+      "tipo": "sustantivo",
+      "genero": "n"
+    },
+    {
+      "id": "v_tarelka",
+      "ru": "тарелка",
+      "ru_acento": "таре́лка",
+      "es": "plato",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_bilet",
+      "ru": "билет",
+      "ru_acento": "биле́т",
+      "es": "billete, entrada",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [б’ил’е́т]."
+    },
+    {
+      "id": "v_direktor",
+      "ru": "директор",
+      "ru_acento": "дире́ктор",
+      "es": "director",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_film",
+      "ru": "фильм",
+      "ru_acento": "фи́льм",
+      "es": "película",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_sestra",
+      "ru": "сестра",
+      "ru_acento": "сестра́",
+      "es": "hermana",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [с’истра́]."
+    },
+    {
+      "id": "v_rossiya",
+      "ru": "Россия",
+      "ru_acento": "Росси́я",
+      "es": "Rusia",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Nombre propio. Se pronuncia [рас’и́йа]."
+    },
+    {
+      "id": "v_rodnoy",
+      "ru": "родной",
+      "ru_acento": "родно́й",
+      "es": "natal, de uno",
+      "tipo": "adjetivo",
+      "nota": "мой родно́й го́род = mi ciudad natal."
+    },
+    {
+      "id": "v_apteka",
+      "ru": "аптека",
+      "ru_acento": "апте́ка",
+      "es": "farmacia",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Material de la clase."
+    },
+    {
+      "id": "v_metro",
+      "ru": "метро",
+      "ru_acento": "метро́",
+      "es": "metro",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Material de la clase. No cambia nunca."
+    },
+    {
+      "id": "v_kafe",
+      "ru": "кафе",
+      "ru_acento": "кафе́",
+      "es": "cafetería",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Material de la clase. No cambia nunca."
+    },
+    {
+      "id": "v_restoran",
+      "ru": "ресторан",
+      "ru_acento": "рестора́н",
+      "es": "restaurante",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_kino",
+      "ru": "кино",
+      "ru_acento": "кино́",
+      "es": "cine",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Material de la clase. No cambia nunca."
+    },
+    {
+      "id": "v_izvinite",
+      "ru": "извините",
+      "ru_acento": "извини́те",
+      "es": "disculpe",
+      "tipo": "expresion",
+      "nota": "Material de la clase."
+    },
+    {
+      "id": "v_skazhite",
+      "ru": "скажите",
+      "ru_acento": "скажи́те",
+      "es": "dígame (usted)",
+      "tipo": "expresion",
+      "nota": "Material de la clase. Скажи́те, пожа́луйста… = Dígame, por favor…"
+    },
+    {
+      "id": "v_pozhaluysta",
+      "ru": "пожалуйста",
+      "ru_acento": "пожа́луйста",
+      "es": "por favor, de nada, adelante",
+      "tipo": "expresion",
+      "nota": "Se pronuncia [пажа́лста]."
+    },
+    {
+      "id": "v_mozhno",
+      "ru": "можно",
+      "ru_acento": "мо́жно",
+      "es": "¿se puede?, ¿puedo?",
+      "tipo": "expresion",
+      "nota": "Material de la clase: — Мо́жно? — Пожа́луйста."
+    }
+  ],
+  "textos": [
+    {
+      "id": "t1",
+      "titulo": "Это я (p. 27)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это я.",
+          "ru_acento": "Э́то я́.",
+          "es": "Soy yo.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "я",
+              "a": "я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing.",
+              "vocab_id": "v_ya"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это мой брат, моя мама, моё яблоко.",
+          "ru_acento": "Э́то мо́й бра́т, моя́ ма́ма, моё я́блоко.",
+          "es": "Este es mi hermano, mi mamá, mi manzana.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "брат",
+              "a": "бра́т",
+              "lema": "брат",
+              "es": "hermano",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_brat"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "моё",
+              "a": "моё",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, neutro sing.; se pronuncia [майо́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "яблоко",
+              "a": "я́блоко",
+              "lema": "яблоко",
+              "es": "manzana",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [йа́блака]",
+              "vocab_id": "v_yabloko"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "titulo": "Задание 25 (p. 33)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Кто это?",
+          "ru_acento": "Кто́ э́то?",
+          "es": "¿Quién es?",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo (personas y animales)",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это мама.",
+          "ru_acento": "Э́то ма́ма.",
+          "es": "Es mamá.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Где мама?",
+          "ru_acento": "Где́ ма́ма?",
+          "es": "¿Dónde está mamá?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Мама справа.",
+          "ru_acento": "Ма́ма спра́ва.",
+          "es": "Mamá está a la derecha.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "справа",
+              "a": "спра́ва",
+              "lema": "справа",
+              "es": "a la derecha",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_sprava"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Вот она.",
+          "ru_acento": "Во́т она́.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "она",
+              "a": "она́",
+              "lema": "она",
+              "es": "ella",
+              "gram": "pronombre personal, 3.ª pers. fem. sing.",
+              "vocab_id": "v_ona"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Это моя квартира.",
+          "ru_acento": "Э́то моя́ кварти́ра.",
+          "es": "Este es mi piso.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "квартира",
+              "a": "кварти́ра",
+              "lema": "квартира",
+              "es": "piso, apartamento",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_kvartira"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Вот моя комната.",
+          "ru_acento": "Во́т моя́ ко́мната.",
+          "es": "Aquí está mi habitación.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "комната",
+              "a": "ко́мната",
+              "lema": "комната",
+              "es": "habitación",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_komnata"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Это мой друг Иван.",
+          "ru_acento": "Э́то мо́й дру́г Ива́н.",
+          "es": "Este es mi amigo Iván.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "друг",
+              "a": "дру́г",
+              "lema": "друг",
+              "es": "amigo",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [друк]",
+              "vocab_id": "v_drug"
+            },
+            {
+              "t": "Иван",
+              "a": "Ива́н",
+              "lema": "Иван",
+              "es": "Iván",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_ivan"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Где моё яблоко?",
+          "ru_acento": "Где́ моё я́блоко?",
+          "es": "¿Dónde está mi manzana?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "моё",
+              "a": "моё",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, neutro sing.; se pronuncia [майо́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "яблоко",
+              "a": "я́блоко",
+              "lema": "яблоко",
+              "es": "manzana",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [йа́блака]",
+              "vocab_id": "v_yabloko"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Оно там.",
+          "ru_acento": "Оно́ та́м.",
+          "es": "Está allí.",
+          "tokens": [
+            {
+              "t": "Оно",
+              "a": "Оно́",
+              "lema": "оно",
+              "es": "ello (neutro)",
+              "gram": "pronombre personal, 3.ª pers. neutro sing.",
+              "vocab_id": "v_ono"
+            },
+            {
+              "t": "там",
+              "a": "та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "titulo": "Задание 26 (p. 34)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Где мама?",
+          "ru_acento": "Где́ ма́ма?",
+          "es": "¿Dónde está mamá?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Мама там.",
+          "ru_acento": "Ма́ма та́м.",
+          "es": "Mamá está allí.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "там",
+              "a": "та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Где магазин?",
+          "ru_acento": "Где́ магази́н?",
+          "es": "¿Dónde está la tienda?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "магазин",
+              "a": "магази́н",
+              "lema": "магазин",
+              "es": "tienda",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_magazin"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Он там.",
+          "ru_acento": "О́н та́м.",
+          "es": "Está allí.",
+          "tokens": [
+            {
+              "t": "Он",
+              "a": "О́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "там",
+              "a": "та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Где зонт?",
+          "ru_acento": "Где́ зо́нт?",
+          "es": "¿Dónde está el paraguas?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "зонт",
+              "a": "зо́нт",
+              "lema": "зонт",
+              "es": "paraguas",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_zont"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Вот он.",
+          "ru_acento": "Во́т о́н.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Где книга?",
+          "ru_acento": "Где́ кни́га?",
+          "es": "¿Dónde está el libro?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "книга",
+              "a": "кни́га",
+              "lema": "книга",
+              "es": "libro",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_kniga"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Вот она.",
+          "ru_acento": "Во́т она́.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "она",
+              "a": "она́",
+              "lema": "она",
+              "es": "ella",
+              "gram": "pronombre personal, 3.ª pers. fem. sing.",
+              "vocab_id": "v_ona"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Где пальто?",
+          "ru_acento": "Где́ пальто́?",
+          "es": "¿Dónde está el abrigo?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "пальто",
+              "a": "пальто́",
+              "lema": "пальто",
+              "es": "abrigo",
+              "gram": "sust. neutro (invariable), nominativo sing.",
+              "vocab_id": "v_palto"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Вот оно.",
+          "ru_acento": "Во́т оно́.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "оно",
+              "a": "оно́",
+              "lema": "оно",
+              "es": "ello (neutro)",
+              "gram": "pronombre personal, 3.ª pers. neutro sing.",
+              "vocab_id": "v_ono"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Где Ира?",
+          "ru_acento": "Где́ И́ра?",
+          "es": "¿Dónde está Ira?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "Ира",
+              "a": "И́ра",
+              "lema": "Ира",
+              "es": "Ira",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_ira"
+            }
+          ]
+        },
+        {
+          "id": "f12",
+          "ru": "Ира дома.",
+          "ru_acento": "И́ра до́ма.",
+          "es": "Ira está en casa.",
+          "tokens": [
+            {
+              "t": "Ира",
+              "a": "И́ра",
+              "lema": "Ира",
+              "es": "Ira",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_ira"
+            },
+            {
+              "t": "дома",
+              "a": "до́ма",
+              "lema": "дома",
+              "es": "en casa",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_doma"
+            }
+          ]
+        },
+        {
+          "id": "f13",
+          "ru": "Где мой билет?",
+          "ru_acento": "Где́ мо́й биле́т?",
+          "es": "¿Dónde está mi billete?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "билет",
+              "a": "биле́т",
+              "lema": "билет",
+              "es": "billete, entrada",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_bilet"
+            }
+          ]
+        },
+        {
+          "id": "f14",
+          "ru": "Вот он.",
+          "ru_acento": "Во́т о́н.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            }
+          ]
+        },
+        {
+          "id": "f15",
+          "ru": "Где моя газета?",
+          "ru_acento": "Где́ моя́ газе́та?",
+          "es": "¿Dónde está mi periódico?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "газета",
+              "a": "газе́та",
+              "lema": "газета",
+              "es": "periódico",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_gazeta"
+            }
+          ]
+        },
+        {
+          "id": "f16",
+          "ru": "Вот она.",
+          "ru_acento": "Во́т она́.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "она",
+              "a": "она́",
+              "lema": "она",
+              "es": "ella",
+              "gram": "pronombre personal, 3.ª pers. fem. sing.",
+              "vocab_id": "v_ona"
+            }
+          ]
+        },
+        {
+          "id": "f17",
+          "ru": "Где моё яблоко?",
+          "ru_acento": "Где́ моё я́блоко?",
+          "es": "¿Dónde está mi manzana?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "моё",
+              "a": "моё",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, neutro sing.; se pronuncia [майо́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "яблоко",
+              "a": "я́блоко",
+              "lema": "яблоко",
+              "es": "manzana",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [йа́блака]",
+              "vocab_id": "v_yabloko"
+            }
+          ]
+        },
+        {
+          "id": "f18",
+          "ru": "Вот оно.",
+          "ru_acento": "Во́т оно́.",
+          "es": "Aquí está.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "оно",
+              "a": "оно́",
+              "lema": "оно",
+              "es": "ello (neutro)",
+              "gram": "pronombre personal, 3.ª pers. neutro sing.",
+              "vocab_id": "v_ono"
+            }
+          ]
+        },
+        {
+          "id": "f19",
+          "ru": "Где Анна и Антон?",
+          "ru_acento": "Где́ А́нна и Анто́н?",
+          "es": "¿Dónde están Anna y Antón?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "Анна",
+              "a": "А́нна",
+              "lema": "Анна",
+              "es": "Anna",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_anna"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "Антон",
+              "a": "Анто́н",
+              "lema": "Антон",
+              "es": "Antón",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_anton"
+            }
+          ]
+        },
+        {
+          "id": "f20",
+          "ru": "Они здесь.",
+          "ru_acento": "Они́ зде́сь.",
+          "es": "Están aquí.",
+          "tokens": [
+            {
+              "t": "Они",
+              "a": "Они́",
+              "lema": "они",
+              "es": "ellos, ellas",
+              "gram": "pronombre personal, 3.ª pers. pl.",
+              "vocab_id": "v_oni"
+            },
+            {
+              "t": "здесь",
+              "a": "зде́сь",
+              "lema": "здесь",
+              "es": "aquí",
+              "gram": "adverbio de lugar (= тут)",
+              "vocab_id": "v_zdes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "titulo": "Задание 27 (p. 34)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это карта.",
+          "ru_acento": "Э́то ка́рта.",
+          "es": "Es un mapa.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "карта",
+              "a": "ка́рта",
+              "lema": "карта",
+              "es": "mapa",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_karta"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это Россия.",
+          "ru_acento": "Э́то Росси́я.",
+          "es": "Esto es Rusia.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "Россия",
+              "a": "Росси́я",
+              "lema": "Россия",
+              "es": "Rusia",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_rossiya"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Это моя страна.",
+          "ru_acento": "Э́то моя́ страна́.",
+          "es": "Es mi país.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "страна",
+              "a": "страна́",
+              "lema": "страна",
+              "es": "país",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_strana"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Это Москва.",
+          "ru_acento": "Э́то Москва́.",
+          "es": "Esto es Moscú.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "Москва",
+              "a": "Москва́",
+              "lema": "Москва",
+              "es": "Moscú",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_moskva"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Это мой родной город.",
+          "ru_acento": "Э́то мо́й родно́й го́род.",
+          "es": "Es mi ciudad natal.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "родной",
+              "a": "родно́й",
+              "lema": "родной",
+              "es": "natal",
+              "gram": "adj. masc., nominativo",
+              "vocab_id": "v_rodnoy"
+            },
+            {
+              "t": "город",
+              "a": "го́род",
+              "lema": "город",
+              "es": "ciudad",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [го́рат]",
+              "vocab_id": "v_gorod"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Там мой папа, моя мама, мой брат.",
+          "ru_acento": "Та́м мо́й па́па, моя́ ма́ма, мо́й бра́т.",
+          "es": "Allí están mi papá, mi mamá y mi hermano.",
+          "tokens": [
+            {
+              "t": "Там",
+              "a": "Та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "брат",
+              "a": "бра́т",
+              "lema": "брат",
+              "es": "hermano",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_brat"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Это город Новгород.",
+          "ru_acento": "Э́то го́род Но́вгород.",
+          "es": "Es la ciudad de Nóvgorod.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "город",
+              "a": "го́род",
+              "lema": "город",
+              "es": "ciudad",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [го́рат]",
+              "vocab_id": "v_gorod"
+            },
+            {
+              "t": "Новгород",
+              "a": "Но́вгород",
+              "lema": "Новгород",
+              "es": "Nóvgorod",
+              "gram": "nombre propio masc., nominativo"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Там мой дедушка и моя бабушка.",
+          "ru_acento": "Та́м мо́й де́душка и моя́ ба́бушка.",
+          "es": "Allí están mi abuelo y mi abuela.",
+          "tokens": [
+            {
+              "t": "Там",
+              "a": "Та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            },
+            {
+              "t": "мой",
+              "a": "мо́й",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, masc. sing.",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "дедушка",
+              "a": "де́душка",
+              "lema": "дедушка",
+              "es": "abuelo",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_dedushka"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "моя",
+              "a": "моя́",
+              "lema": "мой",
+              "es": "mi",
+              "gram": "pronombre posesivo, fem. sing.; se pronuncia [майа́]",
+              "vocab_id": "v_moy"
+            },
+            {
+              "t": "бабушка",
+              "a": "ба́бушка",
+              "lema": "бабушка",
+              "es": "abuela",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_babushka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "titulo": "Где? (material de la clase)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Где мама и я?",
+          "ru_acento": "Где́ ма́ма и я́?",
+          "es": "¿Dónde estamos mamá y yo?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "я",
+              "a": "я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing.",
+              "vocab_id": "v_ya"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Мама дома, я тоже дома.",
+          "ru_acento": "Ма́ма до́ма, я́ то́же до́ма.",
+          "es": "Mamá está en casa, yo también estoy en casa.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "дома",
+              "a": "до́ма",
+              "lema": "дома",
+              "es": "en casa",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_doma"
+            },
+            {
+              "t": "я",
+              "a": "я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing.",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "тоже",
+              "a": "то́же",
+              "lema": "тоже",
+              "es": "también",
+              "gram": "adverbio",
+              "vocab_id": "v_tozhe"
+            },
+            {
+              "t": "дома",
+              "a": "до́ма",
+              "lema": "дома",
+              "es": "en casa",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_doma"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Где гостиная?",
+          "ru_acento": "Где́ гости́ная?",
+          "es": "¿Dónde está la sala?",
+          "tokens": [
+            {
+              "t": "Где",
+              "a": "Где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "гостиная",
+              "a": "гости́ная",
+              "lema": "гостиная",
+              "es": "sala de estar",
+              "gram": "sust. fem. (forma de adjetivo), nominativo sing."
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Гостиная вон там.",
+          "ru_acento": "Гости́ная во́н та́м.",
+          "es": "La sala está allá.",
+          "tokens": [
+            {
+              "t": "Гостиная",
+              "a": "Гости́ная",
+              "lema": "гостиная",
+              "es": "sala de estar",
+              "gram": "sust. fem. (forma de adjetivo), nominativo sing."
+            },
+            {
+              "t": "вон",
+              "a": "во́н",
+              "lema": "вон",
+              "es": "allá",
+              "gram": "partícula demostrativa; «вон там» = «allá»"
+            },
+            {
+              "t": "там",
+              "a": "та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Вот дом.",
+          "ru_acento": "Во́т до́м.",
+          "es": "Aquí está la casa.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "дом",
+              "a": "до́м",
+              "lema": "дом",
+              "es": "casa",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_dom"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Слева банк.",
+          "ru_acento": "Сле́ва ба́нк.",
+          "es": "A la izquierda hay un banco.",
+          "tokens": [
+            {
+              "t": "Слева",
+              "a": "Сле́ва",
+              "lema": "слева",
+              "es": "a la izquierda",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_sleva"
+            },
+            {
+              "t": "банк",
+              "a": "ба́нк",
+              "lema": "банк",
+              "es": "banco",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_bank"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Справа аптека.",
+          "ru_acento": "Спра́ва апте́ка.",
+          "es": "A la derecha hay una farmacia.",
+          "tokens": [
+            {
+              "t": "Справа",
+              "a": "Спра́ва",
+              "lema": "справа",
+              "es": "a la derecha",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_sprava"
+            },
+            {
+              "t": "аптека",
+              "a": "апте́ка",
+              "lema": "аптека",
+              "es": "farmacia",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_apteka"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Там парк.",
+          "ru_acento": "Та́м па́рк.",
+          "es": "Allí hay un parque.",
+          "tokens": [
+            {
+              "t": "Там",
+              "a": "Та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            },
+            {
+              "t": "парк",
+              "a": "па́рк",
+              "lema": "парк",
+              "es": "parque",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_park"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Можно?",
+          "ru_acento": "Мо́жно?",
+          "es": "¿Se puede?",
+          "tokens": [
+            {
+              "t": "Можно",
+              "a": "Мо́жно",
+              "lema": "можно",
+              "es": "se puede",
+              "gram": "adverbio predicativo; «Можно?» = «¿Se puede?»",
+              "vocab_id": "v_mozhno"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Пожалуйста.",
+          "ru_acento": "Пожа́луйста.",
+          "es": "Adelante.",
+          "tokens": [
+            {
+              "t": "Пожалуйста",
+              "a": "Пожа́луйста",
+              "lema": "пожалуйста",
+              "es": "por favor",
+              "gram": "partícula de cortesía; se pronuncia [пажа́лста]",
+              "vocab_id": "v_pozhaluysta"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Кто это?",
+          "ru_acento": "Кто́ э́то?",
+          "es": "¿Quién es?",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo (personas y animales)",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f12",
+          "ru": "Это мы.",
+          "ru_acento": "Э́то мы́.",
+          "es": "Somos nosotros.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мы",
+              "a": "мы́",
+              "lema": "мы",
+              "es": "nosotros",
+              "gram": "pronombre personal, 1.ª pers. pl.",
+              "vocab_id": "v_my"
+            }
+          ]
+        },
+        {
+          "id": "f13",
+          "ru": "Извините, где клиника?",
+          "ru_acento": "Извини́те, где́ кли́ника?",
+          "es": "Disculpe, ¿dónde está la clínica?",
+          "tokens": [
+            {
+              "t": "Извините",
+              "a": "Извини́те",
+              "lema": "извинить",
+              "es": "disculpe",
+              "gram": "verbo извинить, imperativo (usted); fórmula de cortesía"
+            },
+            {
+              "t": "где",
+              "a": "где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "клиника",
+              "a": "кли́ника",
+              "lema": "клиника",
+              "es": "clínica",
+              "gram": "sust. fem., nominativo sing."
+            }
+          ]
+        },
+        {
+          "id": "f14",
+          "ru": "Вот она, справа.",
+          "ru_acento": "Во́т она́, спра́ва.",
+          "es": "Aquí está, a la derecha.",
+          "tokens": [
+            {
+              "t": "Вот",
+              "a": "Во́т",
+              "lema": "вот",
+              "es": "aquí está",
+              "gram": "partícula demostrativa",
+              "vocab_id": "v_vot"
+            },
+            {
+              "t": "она",
+              "a": "она́",
+              "lema": "она",
+              "es": "ella",
+              "gram": "pronombre personal, 3.ª pers. fem. sing.",
+              "vocab_id": "v_ona"
+            },
+            {
+              "t": "справа",
+              "a": "спра́ва",
+              "lema": "справа",
+              "es": "a la derecha",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_sprava"
+            }
+          ]
+        },
+        {
+          "id": "f15",
+          "ru": "Скажите, пожалуйста, где метро?",
+          "ru_acento": "Скажи́те, пожа́луйста, где́ метро́?",
+          "es": "Dígame, por favor, ¿dónde está el metro?",
+          "tokens": [
+            {
+              "t": "Скажите",
+              "a": "Скажи́те",
+              "lema": "сказать",
+              "es": "diga",
+              "gram": "verbo сказать, imperativo (usted); «скажите, пожалуйста» = «dígame, por favor»"
+            },
+            {
+              "t": "пожалуйста",
+              "a": "пожа́луйста",
+              "lema": "пожалуйста",
+              "es": "por favor",
+              "gram": "partícula de cortesía; se pronuncia [пажа́лста]",
+              "vocab_id": "v_pozhaluysta"
+            },
+            {
+              "t": "где",
+              "a": "где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "метро",
+              "a": "метро́",
+              "lema": "метро",
+              "es": "metro",
+              "gram": "sust. neutro (invariable), nominativo sing.",
+              "vocab_id": "v_metro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frases_practica": [
+    {
+      "id": "p1",
+      "ru": "Это моя книга.",
+      "ru_acento": "Э́то моя́ кни́га.",
+      "es": "Este es mi libro.",
+      "alternativas_es": [
+        "Es mi libro."
+      ]
+    },
+    {
+      "id": "p2",
+      "ru": "Это мой дедушка.",
+      "ru_acento": "Э́то мо́й де́душка.",
+      "es": "Este es mi abuelo.",
+      "alternativas_es": [
+        "Es mi abuelo."
+      ]
+    },
+    {
+      "id": "p3",
+      "ru": "Где моё яблоко? — Вот оно.",
+      "ru_acento": "Где́ моё я́блоко? — Во́т оно́.",
+      "es": "¿Dónde está mi manzana? — Aquí está.",
+      "alternativas_es": [
+        "¿Dónde está mi manzana? — Aquí la tienes."
+      ]
+    },
+    {
+      "id": "p4",
+      "ru": "Где мой билет? — Вот он.",
+      "ru_acento": "Где́ мо́й биле́т? — Во́т о́н.",
+      "es": "¿Dónde está mi billete? — Aquí está.",
+      "alternativas_es": [
+        "¿Dónde está mi entrada? — Aquí está."
+      ]
+    },
+    {
+      "id": "p5",
+      "ru": "Где магазин? — Он там.",
+      "ru_acento": "Где́ магази́н? — О́н та́м.",
+      "es": "¿Dónde está la tienda? — Está allí.",
+      "alternativas_es": [
+        "¿Dónde está la tienda? — Allí."
+      ]
+    },
+    {
+      "id": "p6",
+      "ru": "Мама здесь.",
+      "ru_acento": "Ма́ма зде́сь.",
+      "es": "Mamá está aquí.",
+      "alternativas_ru": [
+        "Мама тут."
+      ]
+    },
+    {
+      "id": "p7",
+      "ru": "Где Анна и Антон? — Они здесь.",
+      "ru_acento": "Где́ А́нна и Анто́н? — Они́ зде́сь.",
+      "es": "¿Dónde están Anna y Antón? — Están aquí.",
+      "alternativas_ru": [
+        "Где Анна и Антон? — Они тут."
+      ]
+    },
+    {
+      "id": "p8",
+      "ru": "Извините, где аптека?",
+      "ru_acento": "Извини́те, где́ апте́ка?",
+      "es": "Disculpe, ¿dónde está la farmacia?",
+      "alternativas_es": [
+        "Perdone, ¿dónde está la farmacia?"
+      ]
+    },
+    {
+      "id": "p9",
+      "ru": "Скажите, пожалуйста, где метро?",
+      "ru_acento": "Скажи́те, пожа́луйста, где́ метро́?",
+      "es": "Dígame, por favor, ¿dónde está el metro?",
+      "alternativas_es": [
+        "Por favor, ¿dónde está el metro?"
+      ]
+    },
+    {
+      "id": "p10",
+      "ru": "Справа банк, слева аптека.",
+      "ru_acento": "Спра́ва ба́нк, сле́ва апте́ка.",
+      "es": "A la derecha hay un banco y a la izquierda una farmacia.",
+      "alternativas_es": [
+        "A la derecha está el banco, a la izquierda la farmacia."
+      ]
+    },
+    {
+      "id": "p11",
+      "ru": "Это моя страна.",
+      "ru_acento": "Э́то моя́ страна́.",
+      "es": "Es mi país.",
+      "alternativas_es": [
+        "Este es mi país."
+      ]
+    },
+    {
+      "id": "p12",
+      "ru": "Там мой папа и моя мама.",
+      "ru_acento": "Та́м мо́й па́па и моя́ ма́ма.",
+      "es": "Allí están mi papá y mi mamá.",
+      "alternativas_es": [
+        "Allí están mi padre y mi madre."
+      ]
+    },
+    {
+      "id": "p13",
+      "ru": "Вы Анна?",
+      "ru_acento": "Вы́ А́нна?",
+      "es": "¿Es usted Anna?",
+      "alternativas_es": [
+        "¿Eres Anna?",
+        "¿Usted es Anna?"
+      ]
+    },
+    {
+      "id": "p14",
+      "ru": "Я тоже дома.",
+      "ru_acento": "Я́ то́же до́ма.",
+      "es": "Yo también estoy en casa."
+    }
+  ]
+}

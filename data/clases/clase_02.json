@@ -1,0 +1,2414 @@
+{
+  "schema_version": 1,
+  "id": "clase_02",
+  "fecha": "2026-10-11",
+  "urok": 1,
+  "titulo": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?» (Урок 1, pp. 12–22; Урок 2, p. 24)",
+  "gramatica": [
+    {
+      "tema": "Consonantes р, л, ш, ж, ч",
+      "explicacion": "р es vibrante, como la r de «pero» o la rr. л es una l «oscura», con la parte de atrás de la lengua levantada. ш y ж son siempre duras (ш como un «sh» grave; ж es su pareja sonora). ч es siempre blanda, parecida a la ch española (pp. 12–19).",
+      "ejemplos": [
+        "бра́т, ры́ба, то́рт",
+        "сто́л, по́лка, ла́мпа",
+        "шко́ла, ша́пка, журна́л",
+        "вра́ч, ча́шка, ру́чка"
+      ]
+    },
+    {
+      "tema": "О átona → [а]",
+      "explicacion": "Solo la о acentuada suena [о]. Sin acento suena [а] (p. 14, Правило чтения безударного «о»).",
+      "ejemplos": [
+        "голова́ [галава́]",
+        "молоко́ [малако́]",
+        "соба́ка [саба́ка]",
+        "окно́ [акно́]",
+        "э́то [э́та]"
+      ]
+    },
+    {
+      "tema": "ши → [шы], жи → [жы]",
+      "explicacion": "Como ш y ж son siempre duras, la и que va detrás se pronuncia [ы]. Se escribe и, se dice ы (pp. 17–18).",
+      "ejemplos": [
+        "маши́на [машы́на]",
+        "жи́р [жыр]",
+        "оши́бка [ашы́пка]"
+      ]
+    },
+    {
+      "tema": "Ensordecimiento",
+      "explicacion": "Pares sonora–sorda: б–п, в–ф, д–т, з–с, ж–ш, г–к. La sonora suena sorda al final de palabra y también delante de una consonante sorda (pp. 12, 18–19).",
+      "ejemplos": [
+        "но́ж [нош]",
+        "дру́г [друк]",
+        "гла́з [глас]",
+        "го́род [го́рат]",
+        "авто́бус [афто́бус]",
+        "ло́жка [ло́шка]"
+      ]
+    },
+    {
+      "tema": "Entonación: ИК-1, ИК-3, ИК-2",
+      "explicacion": "ИК-1: en una afirmación la voz baja al final (p. 15). ИК-3: en una pregunta sin palabra interrogativa la voz sube bruscamente en la palabra por la que se pregunta (p. 21). ИК-2: en una pregunta con кто o что la palabra interrogativa lleva el acento fuerte y la voz baja (Урок 2, p. 24).",
+      "ejemplos": [
+        "Э́то ма́ма. (ИК-1)",
+        "Э́то ру́чка? (ИК-3)",
+        "Кто́ э́то? Что́ э́то? (ИК-2)"
+      ]
+    },
+    {
+      "tema": "Кто это? / Что это?",
+      "explicacion": "Кто pregunta por personas y animales; что, por cosas. En presente no se usa el verbo «ser» y no hay artículos: Э́то ко́т = «Esto es un gato» (Урок 2, p. 24).",
+      "ejemplos": [
+        "Кто́ э́то? — Э́то соба́ка.",
+        "Что́ э́то? — Э́то молоко́.",
+        "Кто́ о́н? — О́н вра́ч."
+      ]
+    }
+  ],
+  "vocabulario": [
+    {
+      "id": "v_brat",
+      "ru": "брат",
+      "ru_acento": "бра́т",
+      "es": "hermano",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_drug",
+      "ru": "друг",
+      "ru_acento": "дру́г",
+      "es": "amigo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [друк]."
+    },
+    {
+      "id": "v_podruga",
+      "ru": "подруга",
+      "ru_acento": "подру́га",
+      "es": "amiga",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_karta",
+      "ru": "карта",
+      "ru_acento": "ка́рта",
+      "es": "mapa",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_marka",
+      "ru": "марка",
+      "ru_acento": "ма́рка",
+      "es": "sello (de correos)",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_park",
+      "ru": "парк",
+      "ru_acento": "па́рк",
+      "es": "parque",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_ruka",
+      "ru": "рука",
+      "ru_acento": "рука́",
+      "es": "mano, brazo",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_ryba",
+      "ru": "рыба",
+      "ru_acento": "ры́ба",
+      "es": "pez, pescado",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_strana",
+      "ru": "страна",
+      "ru_acento": "страна́",
+      "es": "país",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_syr",
+      "ru": "сыр",
+      "ru_acento": "сы́р",
+      "es": "queso",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_tort",
+      "ru": "торт",
+      "ru_acento": "то́рт",
+      "es": "tarta, pastel",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_urok",
+      "ru": "урок",
+      "ru_acento": "уро́к",
+      "es": "lección, clase",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_ira",
+      "ru": "Ира",
+      "ru_acento": "И́ра",
+      "es": "Ira",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Nombre propio."
+    },
+    {
+      "id": "v_glaz",
+      "ru": "глаз",
+      "ru_acento": "гла́з",
+      "es": "ojo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [глас]."
+    },
+    {
+      "id": "v_lampa",
+      "ru": "лампа",
+      "ru_acento": "ла́мпа",
+      "es": "lámpara",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_polka",
+      "ru": "полка",
+      "ru_acento": "по́лка",
+      "es": "estante, repisa",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_stol",
+      "ru": "стол",
+      "ru_acento": "сто́л",
+      "es": "mesa",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "л dura («oscura»)."
+    },
+    {
+      "id": "v_stul",
+      "ru": "стул",
+      "ru_acento": "сту́л",
+      "es": "silla",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_voda",
+      "ru": "вода",
+      "ru_acento": "вода́",
+      "es": "agua",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [вада́]."
+    },
+    {
+      "id": "v_vopros",
+      "ru": "вопрос",
+      "ru_acento": "вопро́с",
+      "es": "pregunta",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [вапро́с]."
+    },
+    {
+      "id": "v_gorod",
+      "ru": "город",
+      "ru_acento": "го́род",
+      "es": "ciudad",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [го́рат]."
+    },
+    {
+      "id": "v_doska",
+      "ru": "доска",
+      "ru_acento": "доска́",
+      "es": "pizarra",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [даска́]."
+    },
+    {
+      "id": "v_doroga",
+      "ru": "дорога",
+      "ru_acento": "доро́га",
+      "es": "camino, carretera",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [даро́га]."
+    },
+    {
+      "id": "v_maslo",
+      "ru": "масло",
+      "ru_acento": "ма́сло",
+      "es": "mantequilla, aceite",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [ма́сла]."
+    },
+    {
+      "id": "v_moloko",
+      "ru": "молоко",
+      "ru_acento": "молоко́",
+      "es": "leche",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [малако́]."
+    },
+    {
+      "id": "v_noga",
+      "ru": "нога",
+      "ru_acento": "нога́",
+      "es": "pierna, pie",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [нага́]."
+    },
+    {
+      "id": "v_okno",
+      "ru": "окно",
+      "ru_acento": "окно́",
+      "es": "ventana",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [акно́]."
+    },
+    {
+      "id": "v_otkrytka",
+      "ru": "открытка",
+      "ru_acento": "откры́тка",
+      "es": "postal",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [аткры́тка]."
+    },
+    {
+      "id": "v_pasport",
+      "ru": "паспорт",
+      "ru_acento": "па́спорт",
+      "es": "pasaporte",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [па́спарт]."
+    },
+    {
+      "id": "v_slovo",
+      "ru": "слово",
+      "ru_acento": "сло́во",
+      "es": "palabra",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [сло́ва]."
+    },
+    {
+      "id": "v_sobaka",
+      "ru": "собака",
+      "ru_acento": "соба́ка",
+      "es": "perro",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [саба́ка]. Es femenino; se pregunta con кто."
+    },
+    {
+      "id": "v_golova",
+      "ru": "голова",
+      "ru_acento": "голова́",
+      "es": "cabeza",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [галава́]."
+    },
+    {
+      "id": "v_moskva",
+      "ru": "Москва",
+      "ru_acento": "Москва́",
+      "es": "Moscú",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Nombre propio. Se pronuncia [масква́]."
+    },
+    {
+      "id": "v_karandash",
+      "ru": "карандаш",
+      "ru_acento": "каранда́ш",
+      "es": "lápiz",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_rubashka",
+      "ru": "рубашка",
+      "ru_acento": "руба́шка",
+      "es": "camisa",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_shapka",
+      "ru": "шапка",
+      "ru_acento": "ша́пка",
+      "es": "gorro",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_sharf",
+      "ru": "шарф",
+      "ru_acento": "ша́рф",
+      "es": "bufanda",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_shkaf",
+      "ru": "шкаф",
+      "ru_acento": "шка́ф",
+      "es": "armario",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_shkola",
+      "ru": "школа",
+      "ru_acento": "шко́ла",
+      "es": "escuela",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_mashina",
+      "ru": "машина",
+      "ru_acento": "маши́на",
+      "es": "coche",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [машы́на]."
+    },
+    {
+      "id": "v_nozh",
+      "ru": "нож",
+      "ru_acento": "но́ж",
+      "es": "cuchillo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [нош]."
+    },
+    {
+      "id": "v_zhurnal",
+      "ru": "журнал",
+      "ru_acento": "журна́л",
+      "es": "revista",
+      "tipo": "sustantivo",
+      "genero": "m"
+    },
+    {
+      "id": "v_etazh",
+      "ru": "этаж",
+      "ru_acento": "эта́ж",
+      "es": "piso, planta (de un edificio)",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [эта́ш]."
+    },
+    {
+      "id": "v_avtobus",
+      "ru": "автобус",
+      "ru_acento": "авто́бус",
+      "es": "autobús",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [афто́бус]."
+    },
+    {
+      "id": "v_oshibka",
+      "ru": "ошибка",
+      "ru_acento": "оши́бка",
+      "es": "error",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [ашы́пка]."
+    },
+    {
+      "id": "v_lozhka",
+      "ru": "ложка",
+      "ru_acento": "ло́жка",
+      "es": "cuchara",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Se pronuncia [ло́шка]."
+    },
+    {
+      "id": "v_vrach",
+      "ru": "врач",
+      "ru_acento": "вра́ч",
+      "es": "médico, médica",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Masculino aunque sea una mujer."
+    },
+    {
+      "id": "v_pochta",
+      "ru": "почта",
+      "ru_acento": "по́чта",
+      "es": "correos (oficina)",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_ruchka",
+      "ru": "ручка",
+      "ru_acento": "ру́чка",
+      "es": "bolígrafo",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_chashka",
+      "ru": "чашка",
+      "ru_acento": "ча́шка",
+      "es": "taza",
+      "tipo": "sustantivo",
+      "genero": "f"
+    },
+    {
+      "id": "v_on",
+      "ru": "он",
+      "ru_acento": "о́н",
+      "es": "él",
+      "tipo": "pronombre"
+    },
+    {
+      "id": "v_ona",
+      "ru": "она",
+      "ru_acento": "она́",
+      "es": "ella",
+      "tipo": "pronombre",
+      "nota": "Se pronuncia [ана́]."
+    },
+    {
+      "id": "v_ono",
+      "ru": "оно",
+      "ru_acento": "оно́",
+      "es": "ello (neutro)",
+      "tipo": "pronombre",
+      "nota": "Para sustantivos neutros: окно́ — оно́. Урок 2, p. 24."
+    },
+    {
+      "id": "v_eto",
+      "ru": "это",
+      "ru_acento": "э́то",
+      "es": "esto es, este es",
+      "tipo": "particula",
+      "nota": "Invariable. Se pronuncia [э́та]."
+    },
+    {
+      "id": "v_kto",
+      "ru": "кто",
+      "ru_acento": "кто́",
+      "es": "quién",
+      "tipo": "pronombre",
+      "nota": "Para personas y animales."
+    },
+    {
+      "id": "v_chto",
+      "ru": "что",
+      "ru_acento": "что́",
+      "es": "qué",
+      "tipo": "pronombre",
+      "nota": "Se pronuncia [што]. Para cosas."
+    },
+    {
+      "id": "v_da",
+      "ru": "да",
+      "ru_acento": "да́",
+      "es": "sí",
+      "tipo": "particula"
+    },
+    {
+      "id": "v_i",
+      "ru": "и",
+      "ru_acento": "и",
+      "es": "y",
+      "tipo": "conjuncion"
+    },
+    {
+      "id": "v_tut",
+      "ru": "тут",
+      "ru_acento": "ту́т",
+      "es": "aquí",
+      "tipo": "adverbio"
+    },
+    {
+      "id": "v_tam",
+      "ru": "там",
+      "ru_acento": "та́м",
+      "es": "allí",
+      "tipo": "adverbio"
+    },
+    {
+      "id": "v_vot",
+      "ru": "вот",
+      "ru_acento": "во́т",
+      "es": "aquí está, he aquí",
+      "tipo": "particula"
+    },
+    {
+      "id": "v_doma",
+      "ru": "дома",
+      "ru_acento": "до́ма",
+      "es": "en casa",
+      "tipo": "adverbio",
+      "nota": "Material de la clase, no del libro en estas páginas."
+    },
+    {
+      "id": "v_vaza",
+      "ru": "ваза",
+      "ru_acento": "ва́за",
+      "es": "jarrón",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Material de la clase, no del libro."
+    },
+    {
+      "id": "v_salat",
+      "ru": "салат",
+      "ru_acento": "сала́т",
+      "es": "ensalada",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Material de la clase, no del libro."
+    },
+    {
+      "id": "v_bankomat",
+      "ru": "банкомат",
+      "ru_acento": "банкома́т",
+      "es": "cajero automático",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Material de la clase, no del libro."
+    },
+    {
+      "id": "v_bank",
+      "ru": "банк",
+      "ru_acento": "ба́нк",
+      "es": "banco",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Material de la clase, no del libro."
+    },
+    {
+      "id": "v_zdravstvuyte",
+      "ru": "здравствуйте",
+      "ru_acento": "здра́вствуйте",
+      "es": "hola, buenos días (formal)",
+      "tipo": "expresion",
+      "nota": "La primera в no se pronuncia: [здра́ствуйтэ]."
+    },
+    {
+      "id": "v_menya_zovut",
+      "ru": "меня зовут",
+      "ru_acento": "меня́ зову́т",
+      "es": "me llamo",
+      "tipo": "expresion",
+      "nota": "Literalmente «me llaman». En el libro: Урок 2, p. 36."
+    },
+    {
+      "id": "v_kak_vas_zovut",
+      "ru": "как вас зовут",
+      "ru_acento": "ка́к ва́с зову́т",
+      "es": "¿cómo se llama usted?",
+      "tipo": "expresion"
+    },
+    {
+      "id": "v_ochen_priyatno",
+      "ru": "очень приятно",
+      "ru_acento": "о́чень прия́тно",
+      "es": "mucho gusto",
+      "tipo": "expresion"
+    },
+    {
+      "id": "v_do_svidaniya",
+      "ru": "до свидания",
+      "ru_acento": "до свида́ния",
+      "es": "adiós",
+      "tipo": "expresion"
+    }
+  ],
+  "textos": [
+    {
+      "id": "t1",
+      "titulo": "Диалог (material de la clase)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Здравствуйте!",
+          "ru_acento": "Здра́вствуйте!",
+          "es": "¡Hola!",
+          "tokens": [
+            {
+              "t": "Здравствуйте",
+              "a": "Здра́вствуйте",
+              "lema": "здравствуйте",
+              "es": "hola",
+              "gram": "fórmula de saludo formal; se pronuncia [здра́ствуйтe], la primera в no suena",
+              "vocab_id": "v_zdravstvuyte"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Меня зовут Нина Ивановна.",
+          "ru_acento": "Меня́ зову́т Ни́на Ива́новна.",
+          "es": "Me llamo Nina Ivánovna.",
+          "tokens": [
+            {
+              "t": "Меня",
+              "a": "Меня́",
+              "lema": "я",
+              "es": "me, a mí",
+              "gram": "pronombre personal, 1.ª pers. sing., acusativo; «меня зовут» = «me llamo»"
+            },
+            {
+              "t": "зовут",
+              "a": "зову́т",
+              "lema": "звать",
+              "es": "llaman",
+              "gram": "verbo звать, 3.ª pers. pl. presente; «меня/вас зовут» = «me llamo / se llama»"
+            },
+            {
+              "t": "Нина",
+              "a": "Ни́на",
+              "lema": "Нина",
+              "es": "Nina",
+              "gram": "nombre propio fem., nominativo"
+            },
+            {
+              "t": "Ивановна",
+              "a": "Ива́новна",
+              "lema": "Ивановна",
+              "es": "Ivánovna (patronímico)",
+              "gram": "nombre propio fem., nominativo"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Как вас зовут?",
+          "ru_acento": "Ка́к ва́с зову́т?",
+          "es": "¿Cómo se llama usted?",
+          "tokens": [
+            {
+              "t": "Как",
+              "a": "Ка́к",
+              "lema": "как",
+              "es": "cómo",
+              "gram": "adverbio interrogativo"
+            },
+            {
+              "t": "вас",
+              "a": "ва́с",
+              "lema": "вы",
+              "es": "a usted",
+              "gram": "pronombre personal, 2.ª pers. pl. (usted), acusativo"
+            },
+            {
+              "t": "зовут",
+              "a": "зову́т",
+              "lema": "звать",
+              "es": "llaman",
+              "gram": "verbo звать, 3.ª pers. pl. presente; «меня/вас зовут» = «me llamo / se llama»"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Очень приятно.",
+          "ru_acento": "О́чень прия́тно.",
+          "es": "Mucho gusto.",
+          "tokens": [
+            {
+              "t": "Очень",
+              "a": "О́чень",
+              "lema": "очень",
+              "es": "muy",
+              "gram": "adverbio de modo"
+            },
+            {
+              "t": "приятно",
+              "a": "прия́тно",
+              "lema": "приятно",
+              "es": "agradable",
+              "gram": "adverbio (predicativo); «очень приятно» = «mucho gusto»"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "До свидания!",
+          "ru_acento": "До свида́ния!",
+          "es": "¡Adiós!",
+          "tokens": [
+            {
+              "t": "До",
+              "a": "До",
+              "lema": "до",
+              "es": "hasta",
+              "gram": "preposición + genitivo; «до свидания» = «adiós»"
+            },
+            {
+              "t": "свидания",
+              "a": "свида́ния",
+              "lema": "свидание",
+              "es": "vista, encuentro",
+              "gram": "sust. neutro, genitivo sing.; solo en la fórmula «до свидания»"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "titulo": "Задание 10 (p. 16)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это кот.",
+          "ru_acento": "Э́то ко́т.",
+          "es": "Es un gato.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "кот",
+              "a": "ко́т",
+              "lema": "кот",
+              "es": "gato",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_kot"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это собака.",
+          "ru_acento": "Э́то соба́ка.",
+          "es": "Es un perro.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "собака",
+              "a": "соба́ка",
+              "lema": "собака",
+              "es": "perro",
+              "gram": "sust. fem., nominativo sing.; se pronuncia [саба́ка]",
+              "vocab_id": "v_sobaka"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Это дом.",
+          "ru_acento": "Э́то до́м.",
+          "es": "Es una casa.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "дом",
+              "a": "до́м",
+              "lema": "дом",
+              "es": "casa",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_dom"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Это комната.",
+          "ru_acento": "Э́то ко́мната.",
+          "es": "Es una habitación.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "комната",
+              "a": "ко́мната",
+              "lema": "комната",
+              "es": "habitación",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_komnata"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Это мама.",
+          "ru_acento": "Э́то ма́ма.",
+          "es": "Es mamá.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Это папа.",
+          "ru_acento": "Э́то па́па.",
+          "es": "Es papá.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Это мама и папа.",
+          "ru_acento": "Э́то ма́ма и па́па.",
+          "es": "Son mamá y papá.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Это друг и подруга.",
+          "ru_acento": "Э́то дру́г и подру́га.",
+          "es": "Son un amigo y una amiga.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "друг",
+              "a": "дру́г",
+              "lema": "друг",
+              "es": "amigo",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [друк]",
+              "vocab_id": "v_drug"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "подруга",
+              "a": "подру́га",
+              "lema": "подруга",
+              "es": "amiga",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_podruga"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Это он и она.",
+          "ru_acento": "Э́то о́н и она́.",
+          "es": "Son él y ella.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "она",
+              "a": "она́",
+              "lema": "она",
+              "es": "ella",
+              "gram": "pronombre personal, 3.ª pers. fem. sing.",
+              "vocab_id": "v_ona"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Это собака и кот.",
+          "ru_acento": "Э́то соба́ка и ко́т.",
+          "es": "Son un perro y un gato.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "собака",
+              "a": "соба́ка",
+              "lema": "собака",
+              "es": "perro",
+              "gram": "sust. fem., nominativo sing.; se pronuncia [саба́ка]",
+              "vocab_id": "v_sobaka"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "кот",
+              "a": "ко́т",
+              "lema": "кот",
+              "es": "gato",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_kot"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Это город Москва.",
+          "ru_acento": "Э́то го́род Москва́.",
+          "es": "Es la ciudad de Moscú.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "город",
+              "a": "го́род",
+              "lema": "город",
+              "es": "ciudad",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [го́рат]",
+              "vocab_id": "v_gorod"
+            },
+            {
+              "t": "Москва",
+              "a": "Москва́",
+              "lema": "Москва",
+              "es": "Moscú",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_moskva"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "titulo": "Задание 23 (p. 21)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это комната?",
+          "ru_acento": "Э́то ко́мната?",
+          "es": "¿Es una habitación?",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "комната",
+              "a": "ко́мната",
+              "lema": "комната",
+              "es": "habitación",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_komnata"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это окно?",
+          "ru_acento": "Э́то окно́?",
+          "es": "¿Es una ventana?",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "окно",
+              "a": "окно́",
+              "lema": "окно",
+              "es": "ventana",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [акно́]",
+              "vocab_id": "v_okno"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Это стол и стул.",
+          "ru_acento": "Э́то сто́л и сту́л.",
+          "es": "Son una mesa y una silla.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "стол",
+              "a": "сто́л",
+              "lema": "стол",
+              "es": "mesa",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_stol"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "стул",
+              "a": "сту́л",
+              "lema": "стул",
+              "es": "silla",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_stul"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Это рубашка, шапка и шарф.",
+          "ru_acento": "Э́то руба́шка, ша́пка и ша́рф.",
+          "es": "Son una camisa, un gorro y una bufanda.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "рубашка",
+              "a": "руба́шка",
+              "lema": "рубашка",
+              "es": "camisa",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_rubashka"
+            },
+            {
+              "t": "шапка",
+              "a": "ша́пка",
+              "lema": "шапка",
+              "es": "gorro",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_shapka"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "шарф",
+              "a": "ша́рф",
+              "lema": "шарф",
+              "es": "bufanda",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_sharf"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Это автобус и машина.",
+          "ru_acento": "Э́то авто́бус и маши́на.",
+          "es": "Son un autobús y un coche.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "автобус",
+              "a": "авто́бус",
+              "lema": "автобус",
+              "es": "autobús",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [афто́бус]",
+              "vocab_id": "v_avtobus"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "машина",
+              "a": "маши́на",
+              "lema": "машина",
+              "es": "coche",
+              "gram": "sust. fem., nominativo sing.; se pronuncia [машы́на]",
+              "vocab_id": "v_mashina"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Это школа и почта.",
+          "ru_acento": "Э́то шко́ла и по́чта.",
+          "es": "Son una escuela y una oficina de correos.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "школа",
+              "a": "шко́ла",
+              "lema": "школа",
+              "es": "escuela",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_shkola"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "почта",
+              "a": "по́чта",
+              "lema": "почта",
+              "es": "correos",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_pochta"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Это кот и собака.",
+          "ru_acento": "Э́то ко́т и соба́ка.",
+          "es": "Son un gato y un perro.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "кот",
+              "a": "ко́т",
+              "lema": "кот",
+              "es": "gato",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_kot"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "собака",
+              "a": "соба́ка",
+              "lema": "собака",
+              "es": "perro",
+              "gram": "sust. fem., nominativo sing.; se pronuncia [саба́ка]",
+              "vocab_id": "v_sobaka"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Это карандаш и ручка.",
+          "ru_acento": "Э́то каранда́ш и ру́чка.",
+          "es": "Son un lápiz y un bolígrafo.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "карандаш",
+              "a": "каранда́ш",
+              "lema": "карандаш",
+              "es": "lápiz",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_karandash"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "ручка",
+              "a": "ру́чка",
+              "lema": "ручка",
+              "es": "bolígrafo",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_ruchka"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Это папа, мама и сын.",
+          "ru_acento": "Э́то па́па, ма́ма и сы́н.",
+          "es": "Son papá, mamá y el hijo.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Это сыр, масло и молоко.",
+          "ru_acento": "Э́то сы́р, ма́сло и молоко́.",
+          "es": "Son queso, mantequilla y leche.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "сыр",
+              "a": "сы́р",
+              "lema": "сыр",
+              "es": "queso",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syr"
+            },
+            {
+              "t": "масло",
+              "a": "ма́сло",
+              "lema": "масло",
+              "es": "mantequilla, aceite",
+              "gram": "sust. neutro, nominativo sing.",
+              "vocab_id": "v_maslo"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "молоко",
+              "a": "молоко́",
+              "lema": "молоко",
+              "es": "leche",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [малако́]",
+              "vocab_id": "v_moloko"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Это стакан, чашка, ложка и нож.",
+          "ru_acento": "Э́то стака́н, ча́шка, ло́жка и но́ж.",
+          "es": "Son un vaso, una taza, una cuchara y un cuchillo.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "стакан",
+              "a": "стака́н",
+              "lema": "стакан",
+              "es": "vaso",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_stakan"
+            },
+            {
+              "t": "чашка",
+              "a": "ча́шка",
+              "lema": "чашка",
+              "es": "taza",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_chashka"
+            },
+            {
+              "t": "ложка",
+              "a": "ло́жка",
+              "lema": "ложка",
+              "es": "cuchara",
+              "gram": "sust. fem., nominativo sing.; se pronuncia [ло́шка]",
+              "vocab_id": "v_lozhka"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "нож",
+              "a": "но́ж",
+              "lema": "нож",
+              "es": "cuchillo",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [нош]",
+              "vocab_id": "v_nozh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "titulo": "Урок 2, Задания 1 и 3 (p. 24)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Кто это?",
+          "ru_acento": "Кто́ э́то?",
+          "es": "¿Quién es?",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo (personas y animales)",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это мама, папа и сын.",
+          "ru_acento": "Э́то ма́ма, па́па и сы́н.",
+          "es": "Son mamá, papá y el hijo.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "папа",
+              "a": "па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc. (termina en -а), nominativo sing.",
+              "vocab_id": "v_papa"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Что это?",
+          "ru_acento": "Что́ э́то?",
+          "es": "¿Qué es esto?",
+          "tokens": [
+            {
+              "t": "Что",
+              "a": "Что́",
+              "lema": "что",
+              "es": "qué",
+              "gram": "pronombre interrogativo (cosas); se pronuncia [што]",
+              "vocab_id": "v_chto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Это шапка и шарф.",
+          "ru_acento": "Э́то ша́пка и ша́рф.",
+          "es": "Son un gorro y una bufanda.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "шапка",
+              "a": "ша́пка",
+              "lema": "шапка",
+              "es": "gorro",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_shapka"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "шарф",
+              "a": "ша́рф",
+              "lema": "шарф",
+              "es": "bufanda",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_sharf"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Кто это?",
+          "ru_acento": "Кто́ э́то?",
+          "es": "¿Quién es?",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo (personas y animales)",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Это Антон.",
+          "ru_acento": "Э́то Анто́н.",
+          "es": "Es Antón.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "Антон",
+              "a": "Анто́н",
+              "lema": "Антон",
+              "es": "Antón",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_anton"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Кто он?",
+          "ru_acento": "Кто́ о́н?",
+          "es": "¿Qué es él? (¿A qué se dedica?)",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo (personas y animales)",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Он врач.",
+          "ru_acento": "О́н вра́ч.",
+          "es": "Es médico.",
+          "tokens": [
+            {
+              "t": "Он",
+              "a": "О́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "врач",
+              "a": "вра́ч",
+              "lema": "врач",
+              "es": "médico",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_vrach"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Он врач?",
+          "ru_acento": "О́н вра́ч?",
+          "es": "¿Es médico?",
+          "tokens": [
+            {
+              "t": "Он",
+              "a": "О́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "врач",
+              "a": "вра́ч",
+              "lema": "врач",
+              "es": "médico",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_vrach"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Да, он врач.",
+          "ru_acento": "Да́, о́н вра́ч.",
+          "es": "Sí, es médico.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. masc. sing.",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "врач",
+              "a": "вра́ч",
+              "lema": "врач",
+              "es": "médico",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_vrach"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Что это?",
+          "ru_acento": "Что́ э́то?",
+          "es": "¿Qué es esto?",
+          "tokens": [
+            {
+              "t": "Что",
+              "a": "Что́",
+              "lema": "что",
+              "es": "qué",
+              "gram": "pronombre interrogativo (cosas); se pronuncia [што]",
+              "vocab_id": "v_chto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f12",
+          "ru": "Это молоко.",
+          "ru_acento": "Э́то молоко́.",
+          "es": "Es leche.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "молоко",
+              "a": "молоко́",
+              "lema": "молоко",
+              "es": "leche",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [малако́]",
+              "vocab_id": "v_moloko"
+            }
+          ]
+        },
+        {
+          "id": "f13",
+          "ru": "Это молоко?",
+          "ru_acento": "Э́то молоко́?",
+          "es": "¿Es leche?",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "молоко",
+              "a": "молоко́",
+              "lema": "молоко",
+              "es": "leche",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [малако́]",
+              "vocab_id": "v_moloko"
+            }
+          ]
+        },
+        {
+          "id": "f14",
+          "ru": "Да, это молоко.",
+          "ru_acento": "Да́, э́то молоко́.",
+          "es": "Sí, es leche.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "молоко",
+              "a": "молоко́",
+              "lema": "молоко",
+              "es": "leche",
+              "gram": "sust. neutro, nominativo sing.; se pronuncia [малако́]",
+              "vocab_id": "v_moloko"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "titulo": "Тут и там (material de la clase)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это карта.",
+          "ru_acento": "Э́то ка́рта.",
+          "es": "Es un mapa.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "карта",
+              "a": "ка́рта",
+              "lema": "карта",
+              "es": "mapa",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_karta"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Тут Москва.",
+          "ru_acento": "Ту́т Москва́.",
+          "es": "Aquí está Moscú.",
+          "tokens": [
+            {
+              "t": "Тут",
+              "a": "Ту́т",
+              "lema": "тут",
+              "es": "aquí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tut"
+            },
+            {
+              "t": "Москва",
+              "a": "Москва́",
+              "lema": "Москва",
+              "es": "Moscú",
+              "gram": "nombre propio fem., nominativo",
+              "vocab_id": "v_moskva"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Там Омск.",
+          "ru_acento": "Та́м О́мск.",
+          "es": "Allí está Omsk.",
+          "tokens": [
+            {
+              "t": "Там",
+              "a": "Та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            },
+            {
+              "t": "Омск",
+              "a": "О́мск",
+              "lema": "Омск",
+              "es": "Omsk",
+              "gram": "nombre propio masc., nominativo"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Это Алла и Вова.",
+          "ru_acento": "Э́то А́лла и Во́ва.",
+          "es": "Son Alla y Vova.",
+          "tokens": [
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "esto es",
+              "gram": "partícula demostrativa (invariable); se pronuncia [э́та]",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "Алла",
+              "a": "А́лла",
+              "lema": "Алла",
+              "es": "Alla",
+              "gram": "nombre propio fem., nominativo"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "Вова",
+              "a": "Во́ва",
+              "lema": "Вова",
+              "es": "Vova",
+              "gram": "nombre propio masc., nominativo"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Алла — мама.",
+          "ru_acento": "А́лла — ма́ма.",
+          "es": "Alla es la mamá.",
+          "tokens": [
+            {
+              "t": "Алла",
+              "a": "А́лла",
+              "lema": "Алла",
+              "es": "Alla",
+              "gram": "nombre propio fem., nominativo"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Вова — сын.",
+          "ru_acento": "Во́ва — сы́н.",
+          "es": "Vova es el hijo.",
+          "tokens": [
+            {
+              "t": "Вова",
+              "a": "Во́ва",
+              "lema": "Вова",
+              "es": "Vova",
+              "gram": "nombre propio masc., nominativo"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Мама и сын дома.",
+          "ru_acento": "Ма́ма и сы́н до́ма.",
+          "es": "La mamá y el hijo están en casa.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción copulativa",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "дома",
+              "a": "до́ма",
+              "lema": "дома",
+              "es": "en casa",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_doma"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Тут банк?",
+          "ru_acento": "Ту́т ба́нк?",
+          "es": "¿Aquí hay un banco?",
+          "tokens": [
+            {
+              "t": "Тут",
+              "a": "Ту́т",
+              "lema": "тут",
+              "es": "aquí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tut"
+            },
+            {
+              "t": "банк",
+              "a": "ба́нк",
+              "lema": "банк",
+              "es": "banco",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_bank"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Да, банк.",
+          "ru_acento": "Да́, ба́нк.",
+          "es": "Sí, un banco.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "банк",
+              "a": "ба́нк",
+              "lema": "банк",
+              "es": "banco",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_bank"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Там банкомат?",
+          "ru_acento": "Та́м банкома́т?",
+          "es": "¿Allí hay un cajero?",
+          "tokens": [
+            {
+              "t": "Там",
+              "a": "Та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            },
+            {
+              "t": "банкомат",
+              "a": "банкома́т",
+              "lema": "банкомат",
+              "es": "cajero automático",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_bankomat"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Да, там.",
+          "ru_acento": "Да́, та́м.",
+          "es": "Sí, allí.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "там",
+              "a": "та́м",
+              "lema": "там",
+              "es": "allí",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_tam"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frases_practica": [
+    {
+      "id": "p1",
+      "ru": "Кто это?",
+      "ru_acento": "Кто́ э́то?",
+      "es": "¿Quién es?",
+      "alternativas_es": [
+        "¿Quién es este?",
+        "¿Quién es esta?"
+      ]
+    },
+    {
+      "id": "p2",
+      "ru": "Что это?",
+      "ru_acento": "Что́ э́то?",
+      "es": "¿Qué es esto?",
+      "alternativas_es": [
+        "¿Qué es eso?"
+      ]
+    },
+    {
+      "id": "p3",
+      "ru": "Это кот.",
+      "ru_acento": "Э́то ко́т.",
+      "es": "Es un gato.",
+      "alternativas_es": [
+        "Esto es un gato."
+      ]
+    },
+    {
+      "id": "p4",
+      "ru": "Кто он? — Он врач.",
+      "ru_acento": "Кто́ о́н? — О́н вра́ч.",
+      "es": "¿Qué es él? — Es médico.",
+      "alternativas_es": [
+        "¿Quién es él? — Es médico."
+      ]
+    },
+    {
+      "id": "p5",
+      "ru": "Это ручка? — Да, это ручка.",
+      "ru_acento": "Э́то ру́чка? — Да́, э́то ру́чка.",
+      "es": "¿Es un bolígrafo? — Sí, es un bolígrafo.",
+      "alternativas_ru": [
+        "Это ручка? — Да, ручка."
+      ]
+    },
+    {
+      "id": "p6",
+      "ru": "Это стол и стул.",
+      "ru_acento": "Э́то сто́л и сту́л.",
+      "es": "Son una mesa y una silla.",
+      "alternativas_es": [
+        "Esto es una mesa y una silla."
+      ]
+    },
+    {
+      "id": "p7",
+      "ru": "Это сыр, масло и молоко.",
+      "ru_acento": "Э́то сы́р, ма́сло и молоко́.",
+      "es": "Son queso, mantequilla y leche.",
+      "alternativas_es": [
+        "Esto es queso, mantequilla y leche."
+      ]
+    },
+    {
+      "id": "p8",
+      "ru": "Это автобус? — Да, автобус.",
+      "ru_acento": "Э́то авто́бус? — Да́, авто́бус.",
+      "es": "¿Es un autobús? — Sí, un autobús.",
+      "alternativas_ru": [
+        "Это автобус? — Да, это автобус."
+      ]
+    },
+    {
+      "id": "p9",
+      "ru": "Это Антон. Он врач.",
+      "ru_acento": "Э́то Анто́н. О́н вра́ч.",
+      "es": "Es Antón. Es médico.",
+      "alternativas_es": [
+        "Este es Antón. Él es médico."
+      ]
+    },
+    {
+      "id": "p10",
+      "ru": "Это город Москва.",
+      "ru_acento": "Э́то го́род Москва́.",
+      "es": "Es la ciudad de Moscú.",
+      "alternativas_es": [
+        "Esta es la ciudad de Moscú."
+      ]
+    },
+    {
+      "id": "p11",
+      "ru": "Здравствуйте! Меня зовут Антон.",
+      "ru_acento": "Здра́вствуйте! Меня́ зову́т Анто́н.",
+      "es": "¡Hola! Me llamo Antón.",
+      "alternativas_es": [
+        "¡Buenos días! Me llamo Antón."
+      ]
+    },
+    {
+      "id": "p12",
+      "ru": "Как вас зовут?",
+      "ru_acento": "Ка́к ва́с зову́т?",
+      "es": "¿Cómo se llama usted?",
+      "alternativas_es": [
+        "¿Cuál es su nombre?"
+      ]
+    },
+    {
+      "id": "p13",
+      "ru": "Очень приятно.",
+      "ru_acento": "О́чень прия́тно.",
+      "es": "Mucho gusto.",
+      "alternativas_es": [
+        "Encantado.",
+        "Encantada."
+      ]
+    },
+    {
+      "id": "p14",
+      "ru": "Мама и сын дома.",
+      "ru_acento": "Ма́ма и сы́н до́ма.",
+      "es": "La mamá y el hijo están en casa.",
+      "alternativas_es": [
+        "Mamá y su hijo están en casa."
+      ]
+    }
+  ]
+}

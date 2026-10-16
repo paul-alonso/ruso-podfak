@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "id": "clase_00_ejemplo",
+  "fecha": "2026-10-01",
+  "urok": 2,
+  "titulo": "Ejemplo: Это мой дом",
+  "gramatica": [
+    {
+      "tema": "Это + sustantivo",
+      "explicacion": "Это presenta o señala algo o a alguien y no cambia de forma. En presente no se usa el verbo «ser» y no hay artículos.",
+      "ejemplos": ["Это дом. — Esto es una casa.", "Это мама. — Es mamá."]
+    },
+    {
+      "tema": "Posesivo мой",
+      "explicacion": "Concuerda con el género de lo que se posee: мой (masculino), моя (femenino), моё (neutro).",
+      "ejemplos": ["мой дом, мой папа", "моя мама, моя сестра", "моё окно"]
+    },
+    {
+      "tema": "Entonación de la pregunta",
+      "explicacion": "Con palabra interrogativa (кто, что, как) se usa la ИК-2: la palabra interrogativa lleva el acento fuerte. Sin palabra interrogativa se usa la ИК-3: el tono sube bruscamente en la palabra por la que se pregunta.",
+      "ejemplos": ["Кто это? (ИК-2)", "Мама тут? (ИК-3, el tono sube en «тут»)"]
+    }
+  ],
+  "vocabulario": [
+    { "id": "v_dom", "ru": "дом", "ru_acento": "до́м", "es": "casa", "tipo": "sustantivo", "genero": "m" },
+    { "id": "v_mama", "ru": "мама", "ru_acento": "ма́ма", "es": "mamá", "tipo": "sustantivo", "genero": "f" },
+    { "id": "v_papa", "ru": "папа", "ru_acento": "па́па", "es": "papá", "tipo": "sustantivo", "genero": "m", "nota": "Masculino aunque termina en -а." },
+    { "id": "v_brat", "ru": "брат", "ru_acento": "бра́т", "es": "hermano", "tipo": "sustantivo", "genero": "m" },
+    { "id": "v_sestra", "ru": "сестра", "ru_acento": "сестра́", "es": "hermana", "tipo": "sustantivo", "genero": "f" },
+    { "id": "v_okno", "ru": "окно", "ru_acento": "окно́", "es": "ventana", "tipo": "sustantivo", "genero": "n" },
+    { "id": "v_eto", "ru": "это", "ru_acento": "э́то", "es": "esto es, este es", "tipo": "particula", "nota": "Invariable: sirve para cualquier género y número." },
+    { "id": "v_moy", "ru": "мой", "ru_acento": "мо́й", "es": "mi, mío", "tipo": "pronombre", "nota": "мой (m), моя (f), моё (n), мои (pl)." },
+    { "id": "v_kto", "ru": "кто", "ru_acento": "кто́", "es": "quién", "tipo": "pronombre", "nota": "Para personas y animales." },
+    { "id": "v_chto", "ru": "что", "ru_acento": "что́", "es": "qué", "tipo": "pronombre", "nota": "Se pronuncia [што]." },
+    { "id": "v_kak", "ru": "как", "ru_acento": "ка́к", "es": "cómo", "tipo": "adverbio" },
+    { "id": "v_vot", "ru": "вот", "ru_acento": "во́т", "es": "aquí está, he aquí", "tipo": "particula" },
+    { "id": "v_tam", "ru": "там", "ru_acento": "та́м", "es": "allí, ahí", "tipo": "adverbio" },
+    { "id": "v_tut", "ru": "тут", "ru_acento": "ту́т", "es": "aquí", "tipo": "adverbio" },
+    { "id": "v_net", "ru": "нет", "ru_acento": "не́т", "es": "no", "tipo": "particula" }
+  ],
+  "textos": [
+    {
+      "id": "t1",
+      "titulo": "Мой дом",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Это мой дом.",
+          "ru_acento": "Э́то мо́й до́м.",
+          "es": "Esta es mi casa.",
+          "tokens": [
+            { "t": "Это", "a": "Э́то", "lema": "это", "es": "esta es", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" },
+            { "t": "мой", "a": "мо́й", "lema": "мой", "es": "mi", "gram": "posesivo, masc. sing.", "vocab_id": "v_moy" },
+            { "t": "дом", "a": "до́м", "lema": "дом", "es": "casa", "gram": "sust. masc., nominativo sing.", "vocab_id": "v_dom" }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Вот окно.",
+          "ru_acento": "Во́т окно́.",
+          "es": "Aquí está la ventana.",
+          "tokens": [
+            { "t": "Вот", "a": "Во́т", "lema": "вот", "es": "aquí está", "gram": "partícula demostrativa", "vocab_id": "v_vot" },
+            { "t": "окно", "a": "окно́", "lema": "окно", "es": "ventana", "gram": "sust. neutro, nominativo sing.", "vocab_id": "v_okno" }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Это моя мама.",
+          "ru_acento": "Э́то моя́ ма́ма.",
+          "es": "Esta es mi mamá.",
+          "tokens": [
+            { "t": "Это", "a": "Э́то", "lema": "это", "es": "esta es", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" },
+            { "t": "моя", "a": "моя́", "lema": "мой", "es": "mi", "gram": "posesivo, fem. sing.", "vocab_id": "v_moy" },
+            { "t": "мама", "a": "ма́ма", "lema": "мама", "es": "mamá", "gram": "sust. fem., nominativo sing.", "vocab_id": "v_mama" }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "А это мой папа.",
+          "ru_acento": "А э́то мо́й па́па.",
+          "es": "Y este es mi papá.",
+          "tokens": [
+            { "t": "А", "a": "А", "lema": "а", "es": "y (en cambio)", "gram": "conjunción adversativa" },
+            { "t": "это", "a": "э́то", "lema": "это", "es": "este es", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" },
+            { "t": "мой", "a": "мо́й", "lema": "мой", "es": "mi", "gram": "posesivo, masc. sing.", "vocab_id": "v_moy" },
+            { "t": "папа", "a": "па́па", "lema": "папа", "es": "papá", "gram": "sust. masc. (termina en -а), nominativo sing.", "vocab_id": "v_papa" }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Там мой брат и моя сестра.",
+          "ru_acento": "Та́м мо́й бра́т и моя́ сестра́.",
+          "es": "Allí están mi hermano y mi hermana.",
+          "tokens": [
+            { "t": "Там", "a": "Та́м", "lema": "там", "es": "allí", "gram": "adverbio de lugar", "vocab_id": "v_tam" },
+            { "t": "мой", "a": "мо́й", "lema": "мой", "es": "mi", "gram": "posesivo, masc. sing.", "vocab_id": "v_moy" },
+            { "t": "брат", "a": "бра́т", "lema": "брат", "es": "hermano", "gram": "sust. masc., nominativo sing.", "vocab_id": "v_brat" },
+            { "t": "и", "a": "и", "lema": "и", "es": "y", "gram": "conjunción copulativa" },
+            { "t": "моя", "a": "моя́", "lema": "мой", "es": "mi", "gram": "posesivo, fem. sing.", "vocab_id": "v_moy" },
+            { "t": "сестра", "a": "сестра́", "lema": "сестра", "es": "hermana", "gram": "sust. fem., nominativo sing.", "vocab_id": "v_sestra" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "titulo": "Диалог",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Кто это?",
+          "ru_acento": "Кто́ э́то?",
+          "es": "¿Quién es?",
+          "tokens": [
+            { "t": "Кто", "a": "Кто́", "lema": "кто", "es": "quién", "gram": "pronombre interrogativo (personas y animales)", "vocab_id": "v_kto" },
+            { "t": "это", "a": "э́то", "lema": "это", "es": "es (este)", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Это мой брат.",
+          "ru_acento": "Э́то мо́й бра́т.",
+          "es": "Es mi hermano.",
+          "tokens": [
+            { "t": "Это", "a": "Э́то", "lema": "это", "es": "este es", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" },
+            { "t": "мой", "a": "мо́й", "lema": "мой", "es": "mi", "gram": "posesivo, masc. sing.", "vocab_id": "v_moy" },
+            { "t": "брат", "a": "бра́т", "lema": "брат", "es": "hermano", "gram": "sust. masc., nominativo sing.", "vocab_id": "v_brat" }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Как его зовут?",
+          "ru_acento": "Ка́к его́ зову́т?",
+          "es": "¿Cómo se llama?",
+          "tokens": [
+            { "t": "Как", "a": "Ка́к", "lema": "как", "es": "cómo", "gram": "adverbio interrogativo", "vocab_id": "v_kak" },
+            { "t": "его", "a": "его́", "lema": "он", "es": "lo, a él", "gram": "pronombre personal, 3.ª pers. masc., acusativo; se pronuncia [ево]" },
+            { "t": "зовут", "a": "зову́т", "lema": "звать", "es": "llaman", "gram": "verbo звать, 3.ª pers. pl. presente; «его зовут» = «se llama»" }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Его зовут Антон.",
+          "ru_acento": "Его́ зову́т Анто́н.",
+          "es": "Se llama Antón.",
+          "tokens": [
+            { "t": "Его", "a": "Его́", "lema": "он", "es": "lo, a él", "gram": "pronombre personal, 3.ª pers. masc., acusativo; se pronuncia [ево]" },
+            { "t": "зовут", "a": "зову́т", "lema": "звать", "es": "llaman", "gram": "verbo звать, 3.ª pers. pl. presente; «его зовут» = «se llama»" },
+            { "t": "Антон", "a": "Анто́н", "lema": "Антон", "es": "Antón", "gram": "nombre propio masc., nominativo" }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "А что это?",
+          "ru_acento": "А что́ э́то?",
+          "es": "¿Y qué es esto?",
+          "tokens": [
+            { "t": "А", "a": "А", "lema": "а", "es": "y (en cambio)", "gram": "conjunción adversativa" },
+            { "t": "что", "a": "что́", "lema": "что", "es": "qué", "gram": "pronombre interrogativo (cosas); se pronuncia [што]", "vocab_id": "v_chto" },
+            { "t": "это", "a": "э́то", "lema": "это", "es": "es esto", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Это окно.",
+          "ru_acento": "Э́то окно́.",
+          "es": "Es una ventana.",
+          "tokens": [
+            { "t": "Это", "a": "Э́то", "lema": "это", "es": "es", "gram": "partícula demostrativa (invariable)", "vocab_id": "v_eto" },
+            { "t": "окно", "a": "окно́", "lema": "окно", "es": "ventana", "gram": "sust. neutro, nominativo sing.", "vocab_id": "v_okno" }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Мама тут?",
+          "ru_acento": "Ма́ма ту́т?",
+          "es": "¿Mamá está aquí?",
+          "tokens": [
+            { "t": "Мама", "a": "Ма́ма", "lema": "мама", "es": "mamá", "gram": "sust. fem., nominativo sing.", "vocab_id": "v_mama" },
+            { "t": "тут", "a": "ту́т", "lema": "тут", "es": "aquí", "gram": "adverbio de lugar", "vocab_id": "v_tut" }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Нет, мама там.",
+          "ru_acento": "Не́т, ма́ма та́м.",
+          "es": "No, mamá está allí.",
+          "tokens": [
+            { "t": "Нет", "a": "Не́т", "lema": "нет", "es": "no", "gram": "partícula negativa (respuesta)", "vocab_id": "v_net" },
+            { "t": "мама", "a": "ма́ма", "lema": "мама", "es": "mamá", "gram": "sust. fem., nominativo sing.", "vocab_id": "v_mama" },
+            { "t": "там", "a": "та́м", "lema": "там", "es": "allí", "gram": "adverbio de lugar", "vocab_id": "v_tam" }
+          ]
+        }
+      ]
+    }
+  ],
+  "frases_practica": [
+    { "id": "p1", "ru": "Как вас зовут?", "ru_acento": "Ка́к ва́с зову́т?", "es": "¿Cómo se llama usted?", "alternativas_es": ["¿Cuál es su nombre?", "¿Cómo se llaman ustedes?"] },
+    { "id": "p2", "ru": "Меня зовут Анна.", "ru_acento": "Меня́ зову́т А́нна.", "es": "Me llamo Anna.", "alternativas_es": ["Mi nombre es Anna."] },
+    { "id": "p3", "ru": "Кто это?", "ru_acento": "Кто́ э́то?", "es": "¿Quién es?", "alternativas_es": ["¿Quién es este?", "¿Quién es esta?"] },
+    { "id": "p4", "ru": "Это моя сестра.", "ru_acento": "Э́то моя́ сестра́.", "es": "Esta es mi hermana.", "alternativas_es": ["Es mi hermana.", "Ella es mi hermana."] },
+    { "id": "p5", "ru": "Мама там.", "ru_acento": "Ма́ма та́м.", "es": "Mamá está allí.", "alternativas_es": ["Mamá está ahí."], "alternativas_ru": ["Там мама."] }
+  ]
+}

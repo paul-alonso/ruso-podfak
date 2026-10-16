@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas</title>
+  <style>
+    :root { --fondo: #fafaf8; --texto: #1d1d1b; }
+    @media (prefers-color-scheme: dark) { :root { --fondo: #161615; --texto: #ececea; } }
+    body { margin: 0; padding: 16px; background: var(--fondo); color: var(--texto); font: 15px/1.5 system-ui, sans-serif; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <h1>Pruebas</h1>
+  <pre id="texto-plano">Ejecutando…</pre>
+  <script>
+    // Las pruebas cambian el progreso y abren páginas de la app: si este
+    // navegador tiene la sincronización conectada, esas páginas subirían datos
+    // de prueba al Gist real. Se aparta la configuración y mini.js la restaura.
+    window.syncApartado = localStorage.getItem('podfak_sync');
+    localStorage.removeItem('podfak_sync');
+    // Además, las páginas de la app abiertas en iframes nunca salen a GitHub
+    // (ver fetchDePruebas en js/sync.js); las pruebas que lo necesitan ponen
+    // aquí un GitHub simulado.
+    window.sinRedEnPruebas = () => Promise.reject(new TypeError('Las pruebas no salen a la red'));
+    window.podfakFetchPrueba = window.sinRedEnPruebas;
+  </script>
+  <script type="module">
+    import { ejecutar } from './mini.js';
+    import './data.test.js';
+    import './fase2.test.js';
+    import './lector.test.js';
+    import './fase3.test.js';
+    import './traduccion.test.js';
+    import './fase4.test.js';
+    import './escucha.test.js';
+    import './fase5.test.js';
+    import './flashcards.test.js';
+    import './fase6.test.js';
+    import './home.test.js';
+    import './sync.test.js';
+    import './ajustes.test.js';
+    import './fase7.test.js';
+    ejecutar();
+  </script>
+</body>
+</html>

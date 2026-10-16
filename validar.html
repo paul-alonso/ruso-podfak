@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Validar clases</title>
+  <style>
+    :root {
+      --fondo: #fafaf8; --texto: #1d1d1b; --suave: #6b6b66; --borde: #d9d9d4;
+      --ok: #1f7a3d; --aviso: #8a5a00; --error: #b3261e; --superficie: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fondo: #161615; --texto: #ececea; --suave: #a3a39e; --borde: #3a3a37;
+        --ok: #6cc98a; --aviso: #e0b04c; --error: #f2847b; --superficie: #1f1f1d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 16px; max-width: 760px; margin-inline: auto;
+      font: 16px/1.5 "PT Sans", "Noto Sans", system-ui, sans-serif;
+      background: var(--fondo); color: var(--texto);
+    }
+    h1 { font-size: 1.4rem; margin: 0 0 4px; }
+    h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+    p { margin: 0 0 12px; color: var(--suave); }
+    article {
+      background: var(--superficie); border: 1px solid var(--borde);
+      border-left: 4px solid var(--ok); border-radius: 8px; padding: 10px 14px; margin: 10px 0;
+    }
+    article.aviso { border-left-color: var(--aviso); }
+    article.error { border-left-color: var(--error); }
+    h3 { font-size: 1rem; margin: 0; overflow-wrap: anywhere; }
+    ul { margin: 8px 0 0; padding-left: 18px; }
+    li { margin: 4px 0; overflow-wrap: anywhere; }
+    code { font-size: .9em; background: var(--fondo); padding: 1px 4px; border-radius: 4px; }
+    textarea {
+      width: 100%; min-height: 160px; font: 14px/1.4 ui-monospace, monospace;
+      background: var(--superficie); color: var(--texto); border: 1px solid var(--borde);
+      border-radius: 8px; padding: 10px;
+    }
+    .acciones { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; align-items: center; }
+    button, label.boton {
+      min-height: 44px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--borde);
+      background: var(--superficie); color: var(--texto); font: inherit; cursor: pointer;
+      display: inline-flex; align-items: center;
+    }
+    input[type=file] { display: none; }
+    #texto-plano { white-space: pre-wrap; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Validar clases</h1>
+  <p>Comprueba que los JSON de <code>data/</code> cumplen el esquema. Las clases con errores no se cargan en la app; los avisos no impiden cargarlas.</p>
+
+  <h2>Clases publicadas</h2>
+  <div class="acciones">
+    <button id="recargar" type="button">Volver a revisar</button>
+    <span id="resumen">Revisando…</span>
+  </div>
+  <div id="publicadas"></div>
+
+  <h2>Comprobar un JSON antes de copiarlo</h2>
+  <p>Pega el JSON de una clase (o de <code>index.json</code>) o elige el archivo. Si eliges el archivo, también se comprueba que el nombre coincida con el id.</p>
+  <textarea id="json" spellcheck="false" placeholder='{ "schema_version": 1, "id": "clase_01", … }'></textarea>
+  <div class="acciones">
+    <button id="comprobar" type="button">Comprobar</button>
+    <label class="boton">Elegir archivo…<input id="archivo" type="file" accept=".json,application/json"></label>
+  </div>
+  <div id="resultado-pegado"></div>
+
+  <pre id="texto-plano" hidden></pre>
+  <script type="module" src="js/validar.js"></script>
+</body>
+</html>
