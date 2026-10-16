@@ -98,7 +98,7 @@ export function aciertos(estado) {
     lector: Object.values(estado.lector.vistas).reduce((n, v) => n + Object.keys(v).length, 0),
     traduccion: sumar('traduccion'),
     escucha: sumar('escucha'),
-    tarjetas: { ...estado.estadisticas.tarjetas },
+    tarjetas: { ok: estado.estadisticas.tarjetas.ok, mal: estado.estadisticas.tarjetas.mal },
   };
 }
 

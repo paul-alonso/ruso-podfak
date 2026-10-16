@@ -1,12 +1,13 @@
-// Ajustes: sincronización con un Gist de GitHub y copia manual del progreso
-// (exportar / importar).
+// Ajustes: instalar la app, sincronización con un Gist de GitHub, copia manual
+// del progreso (exportar / importar) y reiniciar el progreso.
 
-import { h, iniciarPagina, estadoInstalacion, instalar } from './comun.js';
-import { almacen, hoy, leerPaquete } from './storage.js';
+import { h, iniciarPagina, estadoInstalacion, instalar, nombreClase, crearHoja } from './comun.js';
+import { almacen, hoy, leerPaquete, reiniciarEstado } from './storage.js';
 import { sync, URL_CREAR_TOKEN } from './sync.js';
 
 let mensajeDatos = null; // aviso de la última importación: { tipo, texto, deshacer }
 let mensajeSync = null;  // error al conectar
+let mensajeReinicio = null; // { texto, respaldo } tras reiniciar (respaldo: progreso para deshacer)
 
 iniciarPagina({ pagina: 'ajustes', renderizar });
 
@@ -16,6 +17,7 @@ function renderizar(ctx, cont) {
     seccionInstalar(ctx),
     seccionSync(ctx),
     seccionDatos(ctx),
+    seccionReiniciar(ctx),
     h('p', { class: 'pie' }, h('a', { href: 'validar.html' }, 'Validar los datos de las clases')));
 }
 
@@ -169,10 +171,14 @@ function resumenProgreso(p) {
 }
 
 function exportar() {
-  const paquete = almacen.exportar();
+  descargar(almacen.exportar(), `podfak-progreso-${hoy()}.json`);
+}
+
+/** Descarga un paquete de progreso como archivo JSON. */
+function descargar(paquete, nombre) {
   const blob = new Blob([JSON.stringify(paquete, null, 1)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
-  const a = h('a', { href: url, download: `podfak-progreso-${hoy()}.json` });
+  const a = h('a', { href: url, download: nombre });
   document.body.append(a);
   a.click();
   a.remove();
@@ -233,4 +239,124 @@ function seccionDatos(ctx) {
       h('button', { type: 'button', class: 'boton', onclick: () => archivo.click() }, 'Importar progreso…'),
       archivo),
     zona);
+}
+
+// ---------------------------------------------------------------------------
+// Reiniciar progreso
+// ---------------------------------------------------------------------------
+
+const ALCANCES = [
+  ['clase', 'Una clase concreta'],
+  ['tarjetas', 'Solo las tarjetas (repaso espaciado)'],
+  ['todo', 'Todo el progreso'],
+];
+
+const SE_CONSERVA = {
+  todo: 'Se conservan los ajustes, el token de GitHub, las clases elegidas y la configuración de nivelación.',
+  tarjetas: 'Se conservan las frases leídas, los resultados de Traducir y Escuchar, las palabras añadidas desde el Lector y los ajustes.',
+  clase: 'Solo se borra el progreso de esta clase: frases leídas, resultados de Traducir y Escuchar y el repaso de sus palabras. Lo demás se conserva.',
+};
+
+/** Cuánto hay de cada cosa en un estado, para decir qué se borrará. */
+function cifras(p) {
+  const contar = porClase => Object.values(porClase).reduce((n, v) => n + Object.keys(v).length, 0);
+  return [
+    ['frase leída', 'frases leídas', contar(p.lector.vistas)],
+    ['resultado de frase', 'resultados de frases', contar(p.traduccion.resultados) + contar(p.escucha.resultados)],
+    ['tarjeta empezada', 'tarjetas empezadas', Object.keys(p.srs.estados).length],
+    ['palabra añadida desde el Lector', 'palabras añadidas desde el Lector', Object.keys(p.tarjetas).length],
+    ['día de racha', 'días de racha', Object.keys(p.actividad).length],
+  ];
+}
+
+function alcanceElegido(tipo, claseId, ctx) {
+  if (tipo !== 'clase') return { tipo };
+  const c = ctx.porId.get(claseId);
+  const anadidas = Object.values(almacen.leer().tarjetas).filter(t => t.clase === claseId).map(t => t.clave);
+  return { tipo, clase: claseId, claves: [...c.vocabulario.map(v => v.id), ...anadidas] };
+}
+
+function seccionReiniciar(ctx) {
+  const hayClases = ctx.clases.length > 0;
+  let tipo = hayClases ? 'clase' : 'tarjetas';
+  const selectClase = h('select', { id: 'reiniciar-clase', 'aria-label': 'Clase que se reinicia' },
+    ctx.clases.map(c => h('option', { value: c.id }, `${nombreClase(c.id)} — ${c.titulo}`)));
+  if (hayClases) selectClase.value = ctx.seleccion[0]?.id ?? ctx.clases[0].id;
+  const opciones = ALCANCES.map(([valor, texto]) => {
+    const radio = h('input', {
+      type: 'radio', name: 'alcance-reinicio', value: valor,
+      checked: valor === tipo, disabled: valor === 'clase' && !hayClases,
+    });
+    radio.addEventListener('change', () => {
+      tipo = valor;
+      selectClase.disabled = tipo !== 'clase';
+    });
+    return h('label', { class: 'opcion-radio' }, radio, texto);
+  });
+  selectClase.disabled = tipo !== 'clase';
+
+  const aviso = mensajeReinicio && h('p', { class: 'aviso ok', role: 'status' }, mensajeReinicio.texto,
+    mensajeReinicio.respaldo && h('button', {
+      type: 'button', class: 'boton enlace',
+      onclick: () => {
+        almacen.importar(mensajeReinicio.respaldo, 'reemplazar');
+        mensajeReinicio = { texto: '✓ Se recuperó el progreso de antes de reiniciar.' };
+        ctx.redibujar();
+      },
+    }, 'Deshacer'));
+
+  return h('section', { class: 'tarjeta zona-peligro', 'aria-labelledby': 'titulo-reiniciar' },
+    h('h2', { id: 'titulo-reiniciar' }, 'Reiniciar progreso'),
+    h('p', { class: 'sub' }, 'Borra el progreso para empezar de cero. Los ajustes, el token de GitHub y las clases elegidas no se borran. Antes de reiniciar se descarga una copia de seguridad.'),
+    h('fieldset', { class: 'alcances' }, h('legend', { class: 'oculto' }, 'Qué reiniciar'), opciones, selectClase),
+    h('button', {
+      type: 'button', class: 'boton peligro',
+      onclick: () => confirmarReinicio(ctx, alcanceElegido(tipo, selectClase.value, ctx)),
+    }, 'Reiniciar progreso…'),
+    aviso);
+}
+
+function confirmarReinicio(ctx, alcance) {
+  const antes = almacen.leer();
+  // Simulación sobre una copia para decir exactamente qué se borrará.
+  const despues = reiniciarEstado(structuredClone(antes), alcance, Date.now() + 1);
+  const a = cifras(antes);
+  const d = cifras(despues);
+  const perdidas = a
+    .map(([uno, varios, n], i) => [uno, varios, n - d[i][2]])
+    .filter(([, , n]) => n > 0)
+    .map(([uno, varios, n]) => plural(n, uno, varios));
+  const titulo = {
+    todo: '¿Reiniciar todo el progreso?',
+    tarjetas: '¿Reiniciar las tarjetas?',
+    clase: `¿Reiniciar ${nombreClase(alcance.clase)}?`,
+  }[alcance.tipo];
+
+  const dlg = crearHoja('Confirmar reinicio');
+  dlg.addEventListener('close', () => dlg.remove());
+  dlg.append(h('div', { class: 'hoja-contenido' },
+    h('h2', {}, titulo),
+    h('p', {}, perdidas.length ? `Se borrará: ${perdidas.join(', ')}.` : 'No hay progreso que borrar en este alcance.'),
+    h('p', { class: 'sub' }, SE_CONSERVA[alcance.tipo]),
+    h('p', { class: 'sub' }, 'Antes se descargará una copia de seguridad (como «Exportar progreso»). Si sincronizas con GitHub, el reinicio llegará también a tus otros dispositivos.'),
+    h('div', { class: 'acciones' },
+      h('button', { type: 'button', class: 'boton', onclick: () => dlg.close() }, 'Cancelar'),
+      h('button', {
+        type: 'button', class: 'boton peligro fuerte',
+        onclick: () => {
+          const paquete = almacen.exportar();
+          const hora = new Date().toTimeString().slice(0, 5).replace(':', '');
+          const nombre = `podfak-respaldo-${hoy()}-${hora}.json`;
+          descargar(paquete, nombre);
+          almacen.reiniciar(alcance);
+          mensajeReinicio = {
+            texto: `✓ Progreso reiniciado. Se descargó una copia: ${nombre}. `,
+            respaldo: paquete.progreso,
+          };
+          dlg.close();
+          dlg.remove(); // el evento close llega más tarde: que no quede un diálogo viejo
+          ctx.redibujar();
+        },
+      }, 'Sí, reiniciar'))));
+  dlg.showModal();
 }

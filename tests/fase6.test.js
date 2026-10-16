@@ -140,7 +140,7 @@ prueba('combinar: une el progreso, quedan los ajustes locales y no duplica', () 
   igual(c.lector.vistas.clase_01, { 't1/f1': '2026-10-10', 't1/f2': '2026-10-12' });
   igual(c.traduccion.resultados.clase_01['p1|ru-es'], { ok: 2, mal: 3, ultima: '2026-10-12', ultimaOk: false });
   igual([c.srs.estados['v_dom|ru-es'].intervalo, Object.keys(c.srs.estados).length], [8, 2]);
-  igual(c.estadisticas.tarjetas, { ok: 4, mal: 6 });
+  igual(c.estadisticas.tarjetas, { ok: 4, mal: 6, desde: 0 });
   igual(Object.keys(c.actividad).sort(), ['2026-10-10', '2026-10-12']);
   igual(Object.keys(c.tarjetas), ['forma_x']);
   // Importar dos veces lo mismo no cambia nada.

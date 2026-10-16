@@ -59,7 +59,7 @@ prueba('frases vistas y actividad del día', () => {
   a.marcarVista('clase_01', 't2/f3');
   igual([...a.frasesVistas('clase_01')], ['t1/f1', 't2/f3']);
   igual(a.frasesVistas('clase_02').size, 0);
-  igual(a.leer().actividad[hoy()], true);
+  cierto(typeof a.leer().actividad[hoy()] === 'number', 'el día de hoy debe guardar la hora de la actividad');
 });
 
 prueba('hoy() usa la fecha local AAAA-MM-DD', () => {

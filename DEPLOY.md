@@ -95,6 +95,14 @@ El punto de color sobre el engranaje (y el detalle en Ajustes) indica:
 - **Si pierdes un dispositivo**: en GitHub, **Settings → Developer settings → Personal access tokens → Tokens (classic)**, borra el token (**Delete**). Después crea otro y conéctalo en los dispositivos que sigas usando.
 - **Limitación conocida**: los contadores de aciertos se combinan quedándose con el máximo (para que importar o sincronizar dos veces no duplique nada). Si respondes la misma frase en dos dispositivos, el total de intentos puede quedar algo por debajo del real. El resto del progreso se combina sin pérdidas.
 
+### 2.5 Reiniciar el progreso
+
+**Ajustes → Reiniciar progreso** borra el progreso de una clase, solo el de las tarjetas (repaso espaciado) o todo. Antes descarga una copia (`podfak-respaldo-AAAA-MM-DD-HHMM.json`). Los ajustes, el token y las clases elegidas no se borran.
+
+Con la sincronización activada, el reinicio llega a todos tus dispositivos: se guarda una marca con la hora del reinicio y, al combinar, se descarta todo lo anterior a ella, venga del Gist o de otro dispositivo. Lo que estudies después del reinicio, en cualquier dispositivo, sí se conserva.
+
+Para deshacerlo, pulsa **Deshacer** justo después, o más tarde **Importar progreso** con el archivo de respaldo y elige **Reemplazar**. Importar es una decisión explícita: los datos del archivo se recuperan aunque sean anteriores al reinicio, y se sincronizan como nuevos.
+
 ---
 
 ## 3. Instalar la app en iPhone

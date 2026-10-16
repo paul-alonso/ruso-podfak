@@ -12,7 +12,7 @@
 //
 // Las peticiones a api.github.com (sincronización) no pasan por aquí.
 
-const CACHE = 'podfak-v7';
+const CACHE = 'podfak-v8';
 const ESPERA_RED_MS = 3000;
 const BASE = [
   './',
