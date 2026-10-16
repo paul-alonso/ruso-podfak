@@ -73,6 +73,36 @@ export function segmentar(frase, palabras) {
 }
 
 // ---------------------------------------------------------------------------
+// Nombres y títulos de clase
+// ---------------------------------------------------------------------------
+
+const RE_NOMBRE_CLASE = /^clase_(\d+)(?:_(.+))?$/;
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+/** clase_07 → «Clase 7»; clase_00_ejemplo → «Clase 0 (ejemplo)». */
+export function nombreClase(id) {
+  const m = RE_NOMBRE_CLASE.exec(id);
+  if (!m) return id;
+  return `Clase ${Number(m[1])}${m[2] ? ` (${m[2].replace(/_/g, ' ')})` : ''}`;
+}
+
+/** '2026-10-07' → «07 oct»; sin fecha → «sin fecha». Abreviaturas fijas (no dependen del navegador). */
+export function fechaCorta(fecha) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(fecha ?? '');
+  return m ? `${m[3]} ${MESES[Number(m[2]) - 1]}` : 'sin fecha';
+}
+
+/**
+ * Título visible de una clase (o de su entrada del índice):
+ * «Clase N · DD mmm · Урок X · tema», con tema = tema_corto o, si no hay, titulo.
+ * Con { urok: false } se omite el урок (p. ej. dentro de un grupo por урок).
+ */
+export function tituloClase(c, { urok = true } = {}) {
+  return [nombreClase(c.id), fechaCorta(c.fecha), urok && `Урок ${c.urok}`, c.tema_corto || c.titulo]
+    .filter(Boolean).join(' · ');
+}
+
+// ---------------------------------------------------------------------------
 // Informe de problemas
 // ---------------------------------------------------------------------------
 
@@ -107,6 +137,7 @@ const unir = (ruta, nombre) => (ruta ? `${ruta}.${nombre}` : nombre);
 
 function describir(v) {
   if (v === null) return 'null';
+  if (v === undefined) return 'nada (falta el campo)';
   if (Array.isArray(v)) return 'una lista';
   if (typeof v === 'string') return `el texto "${v.length > 40 ? v.slice(0, 40) + '…' : v}"`;
   if (typeof v === 'number') return `el número ${v}`;
@@ -188,6 +219,22 @@ function comprobarUrok(inf, urok, ruta) {
   if (urok !== undefined && (urok < 1 || urok > 11)) inf.error(ruta, `debe estar entre 1 y 11, pero es ${urok}`);
 }
 
+const FUENTES = ['clase', 'libro'];
+
+/** Campos opcionales de procedencia: fuente ("clase" | "libro") y, si se permite, repaso (true/false). */
+function comprobarProcedencia(inf, obj, ruta, { repaso = false } = {}) {
+  const fuente = campo(inf, obj, 'fuente', ruta, 'texto', { opcional: true });
+  if (fuente !== undefined && !FUENTES.includes(fuente)) {
+    inf.error(unir(ruta, 'fuente'), `debe ser "clase" o "libro", pero es "${fuente}"`);
+  }
+  if (repaso && obj.repaso !== undefined && obj.repaso !== null && typeof obj.repaso !== 'boolean') {
+    inf.error(unir(ruta, 'repaso'), `debe ser true o false, pero es ${describir(obj.repaso)}`);
+  }
+}
+
+const LARGO_TEMA_CORTO = 40;
+const LARGO_TITULO = 50;
+
 // ---------------------------------------------------------------------------
 // Comprobaciones de texto ruso
 // ---------------------------------------------------------------------------
@@ -239,14 +286,16 @@ const TIPOS_PALABRA = ['sustantivo', 'verbo', 'adjetivo', 'adverbio', 'pronombre
 const GENEROS = ['m', 'f', 'n', 'pl'];
 
 function validarGramatica(inf, g, r) {
-  camposDesconocidos(inf, g, ['tema', 'explicacion', 'ejemplos'], r);
+  camposDesconocidos(inf, g, ['tema', 'explicacion', 'ejemplos', 'fuente', 'repaso'], r);
+  comprobarProcedencia(inf, g, r, { repaso: true });
   campo(inf, g, 'tema', r, 'texto');
   campo(inf, g, 'explicacion', r, 'texto');
   listaDeTextos(inf, g, 'ejemplos', r);
 }
 
 function validarVocablo(inf, v, r) {
-  camposDesconocidos(inf, v, ['id', 'ru', 'ru_acento', 'es', 'tipo', 'genero', 'nota'], r);
+  camposDesconocidos(inf, v, ['id', 'ru', 'ru_acento', 'es', 'tipo', 'genero', 'nota', 'fuente'], r);
+  comprobarProcedencia(inf, v, r);
   const ru = campo(inf, v, 'ru', r, 'texto');
   if (ru !== undefined) comprobarRuso(inf, ru, `${r}.ru`, { acentos: false });
   const ac = campo(inf, v, 'ru_acento', r, 'texto');
@@ -299,7 +348,8 @@ function validarToken(inf, tk, r) {
 }
 
 function validarFrase(inf, f, r) {
-  camposDesconocidos(inf, f, ['id', 'ru', 'ru_acento', 'es', 'tokens'], r);
+  camposDesconocidos(inf, f, ['id', 'ru', 'ru_acento', 'es', 'tokens', 'fuente'], r);
+  comprobarProcedencia(inf, f, r);
   comprobarFormatoId(inf, campo(inf, f, 'id', r, 'texto'), `${r}.id`, /^f\d+$/, 'f1, f2, …');
   const ru = campo(inf, f, 'ru', r, 'texto');
   if (ru !== undefined) comprobarRuso(inf, ru, `${r}.ru`, { acentos: false });
@@ -332,7 +382,8 @@ function validarFrase(inf, f, r) {
 }
 
 function validarTexto(inf, t, r) {
-  camposDesconocidos(inf, t, ['id', 'titulo', 'frases'], r);
+  camposDesconocidos(inf, t, ['id', 'titulo', 'frases', 'fuente', 'repaso'], r);
+  comprobarProcedencia(inf, t, r, { repaso: true });
   comprobarFormatoId(inf, campo(inf, t, 'id', r, 'texto'), `${r}.id`, /^t\d+$/, 't1, t2, …');
   campo(inf, t, 'titulo', r, 'texto');
   const frases = lista(inf, t, 'frases', r, validarFrase, { noVacia: true });
@@ -365,7 +416,7 @@ export function validarClase(datos, { idEsperado = null, origen = null } = {}) {
     inf.error('(raíz)', `el archivo debe contener un objeto { … }, pero contiene ${describir(datos)}`);
     return inf;
   }
-  camposDesconocidos(inf, datos, ['schema_version', 'id', 'fecha', 'urok', 'titulo',
+  camposDesconocidos(inf, datos, ['schema_version', 'id', 'fecha', 'urok', 'titulo', 'tema_corto', 'profesor',
     'gramatica', 'vocabulario', 'textos', 'frases_practica'], '');
 
   const version = campo(inf, datos, 'schema_version', '', 'entero');
@@ -377,9 +428,17 @@ export function validarClase(datos, { idEsperado = null, origen = null } = {}) {
   if (id !== undefined && idEsperado && id !== idEsperado) {
     inf.error('id', `es "${id}", pero el archivo se llama "${idEsperado}.json"`);
   }
-  comprobarFecha(inf, campo(inf, datos, 'fecha', '', 'texto'), 'fecha');
+  comprobarFecha(inf, campo(inf, datos, 'fecha', '', 'texto', { opcional: true }), 'fecha');
   comprobarUrok(inf, campo(inf, datos, 'urok', '', 'entero'), 'urok');
-  campo(inf, datos, 'titulo', '', 'texto');
+  const titulo = campo(inf, datos, 'titulo', '', 'texto');
+  const temaCorto = campo(inf, datos, 'tema_corto', '', 'texto', { opcional: true });
+  campo(inf, datos, 'profesor', '', 'texto', { opcional: true });
+  // El título visible es «Clase N · DD mmm · Урок X · tema»: un tema largo no cabe en el selector.
+  if (temaCorto !== undefined && temaCorto.length > LARGO_TEMA_CORTO) {
+    inf.aviso('tema_corto', `tiene ${temaCorto.length} caracteres; mejor ${LARGO_TEMA_CORTO} o menos para que se lea en el selector`);
+  } else if (temaCorto === undefined && titulo !== undefined && titulo.length > LARGO_TITULO) {
+    inf.aviso('tema_corto', `el titulo tiene ${titulo.length} caracteres: añade un tema_corto (≤ ${LARGO_TEMA_CORTO}) para el título de la clase`);
+  }
 
   lista(inf, datos, 'gramatica', '', validarGramatica);
   const vocabulario = lista(inf, datos, 'vocabulario', '', validarVocablo);
@@ -404,7 +463,7 @@ function validarEntradaIndice(inf, e, r) {
   comprobarFormatoId(inf, campo(inf, e, 'id', r, 'texto'), `${r}.id`, RE_ID_CLASE, 'clase_NN (p. ej. clase_07)');
   comprobarUrok(inf, campo(inf, e, 'urok', r, 'entero'), `${r}.urok`);
   campo(inf, e, 'titulo', r, 'texto');
-  comprobarFecha(inf, campo(inf, e, 'fecha', r, 'texto'), `${r}.fecha`);
+  comprobarFecha(inf, campo(inf, e, 'fecha', r, 'texto', { opcional: true }), `${r}.fecha`);
 }
 
 export function validarIndice(datos) {

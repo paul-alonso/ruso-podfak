@@ -47,11 +47,13 @@
     }
     input[type=file] { display: none; }
     #texto-plano { white-space: pre-wrap; font-size: 13px; }
+    .detalle { margin: 4px 0 0; font-size: .9rem; overflow-wrap: anywhere; }
   </style>
 </head>
 <body>
   <h1>Validar clases</h1>
-  <p>Comprueba que los JSON de <code>data/</code> cumplen el esquema. Las clases con errores no se cargan en la app; los avisos no impiden cargarlas.</p>
+  <p>Comprueba que los JSON de <code>data/</code> cumplen el esquema (ver <a href="SCHEMA.md">SCHEMA.md</a>). Las clases con errores no se cargan en la app; los avisos no impiden cargarlas.</p>
+  <p>Debajo de cada clase válida se ve su título tal como aparece en la app («Clase N · DD mmm · Урок X · tema») y lo marcado como «Libro» (<code>fuente: "libro"</code>) o «Repaso» (<code>repaso: true</code>).</p>
 
   <h2>Clases publicadas</h2>
   <div class="acciones">

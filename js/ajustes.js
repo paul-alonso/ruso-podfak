@@ -1,7 +1,7 @@
 // Ajustes: instalar la app, sincronización con un Gist de GitHub, copia manual
 // del progreso (exportar / importar) y reiniciar el progreso.
 
-import { h, iniciarPagina, estadoInstalacion, instalar, nombreClase, crearHoja } from './comun.js';
+import { h, iniciarPagina, estadoInstalacion, instalar, nombreClase, tituloClase, crearHoja } from './comun.js';
 import { almacen, hoy, leerPaquete, reiniciarEstado } from './storage.js';
 import { sync, URL_CREAR_TOKEN } from './sync.js';
 
@@ -280,7 +280,7 @@ function seccionReiniciar(ctx) {
   const hayClases = ctx.clases.length > 0;
   let tipo = hayClases ? 'clase' : 'tarjetas';
   const selectClase = h('select', { id: 'reiniciar-clase', 'aria-label': 'Clase que se reinicia' },
-    ctx.clases.map(c => h('option', { value: c.id }, `${nombreClase(c.id)} — ${c.titulo}`)));
+    ctx.clases.map(c => h('option', { value: c.id }, tituloClase(c))));
   if (hayClases) selectClase.value = ctx.seleccion[0]?.id ?? ctx.clases[0].id;
   const opciones = ALCANCES.map(([valor, texto]) => {
     const radio = h('input', {

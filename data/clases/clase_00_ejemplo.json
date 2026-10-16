@@ -4,6 +4,8 @@
   "fecha": "2026-10-01",
   "urok": 2,
   "titulo": "Ejemplo: Это мой дом",
+  "tema_corto": "Это мой дом",
+  "profesor": "Ирина Петровна",
   "gramatica": [
     {
       "tema": "Это + sustantivo",
@@ -17,6 +19,8 @@
     },
     {
       "tema": "Entonación de la pregunta",
+      "fuente": "libro",
+      "repaso": true,
       "explicacion": "Con palabra interrogativa (кто, что, как) se usa la ИК-2: la palabra interrogativa lleva el acento fuerte. Sin palabra interrogativa se usa la ИК-3: el tono sube bruscamente en la palabra por la que se pregunta.",
       "ejemplos": ["Кто это? (ИК-2)", "Мама тут? (ИК-3, el tono sube en «тут»)"]
     }
@@ -36,7 +40,7 @@
     { "id": "v_vot", "ru": "вот", "ru_acento": "во́т", "es": "aquí está, he aquí", "tipo": "particula" },
     { "id": "v_tam", "ru": "там", "ru_acento": "та́м", "es": "allí, ahí", "tipo": "adverbio" },
     { "id": "v_tut", "ru": "тут", "ru_acento": "ту́т", "es": "aquí", "tipo": "adverbio" },
-    { "id": "v_net", "ru": "нет", "ru_acento": "не́т", "es": "no", "tipo": "particula" }
+    { "id": "v_net", "ru": "нет", "ru_acento": "не́т", "es": "no", "tipo": "particula", "fuente": "libro" }
   ],
   "textos": [
     {
@@ -89,6 +93,7 @@
         },
         {
           "id": "f5",
+          "fuente": "libro",
           "ru": "Там мой брат и моя сестра.",
           "ru_acento": "Та́м мо́й бра́т и моя́ сестра́.",
           "es": "Allí están mi hermano y mi hermana.",
@@ -106,6 +111,8 @@
     {
       "id": "t2",
       "titulo": "Диалог",
+      "fuente": "libro",
+      "repaso": true,
       "frases": [
         {
           "id": "f1",

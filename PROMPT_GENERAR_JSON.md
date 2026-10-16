@@ -3,6 +3,7 @@
 > Copia todo lo que hay debajo de la línea en el chat que procesa las clases,
 > junto con el PDF de la clase. El resultado es **un archivo JSON por clase**.
 > Referencia completa y válida: `data/clases/clase_00_ejemplo.json`.
+> Referencia de todos los campos y reglas: `SCHEMA.md`.
 
 ---
 
@@ -13,6 +14,7 @@ Vas a convertir el material de una clase de ruso (curso preparatorio, nivel inic
 1. El archivo `data/clases/clase_NN.json` (NN = número de la clase con dos cifras: `clase_01`, `clase_02`, …).
 2. Una entrada nueva en `data/index.json` (es una lista; añádela al final):
    `{ "id": "clase_NN", "urok": <número>, "titulo": "<igual que en la clase>", "fecha": "AAAA-MM-DD" }`
+   (si la clase no tiene fecha, omite `fecha` en los dos sitios)
 3. Valida con `powershell -ExecutionPolicy Bypass -File herramientas\validar.ps1` y corrige hasta que no haya **errores** (✗). Revisa también los **avisos** (⚠): casi siempre son acentos sin marcar o ids mal formados.
 
 Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas finales y con comillas dobles.
@@ -26,16 +28,20 @@ Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas fin
   "fecha": "AAAA-MM-DD",
   "urok": 1,
   "titulo": "Tema principal de la clase, en español",
+  "tema_corto": "Tema en pocas palabras",
+  "profesor": "Ирина Петровна",
   "gramatica": [
-    { "tema": "…", "explicacion": "…", "ejemplos": ["…", "…"] }
+    { "tema": "…", "explicacion": "…", "ejemplos": ["…", "…"], "fuente": "clase", "repaso": false }
   ],
   "vocabulario": [
-    { "id": "v_dom", "ru": "дом", "ru_acento": "до́м", "es": "casa", "tipo": "sustantivo", "genero": "m", "nota": "" }
+    { "id": "v_dom", "ru": "дом", "ru_acento": "до́м", "es": "casa", "tipo": "sustantivo", "genero": "m", "nota": "", "fuente": "clase" }
   ],
   "textos": [
     {
       "id": "t1",
       "titulo": "Диалог",
+      "fuente": "libro",
+      "repaso": false,
       "frases": [
         {
           "id": "f1",
@@ -64,10 +70,12 @@ Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas fin
 |---|---|---|
 | `schema_version` | sí | Siempre `1` (número). |
 | `id` | sí | `clase_NN`, idéntico al nombre del archivo. |
-| `fecha` | sí | Fecha de la clase, `AAAA-MM-DD`. |
+| `fecha` | no (recomendado) | Fecha de la clase, `AAAA-MM-DD`. Omítela solo si no se sabe (p. ej. una clase reconstruida del libro); la app mostrará «sin fecha». |
 | `urok` | sí | Número del урок del libro (1–11) al que pertenece la clase. |
-| `titulo` | sí | Breve, en español; puede incluir una frase rusa. |
-| `gramatica` | sí (puede estar vacía) | Cada tema: `tema`, `explicacion` (clara, para principiantes absolutos) y `ejemplos` (lista de textos; formato libre, p. ej. `"сад [сат]"`). |
+| `titulo` | sí | En español; puede incluir una frase rusa y las páginas del libro. |
+| `tema_corto` | no (recomendado) | El tema en pocas palabras (**40 caracteres como máximo**), sin páginas ni paréntesis. La app titula cada clase «Clase N · DD mmm · Урок X · tema_corto». Si el `titulo` pasa de 50 caracteres y no hay `tema_corto`, el validador avisa. |
+| `profesor` | no | Nombre del profesor o profesora, si aparece en el material. |
+| `gramatica` | sí (puede estar vacía) | Cada tema: `tema`, `explicacion` (clara, para principiantes absolutos) y `ejemplos` (lista de textos; formato libre, p. ej. `"сад [сат]"`). Opcionales: `fuente` y `repaso` (ver abajo). |
 | `vocabulario` | sí | Palabras **nuevas** de esta clase (ver abajo). |
 | `textos` | sí | Textos y diálogos de la clase, divididos en frases con tokens. |
 | `frases_practica` | sí | Frases útiles o de ejercicios para practicar traducción. |
@@ -85,6 +93,19 @@ Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas fin
 | `nota` | no | Pronunciación irregular, formas, uso. P. ej. `"Se pronuncia [што]."`, `"мой (m), моя (f), моё (n), мои (pl)."` |
 
 Para expresiones fijas («Меня зовут…», «У меня есть…») usa `tipo: "expresion"`.
+
+### Procedencia: `fuente` y `repaso`
+
+Marca de dónde sale cada cosa; el Lector lo muestra con etiquetas discretas «Libro» y «Repaso».
+
+| Campo | En | Valores |
+|---|---|---|
+| `fuente` | gramática, vocabulario, textos y frases de los textos | `"clase"` si se vio en la clase (lo normal) o `"libro"` si lo añades tú desde el libro (textos, ejercicios o palabras que el PDF de la clase no trae). |
+| `repaso` | gramática y textos | `true` si repasa lo visto en clases anteriores. |
+
+- Si todo es de la clase, puedes omitir `fuente`: se entiende `"clase"`.
+- Las frases heredan la `fuente` de su texto. Ponla en una frase solo si difiere (p. ej. una frase del libro añadida a un diálogo de la clase).
+- No uses otros valores: el validador da error.
 
 ### Frases de los textos
 
@@ -175,5 +196,7 @@ Usa siempre este estilo, para que sea consistente entre clases:
 - [ ] Los tokens cubren todas las palabras de la frase, en orden, sin puntuación.
 - [ ] Ninguna palabra rusa contiene letras latinas.
 - [ ] ids únicos: `t1…`, `f1…` dentro de cada texto, `p1…`, y `v_…` según la tabla.
-- [ ] La entrada de `data/index.json` tiene el mismo `urok`, `titulo` y `fecha`.
+- [ ] La entrada de `data/index.json` tiene el mismo `urok`, `titulo` y `fecha` (o ninguno de los dos lleva `fecha`).
+- [ ] Hay `tema_corto` (≤ 40 caracteres) si el `titulo` es largo.
+- [ ] Lo añadido desde el libro lleva `"fuente": "libro"`; lo que repasa clases anteriores, `"repaso": true`.
 - [ ] `herramientas\validar.ps1` termina sin errores.

@@ -2,7 +2,7 @@
 // navegación inferior, carga de datos, aviso de clases con errores, aviso de
 // voz rusa y registro del service worker.
 
-import { cargarIndice, cargarClases } from './data.js';
+import { cargarIndice, cargarClases, nombreClase, fechaCorta, tituloClase } from './data.js';
 import { almacen } from './storage.js';
 import { estadoVoz } from './tts.js';
 import { sync } from './sync.js';
@@ -81,14 +81,10 @@ export async function instalar() {
 // Nombres y selección de clases
 // ---------------------------------------------------------------------------
 
-const RE_CLASE = /^clase_(\d+)(?:_(.+))?$/;
+// Los nombres y títulos de clase viven en data.js (los usa también validar.html).
+export { nombreClase, fechaCorta, tituloClase };
 
-/** clase_07 → «Clase 7»; clase_00_ejemplo → «Clase 0 (ejemplo)». */
-export function nombreClase(id) {
-  const m = RE_CLASE.exec(id);
-  if (!m) return id;
-  return `Clase ${Number(m[1])}${m[2] ? ` (${m[2].replace(/_/g, ' ')})` : ''}`;
-}
+const RE_CLASE = /^clase_(\d+)(?:_(.+))?$/;
 
 export function etiquetaSeleccion(ids) {
   if (!ids.length) return 'Sin clases';
@@ -111,6 +107,7 @@ export function rangoSeleccion(ids, seleccion, porDefecto = ids.at(-1)) {
 }
 
 export function fechaLegible(fecha) {
+  if (!fecha) return 'sin fecha';
   const [a, m, d] = fecha.split('-').map(Number);
   return new Date(a, m - 1, d).toLocaleDateString('es', { day: 'numeric', month: 'short', year: 'numeric' });
 }
@@ -227,18 +224,37 @@ export function crearHoja(etiqueta) {
   return dlg;
 }
 
+/**
+ * Clases del índice agrupadas por урок (de menor a mayor), manteniendo su
+ * orden dentro de cada grupo: [[urok, [{ c, valida }]], …]. Se usan los datos
+ * de la clase si es válida (tiene tema_corto, fecha…) y si no, los del índice.
+ */
+export function gruposPorUrok({ indice, porId }) {
+  const grupos = new Map();
+  for (const e of indice) {
+    const c = porId.get(e.id) ?? e;
+    if (!grupos.has(c.urok)) grupos.set(c.urok, []);
+    grupos.get(c.urok).push({ c, valida: porId.has(e.id) });
+  }
+  return [...grupos].sort(([a], [b]) => a - b);
+}
+
 function abrirSelector(datos, idsActuales, alAplicar) {
   const dlg = crearHoja('Elegir clases');
   dlg.addEventListener('close', () => dlg.remove());
-  const validas = new Set(datos.clases.map(c => c.id));
-  const opciones = () => datos.indice.map(e => h('option', { value: e.id },
-    `${nombreClase(e.id)} · Урок ${e.urok} — ${e.titulo}${validas.has(e.id) ? '' : ' (con errores)'}`));
+  const opciones = () => gruposPorUrok(datos).map(([urok, clases]) => h('optgroup', { label: `Урок ${urok}` },
+    clases.map(({ c, valida }) => h('option', { value: c.id },
+      `${tituloClase(c, { urok: false })}${valida ? '' : ' (con errores)'}`))));
   const desde = h('select', { id: 'sel-desde' }, opciones());
   const hasta = h('select', { id: 'sel-hasta' }, opciones());
   desde.value = idsActuales[0];
   hasta.value = idsActuales.at(-1);
-  desde.addEventListener('change', () => { if (desde.selectedIndex > hasta.selectedIndex) hasta.value = desde.value; });
-  hasta.addEventListener('change', () => { if (hasta.selectedIndex < desde.selectedIndex) desde.value = hasta.value; });
+  // Con grupos por урок el orden de las opciones no es el de las clases: el
+  // rango se compara por la posición en el índice.
+  const ids = datos.indice.map(e => e.id);
+  const pos = sel => ids.indexOf(sel.value);
+  desde.addEventListener('change', () => { if (pos(desde) > pos(hasta)) hasta.value = desde.value; });
+  hasta.addEventListener('change', () => { if (pos(hasta) < pos(desde)) desde.value = hasta.value; });
 
   const ultima = datos.clases.at(-1)?.id;
   const fijar = (a, b) => { desde.value = a; hasta.value = b; };

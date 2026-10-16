@@ -288,6 +288,19 @@ button, a, summary, .palabra { touch-action: manipulation; }
 .traduccion { font-size: 1.05rem; }
 .intento { font-style: italic; }
 
+/* Etiquetas discretas de procedencia: «Libro» y «Repaso» */
+.etiqueta-fuente {
+  display: inline-block; vertical-align: middle;
+  margin-left: 6px; padding: 0 6px;
+  border: 1px solid var(--borde); border-radius: 4px;
+  color: var(--suave); background: none;
+  font: 700 .68rem/1.6 var(--fuente); letter-spacing: .04em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.etiqueta-fuente.repaso { border-style: dashed; }
+.frase-cuerpo > .etiqueta-fuente { margin: 0 6px 0 0; }
+.clase-cabeza h2, .titulo-clase { overflow-wrap: anywhere; }
+
 .ficha-palabra { font-size: 2rem; font-weight: 700; overflow-wrap: anywhere; }
 .datos { margin: 8px 0 16px; }
 .datos dt { color: var(--suave); font-size: .85rem; margin-top: 10px; }

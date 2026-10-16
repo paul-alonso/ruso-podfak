@@ -6,7 +6,7 @@
 //   lector.html?clase=clase_00_ejemplo&frase=t2-f3
 
 import {
-  h, icono, iniciarPagina, nombreClase, fechaLegible, avisoVoz, crearHoja, tieneCirilico,
+  h, icono, iniciarPagina, nombreClase, tituloClase, avisoVoz, crearHoja, tieneCirilico,
 } from './comun.js';
 import { segmentar, idVocabulario } from './data.js';
 import { almacen, VELOCIDADES } from './storage.js';
@@ -141,22 +141,36 @@ function seccionClase(c, ctx) {
 
   return h('section', { class: 'clase', 'aria-labelledby': `titulo-${c.id}` },
     h('header', { class: 'clase-cabeza' },
-      h('h2', { id: `titulo-${c.id}` }, nombreClase(c.id), ' ', h('span', { class: 'chip', lang: 'ru' }, `Урок ${c.urok}`)),
-      h('p', { class: 'sub' }, `${c.titulo} · ${fechaLegible(c.fecha)}`),
+      h('h2', { id: `titulo-${c.id}` }, tituloClase(c)),
+      // El título completo (si el visible usa tema_corto) y el profesor.
+      (c.tema_corto && c.tema_corto !== c.titulo || c.profesor) && h('p', { class: 'sub' },
+        [c.tema_corto && c.tema_corto !== c.titulo && c.titulo, c.profesor && `Profesor/a: ${c.profesor}`].filter(Boolean).join(' · ')),
       total > 0 && contador),
     c.gramatica.length > 0 && plegableGramatica(c),
     c.vocabulario.length > 0 && plegableVocabulario(c),
     c.textos.map(t => h('article', { class: 'texto' },
-      h('h3', { lang: tieneCirilico(t.titulo) ? 'ru' : null }, t.titulo),
+      h('h3', {}, h('span', { lang: tieneCirilico(t.titulo) ? 'ru' : null }, t.titulo), etiquetas(t)),
       t.frases.map(f => crearFrase(c, t, f, ctx, vistas.has(`${t.id}/${f.id}`), marcarVista)))),
     c.textos.length === 0 && h('p', { class: 'sub' }, 'Esta clase no tiene textos.'));
+}
+
+/**
+ * Etiquetas discretas de procedencia: «Libro» (fuente: "libro") y «Repaso»
+ * (repaso: true). «clase» es lo normal y no se marca. `heredada` es la fuente
+ * del texto que contiene una frase: si ya es «libro», la frase no la repite.
+ */
+function etiquetas({ fuente, repaso }, heredada = null) {
+  return [
+    fuente === 'libro' && heredada !== 'libro' && h('span', { class: 'etiqueta-fuente', title: 'Material del libro' }, 'Libro'),
+    repaso === true && h('span', { class: 'etiqueta-fuente repaso', title: 'Repaso de lo visto en clases anteriores' }, 'Repaso'),
+  ];
 }
 
 function plegableGramatica(c) {
   return h('details', { class: 'plegable' },
     h('summary', {}, `Gramática (${c.gramatica.length})`),
     c.gramatica.map(g => h('div', { class: 'gramatica' },
-      h('h4', {}, g.tema),
+      h('h4', {}, g.tema, etiquetas(g)),
       h('p', {}, g.explicacion),
       g.ejemplos.length > 0 && h('ul', {}, g.ejemplos.map(e => h('li', {}, e))))));
 }
@@ -171,6 +185,7 @@ function plegableVocabulario(c) {
         registrarRuso(h('span', { class: 'vocab-ru', lang: 'ru' }), v.ru_acento, v.ru),
         ` — ${v.es}`,
         h('small', { class: 'sub' }, ' · ', [v.tipo, GENERO[v.genero]].filter(Boolean).join(', ')),
+        etiquetas(v),
         v.nota && h('small', { class: 'nota' }, v.nota))))));
 }
 
@@ -198,7 +213,7 @@ function crearFrase(c, t, f, ctx, yaVista, marcarVista) {
     type: 'button', class: 'boton-icono boton-frase', 'aria-controls': trad.id, 'aria-expanded': 'false',
     'aria-label': 'Escuchar la frase y mostrar u ocultar su traducción',
   }, icono('altavoz'));
-  const el = h('div', { class: yaVista ? 'frase vista' : 'frase', id: idDom }, boton, h('div', { class: 'frase-cuerpo' }, linea, trad));
+  const el = h('div', { class: yaVista ? 'frase vista' : 'frase', id: idDom }, boton, h('div', { class: 'frase-cuerpo' }, linea, etiquetas(f, t.fuente), trad));
 
   let estado = 'oculta';
   function fijar(nuevo) {

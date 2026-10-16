@@ -3,7 +3,7 @@
 // están en Ajustes (js/ajustes.js).
 
 import {
-  h, icono, iniciarPagina, nombreClase, fechaLegible, etiquetaSeleccion, crearHoja,
+  h, icono, iniciarPagina, nombreClase, tituloClase, fechaCorta, fechaLegible, etiquetaSeleccion, crearHoja,
 } from './comun.js';
 import { almacen, hoy } from './storage.js';
 import { mazoDeEstudio, colaDelDia } from './srs.js';
@@ -91,7 +91,7 @@ function portada(ctx, pendientes) {
   return h('section', { class: 'tarjeta portada' },
     h('p', { class: 'etiqueta' }, 'Estás estudiando'),
     h('h1', {}, etiquetaSeleccion(ctx.idsSeleccion)),
-    sel.length === 1 && h('p', { class: 'sub' }, h('span', { lang: 'ru' }, `Урок ${sel[0].urok}`), ` · ${sel[0].titulo}`),
+    sel.length === 1 && h('p', { class: 'sub' }, `${fechaCorta(sel[0].fecha)} · Урок ${sel[0].urok} · ${sel[0].tema_corto || sel[0].titulo}`),
     h('p', { class: 'sub' }, [plural(textos, 'texto', 'textos'), plural(frases, 'frase', 'frases'), plural(palabras, 'palabra', 'palabras')].join(' · ')),
     h('div', { class: 'acciones' },
       h('a', { class: 'boton primario', href: 'lector.html' }, icono('libro'), 'Abrir el Lector'),
@@ -145,7 +145,7 @@ function seccionNivelacion(ctx, estado, mapa, pendientes) {
     return h('li', { class: a.cubierta ? 'plan-clase cubierta' : 'plan-clase' },
       h('div', { class: 'plan-texto' },
         h('strong', {}, `${a.cubierta ? '✓ ' : ''}${nombreClase(id)}`),
-        h('span', { class: 'sub' }, c.titulo),
+        h('span', { class: 'sub' }, `${fechaCorta(c.fecha)} · ${c.tema_corto || c.titulo}`),
         h('div', { class: 'progreso' }, barra(a.avance, `Avance de ${nombreClase(id)}`), h('small', { class: 'sub' }, pct(a.avance)))),
       h('button', { type: 'button', class: a.cubierta ? 'boton' : 'boton primario', onclick: () => estudiar(id) }, 'Estudiar'));
   });
@@ -182,7 +182,7 @@ function editarNivelacion(ctx, actual) {
   const reales = ctx.clases.filter(c => !esEjemplo(c.id));
   const grupo = h('select', { id: 'niv-grupo' },
     h('option', { value: ULTIMA }, 'La última clase disponible (se actualiza sola)'),
-    reales.map(c => h('option', { value: c.id }, `${nombreClase(c.id)} — ${c.titulo}`)));
+    reales.map(c => h('option', { value: c.id }, tituloClase(c))));
   grupo.value = actual?.claseGrupo ?? ULTIMA;
   let ritmo = actual?.ritmo ?? 2;
   const botonesRitmo = RITMOS.map(r => h('button', {
@@ -276,11 +276,10 @@ function itemClase(c, ctx, a) {
   const parte = (nombre, p) => p.total > 0 && `${nombre} ${p.hechas}/${p.total}`;
   return h('li', { class: elegida ? 'clase-item elegida' : 'clase-item' },
     h('div', { class: 'clase-item-cabeza' },
-      h('strong', {}, nombreClase(c.id)),
-      h('span', { class: 'chip', lang: 'ru' }, `Урок ${c.urok}`),
-      a.cubierta && h('span', { class: 'chip chip-cubierta' }, '✓ Cubierta'),
-      h('span', { class: 'sub' }, fechaLegible(c.fecha))),
-    h('p', {}, c.titulo),
+      h('strong', { class: 'titulo-clase' }, tituloClase(c)),
+      a.cubierta && h('span', { class: 'chip chip-cubierta' }, '✓ Cubierta')),
+    // Si el título visible usa tema_corto, debajo va el título completo.
+    c.tema_corto && c.tema_corto !== c.titulo && h('p', { class: 'sub' }, c.titulo),
     h('div', { class: 'progreso' },
       barra(a.avance, `Avance de ${nombreClase(c.id)}`, a.cubierta ? 'completa' : ''),
       h('small', { class: 'sub' }, pct(a.avance))),
