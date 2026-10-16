@@ -5,6 +5,7 @@
   "urok": 3,
   "titulo": "El verbo, el grupo 1 y las preguntas «Кто? Что делает?» (Урок 3, p. 60)",
   "tema_corto": "El verbo y el grupo 1",
+  "paginas": [{"urok": 3, "desde": 60, "hasta": 60}],
   "gramatica": [
     {
       "tema": "El verbo y el infinitivo",

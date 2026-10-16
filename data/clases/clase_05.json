@@ -5,6 +5,7 @@
   "urok": 2,
   "titulo": "Имя, отчество, фамилия; «или» y género (Урок 2, pp. 37–41; Урок 3, p. 44)",
   "tema_corto": "Nombre, patronímico y «или»",
+  "paginas": [{"urok": 2, "desde": 37, "hasta": 41}, {"urok": 3, "desde": 44, "hasta": 44}],
   "gramatica": [
     {
       "tema": "О átona → [а] (repaso)",

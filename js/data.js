@@ -406,6 +406,18 @@ function validarPractica(inf, p, r) {
     (v, rr) => comprobarRuso(inf, v, rr, { acentos: false }));
 }
 
+/** Un tramo de páginas del libro: { urok, desde, hasta }, con desde ≤ hasta. */
+function validarTramoPaginas(inf, t, r) {
+  camposDesconocidos(inf, t, ['urok', 'desde', 'hasta'], r);
+  comprobarUrok(inf, campo(inf, t, 'urok', r, 'entero'), `${r}.urok`);
+  const desde = campo(inf, t, 'desde', r, 'entero');
+  const hasta = campo(inf, t, 'hasta', r, 'entero');
+  if (desde !== undefined && desde < 1) inf.error(`${r}.desde`, `debe ser 1 o más, pero es ${desde}`);
+  if (desde !== undefined && hasta !== undefined && hasta < desde) {
+    inf.error(`${r}.hasta`, `es ${hasta}, menor que desde (${desde}); para una sola página, hasta = desde`);
+  }
+}
+
 /**
  * Valida el objeto de una clase. `idEsperado` es el nombre del archivo
  * (sin .json); si se indica, el campo id debe coincidir.
@@ -417,7 +429,7 @@ export function validarClase(datos, { idEsperado = null, origen = null } = {}) {
     return inf;
   }
   camposDesconocidos(inf, datos, ['schema_version', 'id', 'fecha', 'urok', 'titulo', 'tema_corto', 'profesor',
-    'gramatica', 'vocabulario', 'textos', 'frases_practica'], '');
+    'paginas', 'gramatica', 'vocabulario', 'textos', 'frases_practica'], '');
 
   const version = campo(inf, datos, 'schema_version', '', 'entero');
   if (version !== undefined && version !== VERSION_ESQUEMA) {
@@ -438,6 +450,11 @@ export function validarClase(datos, { idEsperado = null, origen = null } = {}) {
     inf.aviso('tema_corto', `tiene ${temaCorto.length} caracteres; mejor ${LARGO_TEMA_CORTO} o menos para que se lea en el selector`);
   } else if (temaCorto === undefined && titulo !== undefined && titulo.length > LARGO_TITULO) {
     inf.aviso('tema_corto', `el titulo tiene ${titulo.length} caracteres: añade un tema_corto (≤ ${LARGO_TEMA_CORTO}) para el título de la clase`);
+  }
+  if (datos.paginas === undefined) {
+    inf.aviso('paginas', 'falta: indica las páginas del libro que cubre la clase, p. ej. [{"urok": 1, "desde": 7, "hasta": 12}]');
+  } else {
+    lista(inf, datos, 'paginas', '', validarTramoPaginas);
   }
 
   lista(inf, datos, 'gramatica', '', validarGramatica);

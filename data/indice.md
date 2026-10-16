@@ -8,7 +8,7 @@ Archivo generado por `herramientas/indice.py`; no editar a mano.
 
 N | fecha | урок y páginas | tema_corto
 ---|---|---|---
-1 | sin fecha | У1 | Vocales y primeras consonantes
+1 | sin fecha | У1 · pp. 7–12 | Vocales y primeras consonantes
 2 | sin fecha | У1 · pp. 12–22; У2 p. 24 | Р, Л, Ш, Ж, Ч y «Кто это? Что это?»
 3 | 2026-10-07 | У2 · pp. 25–34 | Я, Ю, Е, Ё, мой/моя/моё y «Где?»
 4 | 2026-10-08 | У2 · pp. 33–38 | «Нет, это не…» y «Меня зовут»
@@ -33,14 +33,14 @@ tema → introducido en → repasado en
 - Entonación: ИК-1, ИК-3, ИК-2 → 2 → —
 - Кто это? / Что это? → 2 → 7
 - Й y las vocales я, ю, е, ё → 3 → —
-- Consonantes duras y blandas; ь → 3 → —
+- Consonantes duras y blandas → 3 → 4
+- Ь → 3 → —
 - ч siempre blanda; ж y ш siempre duras → 3 → 7
 - Мой, моя, моё → 3 → 4
 - Género: он, она, оно → 3 → 6
 - Где? — тут, здесь, там, вот → 3 → 7
 - Pronombres personales → 3 → —
 - Saludar: «Как дела?» → 4 → 7
-- Consonantes duras y blandas → — (solo repaso) → 4
 - Где? En la ciudad → — (solo repaso) → 4
 - Да / Нет, это не… → 4 → 6, 9
 - Меня зовут… / Как его, её, их зовут? → 4 → 6, 7, 9
@@ -636,10 +636,10 @@ v_zvuk | зву́к | sonido | 1
 
 ## Páginas del libro
 
-- Урок 1: 12–22
+- Урок 1: 7–22
 - Урок 2: 24–41
 - Урок 3: 44–61
 
 ## Alertas
 
-- Temas casi iguales: «Consonantes duras y blandas; ь» (clase 3) y «Consonantes duras y blandas» (clase 4).
+Ninguna.

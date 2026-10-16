@@ -23,9 +23,6 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 ACENTO = '\u0301'
 PATRON_ARCHIVO = re.compile(r'^clase_(\d+)\.json$')
-# «p. 24», «pp. 12–22», «pp. 9, 11–12»
-PATRON_PAGINAS = re.compile(r'pp?\.\s*(\d+(?:\s*[–-]\s*\d+)?(?:\s*,\s*\d+(?:\s*[–-]\s*\d+)?)*)')
-PATRON_UROK = re.compile(r'Урок\s*(\d+)')
 UMBRAL_TEMAS = 0.8  # parecido (0–1) a partir del cual dos temas distintos se avisan
 
 
@@ -90,32 +87,21 @@ def tema_normal(tema):
 
 # --- páginas ---
 
-def expandir_paginas(texto):
-    paginas = set()
-    for trozo in texto.split(','):
-        partes = re.split(r'\s*[–-]\s*', trozo.strip())
-        if len(partes) == 2 and partes[0].isdigit() and partes[1].isdigit():
-            a, b = int(partes[0]), int(partes[1])
-            paginas.update(range(min(a, b), max(a, b) + 1))
-        elif partes[0].isdigit():
-            paginas.add(int(partes[0]))
-    return paginas
+def es_entero(v):
+    return isinstance(v, int) and not isinstance(v, bool)
 
 
 def paginas_de(clase):
-    """{урок: {páginas}} a partir de los paréntesis del titulo («(Урок 1, pp. 12–22; Урок 2, p. 24)»).
+    """{урок: {páginas}} a partir del campo "paginas": [{"urok": 1, "desde": 7, "hasta": 12}, …].
 
-    Un tramo sin «Урок N» se atribuye al урок de la clase."""
+    Los tramos mal escritos se ignoran (el validador ya los marca como error)."""
     resultado = {}
-    titulo = str(clase.get('titulo', ''))
-    for parentesis in re.findall(r'\(([^)]*)\)', titulo):
-        for tramo in parentesis.split(';'):
-            m = PATRON_PAGINAS.search(tramo)
-            if not m:
-                continue
-            u = PATRON_UROK.search(tramo)
-            urok = int(u.group(1)) if u else clase.get('urok')
-            resultado.setdefault(urok, set()).update(expandir_paginas(m.group(1)))
+    tramos = clase.get('paginas')
+    for t in tramos if isinstance(tramos, list) else []:
+        if not isinstance(t, dict) or not all(es_entero(t.get(k)) for k in ('urok', 'desde', 'hasta')):
+            continue
+        if t['desde'] <= t['hasta']:
+            resultado.setdefault(t['urok'], set()).update(range(t['desde'], t['hasta'] + 1))
     return resultado
 
 
@@ -223,7 +209,7 @@ def seccion_paginas(clases):
             por_urok.setdefault(u, set()).update(ps)
     filas = ['## Páginas del libro', '']
     if not por_urok:
-        return filas + ['(Ningún `titulo` indica páginas.)']
+        return filas + ['(Ninguna clase tiene el campo `paginas`.)']
     for u in sorted(por_urok, key=lambda x: (x is None, x or 0)):
         ps = por_urok[u]
         huecos = sorted(set(range(min(ps), max(ps) + 1)) - ps)
@@ -233,6 +219,11 @@ def seccion_paginas(clases):
 
 def alertas(clases, vocab, temas, problemas):
     salida = list(problemas)
+
+    # Clases sin páginas del libro.
+    sin_paginas = [str(c['_numero']) for c in clases if not paginas_de(c)]
+    if sin_paginas:
+        salida.append(f"Sin `paginas` (o con todos los tramos mal escritos): clase {', '.join(sin_paginas)}.")
 
     # Misma palabra rusa con distinto vocab_id.
     por_palabra = {}

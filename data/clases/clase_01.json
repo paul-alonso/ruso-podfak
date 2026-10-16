@@ -4,6 +4,7 @@
   "urok": 1,
   "titulo": "(Reconstruida del libro) Vocales y primeras consonantes",
   "tema_corto": "Vocales y primeras consonantes",
+  "paginas": [{"urok": 1, "desde": 7, "hasta": 12}],
   "gramatica": [
     {
       "tema": "Vocales: а, о, у, э, ы, и",

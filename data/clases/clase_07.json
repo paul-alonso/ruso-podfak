@@ -5,6 +5,7 @@
   "urok": 3,
   "titulo": "Verbos del grupo 1, «Ты знаешь, кто это?» y «утром, днём, вечером» (Урок 3, pp. 50, 54, 60)",
   "tema_corto": "Verbos (grupos 1 y 2) y «Когда?»",
+  "paginas": [{"urok": 3, "desde": 50, "hasta": 50}, {"urok": 3, "desde": 54, "hasta": 54}, {"urok": 3, "desde": 60, "hasta": 60}],
   "gramatica": [
     {
       "tema": "Saludar: «Как дела?»",

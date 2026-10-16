@@ -30,6 +30,7 @@ Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas fin
   "titulo": "Tema principal de la clase, en español",
   "tema_corto": "Tema en pocas palabras",
   "profesor": "Ирина Петровна",
+  "paginas": [{ "urok": 1, "desde": 12, "hasta": 22 }, { "urok": 2, "desde": 24, "hasta": 24 }],
   "gramatica": [
     { "tema": "…", "explicacion": "…", "ejemplos": ["…", "…"], "fuente": "clase", "repaso": false }
   ],
@@ -75,6 +76,7 @@ Archivo en UTF-8. Responde solo con JSON válido: sin comentarios, sin comas fin
 | `titulo` | sí | En español; puede incluir una frase rusa y las páginas del libro. |
 | `tema_corto` | no (recomendado) | El tema en pocas palabras (**40 caracteres como máximo**), sin páginas ni paréntesis. La app titula cada clase «Clase N · DD mmm · Урок X · tema_corto». Si el `titulo` pasa de 50 caracteres y no hay `tema_corto`, el validador avisa. |
 | `profesor` | no | Nombre del profesor o profesora, si aparece en el material. |
+| `paginas` | **sí** para clases nuevas | Páginas del libro que cubre la clase: lista de tramos `{ "urok": N, "desde": A, "hasta": B }` (enteros, `desde` ≤ `hasta`; una sola página: `desde` = `hasta`). Un tramo por урок y por bloque de páginas seguidas: «Урок 1, pp. 12–22; Урок 2, p. 24» → `[{ "urok": 1, "desde": 12, "hasta": 22 }, { "urok": 2, "desde": 24, "hasta": 24 }]`. Es la fuente del índice de páginas cubiertas (`data/indice.md`); las páginas escritas en el `titulo` no cuentan. Sin `paginas`, el validador avisa. |
 | `gramatica` | sí (puede estar vacía) | Cada tema: `tema`, `explicacion` (clara, para principiantes absolutos) y `ejemplos` (lista de textos; formato libre, p. ej. `"сад [сат]"`). Opcionales: `fuente` y `repaso` (ver abajo). |
 | `vocabulario` | sí | Palabras **nuevas** de esta clase (ver abajo). |
 | `textos` | sí | Textos y diálogos de la clase, divididos en frases con tokens. |
@@ -198,5 +200,7 @@ Usa siempre este estilo, para que sea consistente entre clases:
 - [ ] ids únicos: `t1…`, `f1…` dentro de cada texto, `p1…`, y `v_…` según la tabla.
 - [ ] La entrada de `data/index.json` tiene el mismo `urok`, `titulo` y `fecha` (o ninguno de los dos lleva `fecha`).
 - [ ] Hay `tema_corto` (≤ 40 caracteres) si el `titulo` es largo.
+- [ ] `paginas` lista todas las páginas del libro que cubre la clase, con su урок.
+- [ ] Los temas de gramática que ya salieron en clases anteriores se llaman igual que allí (ver la sección Temas de `data/indice.md`) y llevan `"repaso": true`; los `vocab_id` ya usados se reutilizan.
 - [ ] Lo añadido desde el libro lleva `"fuente": "libro"`; lo que repasa clases anteriores, `"repaso": true`.
 - [ ] `herramientas\validar.ps1` termina sin errores.

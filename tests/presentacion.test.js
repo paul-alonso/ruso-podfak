@@ -53,6 +53,18 @@ prueba('esquema: avisos de tema_corto largo o de titulo largo sin tema_corto; pr
   cierto(hay(validarCon(c => { c.profesor = 5; }).errores, 'profesor', 'texto'), 'profesor debe ser texto');
 });
 
+prueba('esquema: paginas es una lista de tramos { urok, desde, hasta }; si falta, aviso', () => {
+  igual(validarCon(c => { c.paginas = [{ urok: 1, desde: 7, hasta: 12 }, { urok: 2, desde: 24, hasta: 24 }]; }).errores, []);
+  const sin = validarCon(c => { delete c.paginas; });
+  cierto(sin.ok && hay(sin.avisos, 'paginas', 'falta'), 'sin paginas: aviso, no error');
+  cierto(hay(validarCon(c => { c.paginas = '7–12'; }).errores, 'paginas', 'lista'), 'paginas debe ser una lista');
+  cierto(hay(validarCon(c => { c.paginas = [{ urok: 1, desde: 12, hasta: 7 }]; }).errores, 'paginas[0].hasta', 'menor que desde'), 'hasta < desde');
+  cierto(hay(validarCon(c => { c.paginas = [{ urok: 12, desde: 1, hasta: 2 }]; }).errores, 'paginas[0].urok', 'entre 1 y 11'), 'urok fuera de rango');
+  cierto(hay(validarCon(c => { c.paginas = [{ urok: 1, desde: 0, hasta: 2 }]; }).errores, 'paginas[0].desde', '1 o más'), 'desde < 1');
+  cierto(hay(validarCon(c => { c.paginas = [{ urok: 1, desde: 7 }]; }).errores, 'paginas[0].hasta', 'falta'), 'falta hasta');
+  cierto(hay(validarCon(c => { c.paginas = [{ urok: 1, desde: 7, hasta: 8, pagina: 7 }]; }).avisos, 'paginas[0].pagina', 'campo desconocido'), 'campo desconocido');
+});
+
 // --- selector agrupado por урок ---
 
 prueba('selector: grupos por урок de menor a mayor, con el orden de las clases dentro de cada grupo', () => {

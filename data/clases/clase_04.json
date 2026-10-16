@@ -5,6 +5,7 @@
   "urok": 2,
   "titulo": "«Как дела?», «Нет, это не…» y «Меня зовут» (Урок 2, pp. 33–38)",
   "tema_corto": "«Нет, это не…» y «Меня зовут»",
+  "paginas": [{"urok": 2, "desde": 33, "hasta": 38}],
   "gramatica": [
     {
       "tema": "Saludar: «Как дела́?»",
@@ -16,7 +17,7 @@
       ]
     },
     {
-      "tema": "Consonantes duras y blandas (pares)",
+      "tema": "Consonantes duras y blandas",
       "repaso": true,
       "explicacion": "La mayoría de las consonantes forman pareja dura/blanda: [б]–[б’], [м]–[м’], [т]–[т’]… Siempre duras: ж, ш, ц. Siempre blandas: ч, щ, й. Se practicaron sílabas (ся–зя, ля–ря–зря, ты–ти, ма–мя) y pares de palabras (ма́ма–мяч, мы́шка–ми́нус, мо́ре–мёд). Repaso de la clase 3 (p. 28).",
       "ejemplos": [

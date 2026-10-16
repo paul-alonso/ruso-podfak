@@ -5,6 +5,7 @@
   "urok": 2,
   "titulo": "Я, Ю, Е, Ё, consonantes blandas, мой/моя/моё y «Где?» (Урок 2, pp. 25–34)",
   "tema_corto": "Я, Ю, Е, Ё, мой/моя/моё y «Где?»",
+  "paginas": [{"urok": 2, "desde": 25, "hasta": 34}],
   "gramatica": [
     {
       "tema": "Й y las vocales я, ю, е, ё",
@@ -17,13 +18,19 @@
       ]
     },
     {
-      "tema": "Consonantes duras y blandas; ь",
-      "explicacion": "Ante а, о, у, э, ы la consonante es dura; ante я, ё, ю, е, и, ь es blanda: la lengua sube hacia el paladar, como en la ñ española. La ь no suena: solo ablanda la consonante anterior (p. 28).",
+      "tema": "Consonantes duras y blandas",
+      "explicacion": "Ante а, о, у, э, ы la consonante es dura; ante я, ё, ю, е, и, ь es blanda: la lengua sube hacia el paladar, como en la ñ española (p. 28).",
       "ejemplos": [
         "сат [сат] — сят [с’ат]",
-        "сать [сат’] — сять [с’ат’]",
-        "пальто́ [пал’то́]",
         "мя — una sola sílaba, no «mi-a»"
+      ]
+    },
+    {
+      "tema": "Ь (signo blando)",
+      "explicacion": "La ь no suena: solo ablanda la consonante anterior (p. 28).",
+      "ejemplos": [
+        "сать [сат’] — сять [с’ат’]",
+        "пальто́ [пал’то́]"
       ]
     },
     {

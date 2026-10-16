@@ -4,6 +4,7 @@
   "urok": 1,
   "titulo": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?» (Урок 1, pp. 12–22; Урок 2, p. 24)",
   "tema_corto": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?»",
+  "paginas": [{"urok": 1, "desde": 12, "hasta": 22}, {"urok": 2, "desde": 24, "hasta": 24}],
   "gramatica": [
     {
       "tema": "Consonantes р, л, ш, ж, ч",

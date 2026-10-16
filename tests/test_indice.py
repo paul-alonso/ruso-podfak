@@ -21,9 +21,18 @@ def palabra(vid, ru, es, acento=None):
     return {'id': vid, 'ru': ru, 'ru_acento': acento or ru, 'es': es, 'tipo': 'sustantivo', 'genero': 'm'}
 
 
-def clase(n, urok, titulo, gramatica=(), vocabulario=(), **extra):
-    return {'schema_version': 1, 'id': f'clase_{n:02d}', 'urok': urok, 'titulo': titulo,
-            'gramatica': list(gramatica), 'vocabulario': list(vocabulario), 'textos': [], 'frases_practica': [], **extra}
+def pags(*tramos):
+    """pags((1, 7, 12), (2, 24, 24)) → [{"urok": 1, "desde": 7, "hasta": 12}, …]."""
+    return [{'urok': u, 'desde': a, 'hasta': b} for u, a, b in tramos]
+
+
+def clase(n, urok, titulo, gramatica=(), vocabulario=(), paginas='p. 1', **extra):
+    """Clase mínima; por defecto cubre la p. 1 de su урок (paginas=None: sin el campo)."""
+    c = {'schema_version': 1, 'id': f'clase_{n:02d}', 'urok': urok, 'titulo': titulo,
+         'gramatica': list(gramatica), 'vocabulario': list(vocabulario), 'textos': [], 'frases_practica': [], **extra}
+    if paginas is not None:
+        c['paginas'] = pags((urok, 1, 1)) if paginas == 'p. 1' else paginas
+    return c
 
 
 def tema(nombre, repaso=None):
@@ -88,17 +97,21 @@ class Encabezado(ConCarpeta):
 
 class Clases(ConCarpeta):
     def test_fila_con_paginas_de_varios_urok_y_tema_corto(self):
-        texto = self.generar(clase(2, 1, 'Р, Л (Урок 1, pp. 12–22; Урок 2, p. 24)', fecha='2026-10-11', tema_corto='Кто это?'))
+        texto = self.generar(clase(2, 1, 'Р, Л', paginas=pags((2, 24, 24), (1, 12, 22)), fecha='2026-10-11', tema_corto='Кто это?'))
         self.assertIn('2 | 2026-10-11 | У1 · pp. 12–22; У2 p. 24 | Кто это?', seccion(texto, 'Clases'))
 
     def test_sin_fecha_sin_paginas_y_sin_tema_corto(self):
-        texto = self.generar(clase(3, 2, 'Genitivo | plural (repaso)'))
+        texto = self.generar(clase(3, 2, 'Genitivo | plural (Урок 2, pp. 7–9)', paginas=None))
         s = seccion(texto, 'Clases')
-        self.assertIn('3 | sin fecha | У2 | Genitivo \\| plural *', s)
+        self.assertIn('3 | sin fecha | У2 | Genitivo \\| plural *', s)  # las páginas del titulo no cuentan
         self.assertIn('Sin `tema_corto`', s)
+        self.assertIn('Sin `paginas` (o con todos los tramos mal escritos): clase 3.', seccion(texto, 'Alertas'))
 
-    def test_paginas_sin_urok_son_del_urok_de_la_clase(self):
-        self.assertEqual(indice.paginas_de(clase(1, 1, 'Vocales (pp. 7–9, 11)')), {1: {7, 8, 9, 11}})
+    def test_tramos_mal_escritos_se_ignoran(self):
+        c = clase(1, 1, 'a', paginas=[{'urok': 1, 'desde': 7, 'hasta': 9}, {'urok': 1, 'desde': 12, 'hasta': 10},
+                                      {'urok': '2', 'desde': 1, 'hasta': 2}, {'urok': 2, 'desde': True, 'hasta': 3}, 'p. 5'])
+        self.assertEqual(indice.paginas_de(c), {1: {7, 8, 9}})
+        self.assertEqual(indice.paginas_de(clase(1, 1, 'a', paginas={'urok': 1})), {})
 
 
 class Temas(ConCarpeta):
@@ -165,9 +178,9 @@ class Vocabulario(ConCarpeta):
 class Paginas(ConCarpeta):
     def test_rangos_por_urok_y_huecos(self):
         texto = self.generar(
-            clase(1, 1, 'a (Урок 1, pp. 7–12)'),
-            clase(2, 1, 'b (Урок 1, pp. 12–15; Урок 2, p. 24)'),
-            clase(3, 2, 'c (pp. 27–30)'),
+            clase(1, 1, 'a', paginas=pags((1, 7, 12))),
+            clase(2, 1, 'b', paginas=pags((1, 12, 15), (2, 24, 24))),
+            clase(3, 2, 'c', paginas=pags((2, 27, 30))),
         )
         s = seccion(texto, 'Páginas del libro')
         self.assertIn('- Урок 1: 7–15', s)
@@ -179,7 +192,7 @@ class Paginas(ConCarpeta):
 
 class Linea(ConCarpeta):
     def test_main_escribe_utf8_con_lf(self):
-        self.escribir('clase_01.json', clase(1, 1, 'Привет (pp. 7–8)'))
+        self.escribir('clase_01.json', clase(1, 1, 'Привет', paginas=pags((1, 7, 8))))
         salida = self.dir / 'indice.md'
         with contextlib.redirect_stdout(io.StringIO()):
             indice.main(['--datos', str(self.dir), '--salida', str(salida), '--fecha', '2026-01-02'])

@@ -43,6 +43,7 @@ Si `urok`, `titulo` o `fecha` no coinciden con los de la clase, el validador avi
   "titulo": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?» (Урок 1, pp. 12–22)",
   "tema_corto": "Кто это? Что это?",
   "profesor": "Ирина Петровна",
+  "paginas": [{ "urok": 1, "desde": 12, "hasta": 22 }, { "urok": 2, "desde": 24, "hasta": 24 }],
   "gramatica": [ … ],
   "vocabulario": [ … ],
   "textos": [ … ],
@@ -59,10 +60,27 @@ Si `urok`, `titulo` o `fecha` no coinciden con los de la clase, el validador avi
 | `titulo` | sí | Tema de la clase, en español; puede ser largo e incluir páginas del libro. |
 | `tema_corto` | no | Versión breve del tema (≤ 40 caracteres) para el título visible. Si falta, se usa `titulo`, y el validador avisa cuando `titulo` pasa de 50 caracteres. |
 | `profesor` | no | Nombre del profesor o profesora. Se muestra en el Lector. |
+| `paginas` | recomendado | Páginas del libro que cubre la clase (ver abajo). Si falta, aviso. |
 | `gramatica` | sí | Lista (puede estar vacía). |
 | `vocabulario` | sí | Lista de palabras nuevas de esta clase. |
 | `textos` | sí | Lista de textos y diálogos. |
 | `frases_practica` | sí | Lista de frases para Traducir y Escuchar. |
+
+### Páginas del libro: `paginas`
+
+Lista de tramos, uno por урок y bloque de páginas seguidas:
+
+```json
+"paginas": [{ "urok": 1, "desde": 12, "hasta": 22 }, { "urok": 2, "desde": 24, "hasta": 24 }]
+```
+
+| Campo | Obligatorio | Regla |
+|---|---|---|
+| `urok` | sí | Número del урок (1–11) al que pertenecen esas páginas (puede no ser el de la clase). |
+| `desde` | sí | Primera página, entero ≥ 1. |
+| `hasta` | sí | Última página, entero ≥ `desde`. Para una sola página, igual a `desde`. |
+
+`herramientas/indice.py` usa este campo para la tabla de clases y las páginas cubiertas por урок de `data/indice.md`. Las páginas que aparezcan en el `titulo` son solo texto: no cuentan.
 
 ### Título visible
 
@@ -185,4 +203,4 @@ Los tokens, en orden, deben reconstruir `ru`, y sus `a` deben reconstruir `ru_ac
 
 ## Compatibilidad
 
-`tema_corto`, `profesor`, `fuente` y `repaso` se añadieron sin cambiar `schema_version`. `fecha` pasó de obligatoria a opcional. Los JSON anteriores siguen siendo válidos tal cual.
+`tema_corto`, `profesor`, `paginas`, `fuente` y `repaso` se añadieron sin cambiar `schema_version`. `fecha` pasó de obligatoria a opcional. Los JSON anteriores siguen siendo válidos tal cual.

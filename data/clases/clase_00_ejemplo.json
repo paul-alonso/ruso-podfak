@@ -5,6 +5,7 @@
   "urok": 2,
   "titulo": "Ejemplo: Это мой дом",
   "tema_corto": "Это мой дом",
+  "paginas": [{"urok": 2, "desde": 26, "hasta": 27}],
   "profesor": "Ирина Петровна",
   "gramatica": [
     {
