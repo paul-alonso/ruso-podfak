@@ -172,7 +172,13 @@ prueba('validarIndice detecta ids repetidos y raíz incorrecta', () => {
 prueba('cargarIndice carga data/index.json', async () => {
   const { indice, informe } = await cargarIndice();
   cierto(informe.ok, informe.lineas().join('\n'));
-  cierto(indice.some(e => e.id === 'clase_00_ejemplo'), 'falta clase_00_ejemplo en el índice');
+  cierto(indice.some(e => e.id === 'clase_00_ejemplo'), 'las pruebas añaden clase_00_ejemplo al índice');
+});
+
+prueba('data/index.json no incluye la clase de ejemplo (la app no la muestra)', async () => {
+  const datos = await (await fetch('../data/index.json', { cache: 'no-cache' })).json();
+  cierto(Array.isArray(datos) && datos.length > 0, 'index.json vacío');
+  cierto(!datos.some(e => /_ejemplo$/.test(e.id)), 'clase_00_ejemplo sigue en index.json');
 });
 
 prueba('cargarClase carga el ejemplo', async () => {

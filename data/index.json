@@ -1,6 +1,11 @@
 [
-  {"id": "clase_00_ejemplo", "urok": 2, "titulo": "Ejemplo: Это мой дом", "fecha": "2026-10-01"},
-  {"id": "clase_01", "urok": 1, "titulo": "(Reconstruida del libro) Vocales y primeras consonantes (Урок 1, pp. 7–12)", "fecha": "2026-10-11"},
-  {"id": "clase_02", "urok": 1, "titulo": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?» (Урок 1, pp. 12–22; Урок 2, p. 24)", "fecha": "2026-10-11"},
-  {"id": "clase_03", "urok": 2, "titulo": "Я, Ю, Е, Ё, consonantes blandas, мой/моя/моё y «Где?» (Урок 2, pp. 25–34)", "fecha": "2026-10-07"}
+  {"id": "clase_01", "urok": 1, "titulo": "(Reconstruida del libro) Vocales y primeras consonantes"},
+  {"id": "clase_02", "urok": 1, "titulo": "Р, Л, Ш, Ж, Ч y «Кто это? Что это?» (Урок 1, pp. 12–22; Урок 2, p. 24)"},
+  {"id": "clase_03", "urok": 2, "titulo": "Я, Ю, Е, Ё, consonantes blandas, мой/моя/моё y «Где?» (Урок 2, pp. 25–34)", "fecha": "2026-10-07"},
+  {"id": "clase_04", "urok": 2, "titulo": "«Как дела?», «Нет, это не…» y «Меня зовут» (Урок 2, pp. 33–38)", "fecha": "2026-10-08"},
+  {"id": "clase_05", "urok": 2, "titulo": "Имя, отчество, фамилия; «или» y género (Урок 2, pp. 37–41; Урок 3, p. 44)", "fecha": "2026-10-10"},
+  {"id": "clase_06", "urok": 3, "titulo": "Género con -ь, Х, Ц, Щ, números 0–29 y plural (Урок 3, pp. 45–54)", "fecha": "2026-10-12"},
+  {"id": "clase_07", "urok": 3, "titulo": "Verbos del grupo 1, «Ты знаешь, кто это?» y «утром, днём, вечером» (Урок 3, pp. 50, 54, 60)", "fecha": "2026-10-13"},
+  {"id": "clase_08", "urok": 3, "titulo": "El verbo, el grupo 1 y las preguntas «Кто? Что делает?» (Урок 3, p. 60)", "fecha": "2026-10-14"},
+  {"id": "clase_09", "urok": 3, "titulo": "Posesivos y «Чей? Чья? Чьё? Чьи?» (Урок 3, pp. 55–61)", "fecha": "2026-10-15"}
 ]

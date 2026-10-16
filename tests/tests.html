@@ -25,6 +25,9 @@
     // aquí un GitHub simulado.
     window.sinRedEnPruebas = () => Promise.reject(new TypeError('Las pruebas no salen a la red'));
     window.podfakFetchPrueba = window.sinRedEnPruebas;
+    // La clase de ejemplo no está en data/index.json (la app no la muestra),
+    // pero las pruebas la usan: cargarIndice (js/data.js) la añade al índice.
+    window.podfakIndicePrueba = [{ id: 'clase_00_ejemplo', urok: 2, titulo: 'Ejemplo: Это мой дом', fecha: '2026-10-01' }];
   </script>
   <script type="module">
     import { ejecutar } from './mini.js';

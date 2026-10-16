@@ -551,6 +551,20 @@ async function leerJSON(url, nombre) {
   return parsearJSON(await resp.text());
 }
 
+/**
+ * Solo para las pruebas: tests.html define podfakIndicePrueba con entradas que
+ * se añaden al índice (la clase de ejemplo, que la app no muestra). Fuera de
+ * tests.html y de sus iframes no tiene ningún efecto.
+ */
+function entradasDePrueba() {
+  try {
+    const lista = globalThis.window?.parent?.podfakIndicePrueba;
+    return Array.isArray(lista) ? lista : [];
+  } catch {
+    return []; // padre de otro origen
+  }
+}
+
 const ordenarPorId = (a, b) => a.id.localeCompare(b.id, 'es', { numeric: true });
 
 /**
@@ -558,12 +572,14 @@ const ordenarPorId = (a, b) => a.id.localeCompare(b.id, 'es', { numeric: true })
  * las entradas válidas, ordenadas por id.
  */
 export async function cargarIndice() {
-  const { datos, problema } = await leerJSON(new URL('index.json', URL_DATOS), 'data/index.json');
+  const { datos: leidos, problema } = await leerJSON(new URL('index.json', URL_DATOS), 'data/index.json');
   if (problema) {
     const inf = new Informe('index.json');
     inf.error('(archivo)', problema);
     return { indice: [], informe: inf };
   }
+  const extra = entradasDePrueba();
+  const datos = Array.isArray(leidos) ? [...extra.filter(e => !leidos.some(d => d?.id === e.id)), ...leidos] : leidos;
   const informe = validarIndice(datos);
   const conError = i => informe.errores.some(p => p.ruta.startsWith(`[${i}]`));
   const indice = Array.isArray(datos) ? datos.filter((e, i) => !conError(i)) : [];

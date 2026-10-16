@@ -18,6 +18,16 @@ $navegador = @(
 ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if (-not $navegador) { throw 'No se encontró Edge ni Chrome.' }
 
+if ($Tests) {
+  $python = Get-Command python, py -ErrorAction SilentlyContinue | Select-Object -First 1
+  if ($python) {
+    & $python.Source -m unittest discover -s (Join-Path (Split-Path $PSScriptRoot) 'tests') -p 'test_*.py'
+    if ($LASTEXITCODE -ne 0) { Write-Output 'Fallan las pruebas de Python.'; exit 1 }
+  } else {
+    Write-Output 'Python no está instalado: se omiten las pruebas de indice.py.'
+  }
+}
+
 $pagina = if ($Tests) { 'tests/tests.html' } else { 'validar.html?cli' }
 $servidor = Start-Process powershell -WindowStyle Hidden -PassThru -ArgumentList @(
   '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', "`"$PSScriptRoot\servir.ps1`"", '-Puerto', $Puerto)

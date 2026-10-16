@@ -1,0 +1,1957 @@
+{
+  "schema_version": 1,
+  "id": "clase_08",
+  "fecha": "2026-10-14",
+  "urok": 3,
+  "titulo": "El verbo, el grupo 1 y las preguntas «Кто? Что делает?» (Урок 3, p. 60)",
+  "tema_corto": "El verbo y el grupo 1",
+  "gramatica": [
+    {
+      "tema": "El verbo y el infinitivo",
+      "explicacion": "El verbo (глаго́л) expresa una acción (игра́ть) o un estado (понима́ть) y responde a «Что де́лать?». El infinitivo (инфинити́в) es la forma del diccionario; en el grupo 1 acaba en -ать / -ять.",
+      "ejemplos": [
+        "Что де́лать? — чита́ть, ду́мать, писа́ть",
+        "де́лать, чита́ть, игра́ть",
+        "знать, ду́мать, понима́ть"
+      ]
+    },
+    {
+      "tema": "Sujeto y predicado (S + P)",
+      "explicacion": "El sujeto (S) responde a Кто? / Что?; el predicado (P), a Что де́лает? La forma del verbo depende del sujeto: forma S = forma P.",
+      "ejemplos": [
+        "Па́па (кто?) рабо́тает (что де́лает?).",
+        "Ребёнок игра́ет.",
+        "Я чита́ю. — Де́ти игра́ют."
+      ]
+    },
+    {
+      "tema": "Verbos del grupo 1: знать, делать, работать",
+      "explicacion": "Se quita -ть del infinitivo y se añade: я -ю, ты -ешь, он/она -ет, мы -ем, вы -ете, они -ют. El acento no se mueve. Verbos nuevos: изуча́ть, слу́шать, понима́ть, гуля́ть, спра́шивать, отвеча́ть, повторя́ть, начина́ть.",
+      "ejemplos": [
+        "де́лаю, де́лаешь, де́лает, де́лаем, де́лаете, де́лают",
+        "гуля́ю, гуля́ешь, гуля́ет, гуля́ем, гуля́ете, гуля́ют",
+        "Ма́ма и сын отдыха́ют. (dos sujetos → plural)"
+      ],
+      "repaso": true
+    },
+    {
+      "tema": "Preguntas sí/no con verbos",
+      "explicacion": "Sin palabra interrogativa, la pregunta se hace solo con la entonación (ИК-3: la voz sube en el verbo). Para negar, не va delante del verbo; con а se contrasta: «не… а…» = no…, sino….",
+      "ejemplos": [
+        "Ма́ма слу́шает? — Нет, ма́ма не слу́шает, а чита́ет.",
+        "Сын гуля́ет? — Нет, он не гуля́ет.",
+        "Ма́ма и сын отдыха́ют? — Да, они́ отдыха́ют."
+      ]
+    },
+    {
+      "tema": "Preguntas con кто y что делает",
+      "explicacion": "Кто? pregunta por el sujeto y lleva el verbo en singular; Что де́лает / де́лают? pregunta por el predicado.",
+      "ejemplos": [
+        "Кто чита́ет? — Ма́ма чита́ет.",
+        "Что де́лает ма́ма? — Ма́ма чита́ет.",
+        "Что де́лают ма́ма и сын? — Они́ отдыха́ют."
+      ]
+    },
+    {
+      "tema": "Ты знаешь, кто это? Да, знаю / Нет, не знаю",
+      "explicacion": "Tras знать puede ir una pregunta indirecta con кто, где, как… Para responder basta «Да, зна́ю» o «Нет, не зна́ю». «Вы не зна́ете…?» es una forma cortés de preguntar.",
+      "ejemplos": [
+        "Ты зна́ешь, кто э́то? — Да, зна́ю.",
+        "Вы не зна́ете, где Ви́ктор? — Он до́ма.",
+        "Я не зна́ю, где он."
+      ],
+      "repaso": true
+    },
+    {
+      "tema": "Как по-русски…? Что значит…?",
+      "explicacion": "Frases para la clase: preguntar cómo se dice algo en ruso, qué significa una palabra, y decir que no entiendes o no recuerdas. Забы́л (hombre) / забы́ла (mujer) es pasado; de momento, frase fija.",
+      "ejemplos": [
+        "Как по-ру́сски «snow»? — «Snow» по-ру́сски «снег».",
+        "Что зна́чит «снег»?",
+        "Я не понима́ю. Я не по́мню. Я забы́л(а)."
+      ]
+    },
+    {
+      "tema": "Почему? — Потому что… (avance del Урок 4)",
+      "explicacion": "почему́ = ¿por qué?; потому́ что = porque (se pronuncia [патаму́ што]). En el libro llega en el Урок 4, p. 70.",
+      "ejemplos": [
+        "Почему́ ты не чита́ешь журна́л? — Потому́ что я слу́шаю му́зыку.",
+        "Почему́ вы гуля́ете? — Потому́ что мы не рабо́таем."
+      ]
+    },
+    {
+      "tema": "Много / мало (avance del Урок 4)",
+      "explicacion": "мно́го = mucho, ма́ло = poco. Acompañan al verbo como cualquier adverbio.",
+      "ejemplos": [
+        "Вы чита́ете мно́го.",
+        "Вы отдыха́ете ма́ло."
+      ]
+    },
+    {
+      "tema": "Заниматься спортом (avance del Урок 8)",
+      "explicacion": "занима́ться спо́ртом = hacer deporte. Es un verbo con -ся: я занима́юсь, ты занима́ешься, он занима́ется, мы занима́емся, вы занима́етесь, они́ занима́ются. De momento, como expresión.",
+      "ejemplos": [
+        "Она́ занима́ется спо́ртом.",
+        "Почему́ вы не занима́етесь спо́ртом?"
+      ]
+    }
+  ],
+  "vocabulario": [
+    {
+      "id": "v_izuchat",
+      "ru": "изучать",
+      "ru_acento": "изуча́ть",
+      "es": "estudiar (una materia)",
+      "tipo": "verbo",
+      "nota": "Grupo 1: изуча́ю, изуча́ешь… Necesita complemento: изуча́ю ру́сский язы́к. En el libro: Урок 4, p. 67."
+    },
+    {
+      "id": "v_slushat",
+      "ru": "слушать",
+      "ru_acento": "слу́шать",
+      "es": "escuchar",
+      "tipo": "verbo",
+      "nota": "Grupo 1: слу́шаю, слу́шаешь… En el libro: Урок 5, p. 83."
+    },
+    {
+      "id": "v_ponimat",
+      "ru": "понимать",
+      "ru_acento": "понима́ть",
+      "es": "entender, comprender",
+      "tipo": "verbo",
+      "nota": "Grupo 1: понима́ю, понима́ешь… Se pronuncia [пан'има́т']. En el libro: Урок 4, p. 66."
+    },
+    {
+      "id": "v_gulyat",
+      "ru": "гулять",
+      "ru_acento": "гуля́ть",
+      "es": "pasear",
+      "tipo": "verbo",
+      "nota": "Grupo 1: гуля́ю, гуля́ешь… (la я se conserva). En el libro: Урок 5, p. 84."
+    },
+    {
+      "id": "v_sprashivat",
+      "ru": "спрашивать",
+      "ru_acento": "спра́шивать",
+      "es": "preguntar",
+      "tipo": "verbo",
+      "nota": "Grupo 1: спра́шиваю, спра́шиваешь… Pareja: спра́шивать — отвеча́ть."
+    },
+    {
+      "id": "v_otvechat",
+      "ru": "отвечать",
+      "ru_acento": "отвеча́ть",
+      "es": "responder, contestar",
+      "tipo": "verbo",
+      "nota": "Grupo 1: отвеча́ю, отвеча́ешь… Se pronuncia [атв'ича́т']."
+    },
+    {
+      "id": "v_povtoryat",
+      "ru": "повторять",
+      "ru_acento": "повторя́ть",
+      "es": "repetir",
+      "tipo": "verbo",
+      "nota": "Grupo 1: повторя́ю, повторя́ешь…"
+    },
+    {
+      "id": "v_nachinat",
+      "ru": "начинать",
+      "ru_acento": "начина́ть",
+      "es": "empezar, comenzar",
+      "tipo": "verbo",
+      "nota": "Grupo 1: начина́ю, начина́ешь…"
+    },
+    {
+      "id": "v_pisat",
+      "ru": "писать",
+      "ru_acento": "писа́ть",
+      "es": "escribir",
+      "tipo": "verbo",
+      "nota": "Ojo: no es del grupo 1 aunque acabe en -ать: я пишу́, ты пи́шешь (se verá más adelante). En la clase sale solo como infinitivo."
+    },
+    {
+      "id": "v_infinitiv",
+      "ru": "инфинитив",
+      "ru_acento": "инфинити́в",
+      "es": "infinitivo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Forma inicial del verbo, la del diccionario. Se pronuncia [инф'ин'ит'и́ф]."
+    },
+    {
+      "id": "v_deystvie",
+      "ru": "действие",
+      "ru_acento": "де́йствие",
+      "es": "acción",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": ""
+    },
+    {
+      "id": "v_sostoyanie",
+      "ru": "состояние",
+      "ru_acento": "состоя́ние",
+      "es": "estado",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": ""
+    },
+    {
+      "id": "v_pochemu",
+      "ru": "почему",
+      "ru_acento": "почему́",
+      "es": "por qué",
+      "tipo": "adverbio",
+      "nota": "Se pronuncia [пач'иму́]. Avance: Урок 4, p. 70."
+    },
+    {
+      "id": "v_potomu_chto",
+      "ru": "потому что",
+      "ru_acento": "потому́ что",
+      "es": "porque",
+      "tipo": "conjuncion",
+      "nota": "Se pronuncia [патаму́ што]. Avance: Урок 4, p. 70."
+    },
+    {
+      "id": "v_mnogo",
+      "ru": "много",
+      "ru_acento": "мно́го",
+      "es": "mucho",
+      "tipo": "adverbio",
+      "nota": "Contrario: ма́ло. Avance: Урок 4, p. 70."
+    },
+    {
+      "id": "v_malo",
+      "ru": "мало",
+      "ru_acento": "ма́ло",
+      "es": "poco",
+      "tipo": "adverbio",
+      "nota": "Contrario: мно́го."
+    },
+    {
+      "id": "v_po_russki",
+      "ru": "по-русски",
+      "ru_acento": "по-ру́сски",
+      "es": "en ruso",
+      "tipo": "adverbio",
+      "nota": "Se escribe con guion. Como en «Как по-ру́сски…?»."
+    },
+    {
+      "id": "v_kak_po_russki",
+      "ru": "Как по-русски…?",
+      "ru_acento": "Как по-ру́сски…?",
+      "es": "¿Cómo se dice en ruso…?",
+      "tipo": "expresion",
+      "nota": "Libro p. 60, 3.43."
+    },
+    {
+      "id": "v_chto_znachit",
+      "ru": "Что значит…?",
+      "ru_acento": "Что́ зна́чит…?",
+      "es": "¿Qué significa…?",
+      "tipo": "expresion",
+      "nota": "Что se pronuncia [што]."
+    },
+    {
+      "id": "v_ya_ne_pomnyu",
+      "ru": "Я не помню.",
+      "ru_acento": "Я не по́мню.",
+      "es": "No me acuerdo.",
+      "tipo": "expresion",
+      "nota": "Se pronuncia [йа н'и по́мн'у]."
+    },
+    {
+      "id": "v_ya_zabyl_a",
+      "ru": "Я забыл(а).",
+      "ru_acento": "Я забы́л(а).",
+      "es": "Lo he olvidado.",
+      "tipo": "expresion",
+      "nota": "Hombre: забы́л; mujer: забы́ла (es pasado, Урок 6). De momento, frase fija."
+    },
+    {
+      "id": "v_sneg",
+      "ru": "снег",
+      "ru_acento": "сне́г",
+      "es": "nieve",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [сн'эк] (ensordecimiento final). Libro p. 60."
+    },
+    {
+      "id": "v_tekst",
+      "ru": "текст",
+      "ru_acento": "те́кст",
+      "es": "texto",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": ""
+    },
+    {
+      "id": "v_roman",
+      "ru": "роман",
+      "ru_acento": "рома́н",
+      "es": "novela",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "No significa «romano». Se pronuncia [рама́н]."
+    },
+    {
+      "id": "v_rasskaz",
+      "ru": "рассказ",
+      "ru_acento": "расска́з",
+      "es": "relato, cuento",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [раска́с]."
+    },
+    {
+      "id": "v_predlozhenie",
+      "ru": "предложение",
+      "ru_acento": "предложе́ние",
+      "es": "oración, frase",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": "Se pronuncia [пр'идлажэ́н'ийэ]."
+    },
+    {
+      "id": "v_pravilo",
+      "ru": "правило",
+      "ru_acento": "пра́вило",
+      "es": "regla",
+      "tipo": "sustantivo",
+      "genero": "n",
+      "nota": ""
+    },
+    {
+      "id": "v_muzyka",
+      "ru": "музыка",
+      "ru_acento": "му́зыка",
+      "es": "música",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "Tras слу́шать: слу́шаю му́зыку (caso 4, Урок 5)."
+    },
+    {
+      "id": "v_pravda",
+      "ru": "правда",
+      "ru_acento": "пра́вда",
+      "es": "verdad",
+      "tipo": "sustantivo",
+      "genero": "f",
+      "nota": "«Пра́вда?» = ¿De verdad?"
+    },
+    {
+      "id": "v_russkiy_yazyk",
+      "ru": "русский язык",
+      "ru_acento": "ру́сский язы́к",
+      "es": "lengua rusa, ruso (idioma)",
+      "tipo": "expresion",
+      "nota": "ру́сский (adj.) + язы́к (m., lengua, idioma)."
+    },
+    {
+      "id": "v_alfavit",
+      "ru": "алфавит",
+      "ru_acento": "алфави́т",
+      "es": "alfabeto",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [алфав'и́т]."
+    },
+    {
+      "id": "v_dialog",
+      "ru": "диалог",
+      "ru_acento": "диало́г",
+      "es": "diálogo",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "Se pronuncia [д'иало́к]."
+    },
+    {
+      "id": "v_sport",
+      "ru": "спорт",
+      "ru_acento": "спо́рт",
+      "es": "deporte",
+      "tipo": "sustantivo",
+      "genero": "m",
+      "nota": "«занима́ться спо́ртом» = hacer deporte (avance, Урок 8)."
+    },
+    {
+      "id": "v_zanimatsya_sportom",
+      "ru": "заниматься спортом",
+      "ru_acento": "занима́ться спо́ртом",
+      "es": "hacer deporte",
+      "tipo": "expresion",
+      "nota": "Verbo con -ся (avance, Урок 8, p. 163): я занима́юсь, ты занима́ешься, они́ занима́ются."
+    }
+  ],
+  "textos": [
+    {
+      "id": "t1",
+      "titulo": "Функция глагола: S + P",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Папа работает.",
+          "ru_acento": "Па́па рабо́тает.",
+          "es": "Papá trabaja.",
+          "tokens": [
+            {
+              "t": "Папа",
+              "a": "Па́па",
+              "lema": "папа",
+              "es": "papá",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_papa"
+            },
+            {
+              "t": "работает",
+              "a": "рабо́тает",
+              "lema": "работать",
+              "es": "trabaja",
+              "gram": "verbo работать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_rabotat"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Ребёнок играет.",
+          "ru_acento": "Ребёнок игра́ет.",
+          "es": "El niño juega.",
+          "tokens": [
+            {
+              "t": "Ребёнок",
+              "a": "Ребёнок",
+              "lema": "ребенок",
+              "es": "el niño",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_rebyonok"
+            },
+            {
+              "t": "играет",
+              "a": "игра́ет",
+              "lema": "играть",
+              "es": "juega",
+              "gram": "verbo играть, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_igrat"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Я читаю.",
+          "ru_acento": "Я́ чита́ю.",
+          "es": "Yo leo.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "читаю",
+              "a": "чита́ю",
+              "lema": "читать",
+              "es": "leo",
+              "gram": "verbo читать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Дети играют.",
+          "ru_acento": "Де́ти игра́ют.",
+          "es": "Los niños juegan.",
+          "tokens": [
+            {
+              "t": "Дети",
+              "a": "Де́ти",
+              "lema": "дети",
+              "es": "los niños",
+              "gram": "sust. pl. (de ребёнок), nominativo pl.",
+              "vocab_id": "v_deti"
+            },
+            {
+              "t": "играют",
+              "a": "игра́ют",
+              "lema": "играть",
+              "es": "juegan",
+              "gram": "verbo играть, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_igrat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "titulo": "Примеры",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Ты читаешь.",
+          "ru_acento": "Ты́ чита́ешь.",
+          "es": "Tú lees.",
+          "tokens": [
+            {
+              "t": "Ты",
+              "a": "Ты́",
+              "lema": "ты",
+              "es": "tú",
+              "gram": "pronombre personal, 2.ª pers. sing., nominativo",
+              "vocab_id": "v_ty"
+            },
+            {
+              "t": "читаешь",
+              "a": "чита́ешь",
+              "lema": "читать",
+              "es": "lees",
+              "gram": "verbo читать, 2.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Сын слушает.",
+          "ru_acento": "Сы́н слу́шает.",
+          "es": "El hijo escucha.",
+          "tokens": [
+            {
+              "t": "Сын",
+              "a": "Сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "слушает",
+              "a": "слу́шает",
+              "lema": "слушать",
+              "es": "escucha",
+              "gram": "verbo слушать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Мама и сын отдыхают.",
+          "ru_acento": "Ма́ма и сы́н отдыха́ют.",
+          "es": "Mamá y el hijo descansan.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "отдыхают",
+              "a": "отдыха́ют",
+              "lema": "отдыхать",
+              "es": "descansan",
+              "gram": "verbo отдыхать, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_otdykhat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "titulo": "Вопросы",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Мама и сын отдыхают?",
+          "ru_acento": "Ма́ма и сы́н отдыха́ют?",
+          "es": "¿Mamá y el hijo descansan?",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "отдыхают",
+              "a": "отдыха́ют",
+              "lema": "отдыхать",
+              "es": "descansan",
+              "gram": "verbo отдыхать, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_otdykhat"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Да, они отдыхают.",
+          "ru_acento": "Да́, они́ отдыха́ют.",
+          "es": "Sí, descansan.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "они",
+              "a": "они́",
+              "lema": "они",
+              "es": "ellos",
+              "gram": "pronombre personal, 3.ª pers. pl., nominativo",
+              "vocab_id": "v_oni"
+            },
+            {
+              "t": "отдыхают",
+              "a": "отдыха́ют",
+              "lema": "отдыхать",
+              "es": "descansan",
+              "gram": "verbo отдыхать, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_otdykhat"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Мама слушает?",
+          "ru_acento": "Ма́ма слу́шает?",
+          "es": "¿Mamá escucha?",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "слушает",
+              "a": "слу́шает",
+              "lema": "слушать",
+              "es": "escucha",
+              "gram": "verbo слушать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Нет, мама не слушает, а читает.",
+          "ru_acento": "Не́т, ма́ма не слу́шает, а чита́ет.",
+          "es": "No, mamá no escucha, sino que lee.",
+          "tokens": [
+            {
+              "t": "Нет",
+              "a": "Не́т",
+              "lema": "нет",
+              "es": "no",
+              "gram": "partícula negativa",
+              "vocab_id": "v_net"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "слушает",
+              "a": "слу́шает",
+              "lema": "слушать",
+              "es": "escucha",
+              "gram": "verbo слушать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            },
+            {
+              "t": "а",
+              "a": "а",
+              "lema": "а",
+              "es": "y (en cambio), sino",
+              "gram": "conjunción de contraste",
+              "vocab_id": "v_a"
+            },
+            {
+              "t": "читает",
+              "a": "чита́ет",
+              "lema": "читать",
+              "es": "lee",
+              "gram": "verbo читать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Сын гуляет?",
+          "ru_acento": "Сы́н гуля́ет?",
+          "es": "¿El hijo pasea?",
+          "tokens": [
+            {
+              "t": "Сын",
+              "a": "Сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "гуляет",
+              "a": "гуля́ет",
+              "lema": "гулять",
+              "es": "pasea",
+              "gram": "verbo гулять, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_gulyat"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Нет, он не гуляет, он слушает и понимает.",
+          "ru_acento": "Не́т, о́н не гуля́ет, о́н слу́шает и понима́ет.",
+          "es": "No, no pasea: escucha y entiende.",
+          "tokens": [
+            {
+              "t": "Нет",
+              "a": "Не́т",
+              "lema": "нет",
+              "es": "no",
+              "gram": "partícula negativa",
+              "vocab_id": "v_net"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "гуляет",
+              "a": "гуля́ет",
+              "lema": "гулять",
+              "es": "pasea",
+              "gram": "verbo гулять, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_gulyat"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "слушает",
+              "a": "слу́шает",
+              "lema": "слушать",
+              "es": "escucha",
+              "gram": "verbo слушать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "понимает",
+              "a": "понима́ет",
+              "lema": "понимать",
+              "es": "entiende",
+              "gram": "verbo понимать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_ponimat"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Кто читает?",
+          "ru_acento": "Кто́ чита́ет?",
+          "es": "¿Quién lee?",
+          "tokens": [
+            {
+              "t": "Кто",
+              "a": "Кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo, nominativo",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "читает",
+              "a": "чита́ет",
+              "lema": "читать",
+              "es": "lee",
+              "gram": "verbo читать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            }
+          ]
+        },
+        {
+          "id": "f8",
+          "ru": "Что делает мама?",
+          "ru_acento": "Что́ де́лает ма́ма?",
+          "es": "¿Qué hace mamá?",
+          "tokens": [
+            {
+              "t": "Что",
+              "a": "Что́",
+              "lema": "что",
+              "es": "qué",
+              "gram": "pronombre interrogativo; se pronuncia [што]",
+              "vocab_id": "v_chto"
+            },
+            {
+              "t": "делает",
+              "a": "де́лает",
+              "lema": "делать",
+              "es": "hace",
+              "gram": "verbo делать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_delat"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            }
+          ]
+        },
+        {
+          "id": "f9",
+          "ru": "Что делают мама и сын?",
+          "ru_acento": "Что́ де́лают ма́ма и сы́н?",
+          "es": "¿Qué hacen mamá y el hijo?",
+          "tokens": [
+            {
+              "t": "Что",
+              "a": "Что́",
+              "lema": "что",
+              "es": "qué",
+              "gram": "pronombre interrogativo; se pronuncia [што]",
+              "vocab_id": "v_chto"
+            },
+            {
+              "t": "делают",
+              "a": "де́лают",
+              "lema": "делать",
+              "es": "hacen",
+              "gram": "verbo делать, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_delat"
+            },
+            {
+              "t": "мама",
+              "a": "ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "и",
+              "a": "и",
+              "lema": "и",
+              "es": "y",
+              "gram": "conjunción",
+              "vocab_id": "v_i"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            }
+          ]
+        },
+        {
+          "id": "f10",
+          "ru": "Они отдыхают.",
+          "ru_acento": "Они́ отдыха́ют.",
+          "es": "Descansan.",
+          "tokens": [
+            {
+              "t": "Они",
+              "a": "Они́",
+              "lema": "они",
+              "es": "ellos",
+              "gram": "pronombre personal, 3.ª pers. pl., nominativo",
+              "vocab_id": "v_oni"
+            },
+            {
+              "t": "отдыхают",
+              "a": "отдыха́ют",
+              "lema": "отдыхать",
+              "es": "descansan",
+              "gram": "verbo отдыхать, 3.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_otdykhat"
+            }
+          ]
+        },
+        {
+          "id": "f11",
+          "ru": "Мама читает, а сын слушает.",
+          "ru_acento": "Ма́ма чита́ет, а сы́н слу́шает.",
+          "es": "Mamá lee y el hijo escucha.",
+          "tokens": [
+            {
+              "t": "Мама",
+              "a": "Ма́ма",
+              "lema": "мама",
+              "es": "mamá",
+              "gram": "sust. fem., nominativo sing.",
+              "vocab_id": "v_mama"
+            },
+            {
+              "t": "читает",
+              "a": "чита́ет",
+              "lema": "читать",
+              "es": "lee",
+              "gram": "verbo читать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            },
+            {
+              "t": "а",
+              "a": "а",
+              "lema": "а",
+              "es": "y (en cambio), sino",
+              "gram": "conjunción de contraste",
+              "vocab_id": "v_a"
+            },
+            {
+              "t": "сын",
+              "a": "сы́н",
+              "lema": "сын",
+              "es": "el hijo",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_syn"
+            },
+            {
+              "t": "слушает",
+              "a": "слу́шает",
+              "lema": "слушать",
+              "es": "escucha",
+              "gram": "verbo слушать, 3.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "titulo": "Ты знаешь, кто это? (p. 60)",
+      "repaso": true,
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Ты знаешь, кто это?",
+          "ru_acento": "Ты́ зна́ешь, кто́ э́то?",
+          "es": "¿Sabes quién es?",
+          "tokens": [
+            {
+              "t": "Ты",
+              "a": "Ты́",
+              "lema": "ты",
+              "es": "tú",
+              "gram": "pronombre personal, 2.ª pers. sing., nominativo",
+              "vocab_id": "v_ty"
+            },
+            {
+              "t": "знаешь",
+              "a": "зна́ешь",
+              "lema": "знать",
+              "es": "sabes",
+              "gram": "verbo знать, 2.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "кто",
+              "a": "кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo, nominativo",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "este es",
+              "gram": "partícula demostrativa (invariable)",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Да, знаю. Это Виктор Иванов.",
+          "ru_acento": "Да́, зна́ю. Э́то Ви́ктор Ива́нов.",
+          "es": "Sí, lo sé. Es Víctor Ivánov.",
+          "tokens": [
+            {
+              "t": "Да",
+              "a": "Да́",
+              "lema": "да",
+              "es": "sí",
+              "gram": "partícula afirmativa",
+              "vocab_id": "v_da"
+            },
+            {
+              "t": "знаю",
+              "a": "зна́ю",
+              "lema": "знать",
+              "es": "sé",
+              "gram": "verbo знать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "Это",
+              "a": "Э́то",
+              "lema": "это",
+              "es": "este es",
+              "gram": "partícula demostrativa (invariable)",
+              "vocab_id": "v_eto"
+            },
+            {
+              "t": "Виктор",
+              "a": "Ви́ктор",
+              "lema": "Виктор",
+              "es": "Víctor",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_viktor"
+            },
+            {
+              "t": "Иванов",
+              "a": "Ива́нов",
+              "lema": "Иванов",
+              "es": "Ivánov",
+              "gram": "apellido masc., nominativo"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Нет, не знаю.",
+          "ru_acento": "Не́т, не зна́ю.",
+          "es": "No, no lo sé.",
+          "tokens": [
+            {
+              "t": "Нет",
+              "a": "Не́т",
+              "lema": "нет",
+              "es": "no",
+              "gram": "partícula negativa",
+              "vocab_id": "v_net"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "знаю",
+              "a": "зна́ю",
+              "lema": "знать",
+              "es": "sé",
+              "gram": "verbo знать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_znat"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Я не знаю, кто это.",
+          "ru_acento": "Я́ не зна́ю, кто́ э́то.",
+          "es": "No sé quién es.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "знаю",
+              "a": "зна́ю",
+              "lema": "знать",
+              "es": "sé",
+              "gram": "verbo знать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "кто",
+              "a": "кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo, nominativo",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "это",
+              "a": "э́то",
+              "lema": "это",
+              "es": "este es",
+              "gram": "partícula demostrativa (invariable)",
+              "vocab_id": "v_eto"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "А кто он?",
+          "ru_acento": "А кто́ о́н?",
+          "es": "¿Y qué es?",
+          "tokens": [
+            {
+              "t": "А",
+              "a": "А",
+              "lema": "а",
+              "es": "y (en cambio), sino",
+              "gram": "conjunción de contraste",
+              "vocab_id": "v_a"
+            },
+            {
+              "t": "кто",
+              "a": "кто́",
+              "lema": "кто",
+              "es": "quién",
+              "gram": "pronombre interrogativo, nominativo",
+              "vocab_id": "v_kto"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Он футболист.",
+          "ru_acento": "О́н футболи́ст.",
+          "es": "Es futbolista.",
+          "tokens": [
+            {
+              "t": "Он",
+              "a": "О́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "футболист",
+              "a": "футболи́ст",
+              "lema": "футболист",
+              "es": "futbolista",
+              "gram": "sust. masc., nominativo sing.",
+              "vocab_id": "v_futbolist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "titulo": "Как по-русски «snow»? (p. 60)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Вы не знаете, где Виктор?",
+          "ru_acento": "Вы́ не зна́ете, где́ Ви́ктор?",
+          "es": "¿No sabe usted dónde está Víctor?",
+          "tokens": [
+            {
+              "t": "Вы",
+              "a": "Вы́",
+              "lema": "вы",
+              "es": "vosotros, usted",
+              "gram": "pronombre personal, 2.ª pers. pl. (también forma de cortesía), nominativo",
+              "vocab_id": "v_vy"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "знаете",
+              "a": "зна́ете",
+              "lema": "знать",
+              "es": "sabéis / sabe (usted)",
+              "gram": "verbo знать, 2.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "где",
+              "a": "где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "Виктор",
+              "a": "Ви́ктор",
+              "lema": "Виктор",
+              "es": "Víctor",
+              "gram": "nombre propio masc., nominativo",
+              "vocab_id": "v_viktor"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Он дома.",
+          "ru_acento": "О́н до́ма.",
+          "es": "Está en casa.",
+          "tokens": [
+            {
+              "t": "Он",
+              "a": "О́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            },
+            {
+              "t": "дома",
+              "a": "до́ма",
+              "lema": "дома",
+              "es": "en casa",
+              "gram": "adverbio de lugar",
+              "vocab_id": "v_doma"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Я не знаю, где он.",
+          "ru_acento": "Я́ не зна́ю, где́ о́н.",
+          "es": "No sé dónde está.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "знаю",
+              "a": "зна́ю",
+              "lema": "знать",
+              "es": "sé",
+              "gram": "verbo знать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "где",
+              "a": "где́",
+              "lema": "где",
+              "es": "dónde",
+              "gram": "adverbio interrogativo de lugar",
+              "vocab_id": "v_gde"
+            },
+            {
+              "t": "он",
+              "a": "о́н",
+              "lema": "он",
+              "es": "él",
+              "gram": "pronombre personal, 3.ª pers. sing. masc., nominativo",
+              "vocab_id": "v_on"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Как по-русски «snow»?",
+          "ru_acento": "Ка́к по-ру́сски «snow»?",
+          "es": "¿Cómo se dice «snow» en ruso?",
+          "tokens": [
+            {
+              "t": "Как",
+              "a": "Ка́к",
+              "lema": "как",
+              "es": "cómo",
+              "gram": "adverbio interrogativo",
+              "vocab_id": "v_kak"
+            },
+            {
+              "t": "по-русски",
+              "a": "по-ру́сски",
+              "lema": "по-русски",
+              "es": "en ruso",
+              "gram": "adverbio de modo",
+              "vocab_id": "v_po_russki"
+            },
+            {
+              "t": "snow",
+              "a": "snow",
+              "lema": "snow",
+              "es": "«snow» (nieve, en inglés)",
+              "gram": "palabra inglesa citada"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "А вы знаете, как по-русски «snow»?",
+          "ru_acento": "А вы́ зна́ете, ка́к по-ру́сски «snow»?",
+          "es": "¿Y usted sabe cómo se dice «snow» en ruso?",
+          "tokens": [
+            {
+              "t": "А",
+              "a": "А",
+              "lema": "а",
+              "es": "y (en cambio), sino",
+              "gram": "conjunción de contraste",
+              "vocab_id": "v_a"
+            },
+            {
+              "t": "вы",
+              "a": "вы́",
+              "lema": "вы",
+              "es": "vosotros, usted",
+              "gram": "pronombre personal, 2.ª pers. pl. (también forma de cortesía), nominativo",
+              "vocab_id": "v_vy"
+            },
+            {
+              "t": "знаете",
+              "a": "зна́ете",
+              "lema": "знать",
+              "es": "sabéis / sabe (usted)",
+              "gram": "verbo знать, 2.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_znat"
+            },
+            {
+              "t": "как",
+              "a": "ка́к",
+              "lema": "как",
+              "es": "cómo",
+              "gram": "adverbio interrogativo",
+              "vocab_id": "v_kak"
+            },
+            {
+              "t": "по-русски",
+              "a": "по-ру́сски",
+              "lema": "по-русски",
+              "es": "en ruso",
+              "gram": "adverbio de modo",
+              "vocab_id": "v_po_russki"
+            },
+            {
+              "t": "snow",
+              "a": "snow",
+              "lema": "snow",
+              "es": "«snow» (nieve, en inglés)",
+              "gram": "palabra inglesa citada"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "«Snow» по-русски «снег».",
+          "ru_acento": "«Snow» по-ру́сски «сне́г».",
+          "es": "«Snow» en ruso es «снег».",
+          "tokens": [
+            {
+              "t": "Snow",
+              "a": "Snow",
+              "lema": "snow",
+              "es": "«snow» (nieve, en inglés)",
+              "gram": "palabra inglesa citada"
+            },
+            {
+              "t": "по-русски",
+              "a": "по-ру́сски",
+              "lema": "по-русски",
+              "es": "en ruso",
+              "gram": "adverbio de modo",
+              "vocab_id": "v_po_russki"
+            },
+            {
+              "t": "снег",
+              "a": "сне́г",
+              "lema": "снег",
+              "es": "nieve",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [сн'эк]",
+              "vocab_id": "v_sneg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "titulo": "Почему? — Потому что… (avance)",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Почему ты не читаешь журнал?",
+          "ru_acento": "Почему́ ты́ не чита́ешь журна́л?",
+          "es": "¿Por qué no lees la revista?",
+          "tokens": [
+            {
+              "t": "Почему",
+              "a": "Почему́",
+              "lema": "почему",
+              "es": "por qué",
+              "gram": "adverbio interrogativo",
+              "vocab_id": "v_pochemu"
+            },
+            {
+              "t": "ты",
+              "a": "ты́",
+              "lema": "ты",
+              "es": "tú",
+              "gram": "pronombre personal, 2.ª pers. sing., nominativo",
+              "vocab_id": "v_ty"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "читаешь",
+              "a": "чита́ешь",
+              "lema": "читать",
+              "es": "lees",
+              "gram": "verbo читать, 2.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_chitat"
+            },
+            {
+              "t": "журнал",
+              "a": "журна́л",
+              "lema": "журнал",
+              "es": "la revista",
+              "gram": "sust. masc., acusativo sing. (= nominativo)",
+              "vocab_id": "v_zhurnal"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Потому что я слушаю музыку.",
+          "ru_acento": "Потому́ что я́ слу́шаю му́зыку.",
+          "es": "Porque estoy escuchando música.",
+          "tokens": [
+            {
+              "t": "Потому",
+              "a": "Потому́",
+              "lema": "потому",
+              "es": "porque",
+              "gram": "«потому что» = porque; se pronuncia [патаму́ што]",
+              "vocab_id": "v_potomu_chto"
+            },
+            {
+              "t": "что",
+              "a": "что",
+              "lema": "что",
+              "es": "que",
+              "gram": "parte de «потому что»; se pronuncia [што]",
+              "vocab_id": "v_potomu_chto"
+            },
+            {
+              "t": "я",
+              "a": "я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "слушаю",
+              "a": "слу́шаю",
+              "lema": "слушать",
+              "es": "escucho",
+              "gram": "verbo слушать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_slushat"
+            },
+            {
+              "t": "музыку",
+              "a": "му́зыку",
+              "lema": "музыка",
+              "es": "música",
+              "gram": "sust. fem., acusativo sing. (avance del Урок 5)",
+              "vocab_id": "v_muzyka"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Почему вы гуляете?",
+          "ru_acento": "Почему́ вы́ гуля́ете?",
+          "es": "¿Por qué paseáis?",
+          "tokens": [
+            {
+              "t": "Почему",
+              "a": "Почему́",
+              "lema": "почему",
+              "es": "por qué",
+              "gram": "adverbio interrogativo",
+              "vocab_id": "v_pochemu"
+            },
+            {
+              "t": "вы",
+              "a": "вы́",
+              "lema": "вы",
+              "es": "vosotros, usted",
+              "gram": "pronombre personal, 2.ª pers. pl. (también forma de cortesía), nominativo",
+              "vocab_id": "v_vy"
+            },
+            {
+              "t": "гуляете",
+              "a": "гуля́ете",
+              "lema": "гулять",
+              "es": "paseáis / pasea (usted)",
+              "gram": "verbo гулять, 2.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_gulyat"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Потому что мы не работаем.",
+          "ru_acento": "Потому́ что мы́ не рабо́таем.",
+          "es": "Porque no trabajamos.",
+          "tokens": [
+            {
+              "t": "Потому",
+              "a": "Потому́",
+              "lema": "потому",
+              "es": "porque",
+              "gram": "«потому что» = porque; se pronuncia [патаму́ што]",
+              "vocab_id": "v_potomu_chto"
+            },
+            {
+              "t": "что",
+              "a": "что",
+              "lema": "что",
+              "es": "que",
+              "gram": "parte de «потому что»; se pronuncia [што]",
+              "vocab_id": "v_potomu_chto"
+            },
+            {
+              "t": "мы",
+              "a": "мы́",
+              "lema": "мы",
+              "es": "nosotros",
+              "gram": "pronombre personal, 1.ª pers. pl., nominativo",
+              "vocab_id": "v_my"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "работаем",
+              "a": "рабо́таем",
+              "lema": "работать",
+              "es": "trabajamos",
+              "gram": "verbo работать, 1.ª pers. pl. presente, grupo 1",
+              "vocab_id": "v_rabotat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "titulo": "В классе: Что значит…?",
+      "frases": [
+        {
+          "id": "f1",
+          "ru": "Что значит «снег»?",
+          "ru_acento": "Что́ зна́чит «сне́г»?",
+          "es": "¿Qué significa «снег»?",
+          "tokens": [
+            {
+              "t": "Что",
+              "a": "Что́",
+              "lema": "что",
+              "es": "qué",
+              "gram": "pronombre interrogativo; se pronuncia [што]",
+              "vocab_id": "v_chto"
+            },
+            {
+              "t": "значит",
+              "a": "зна́чит",
+              "lema": "значить",
+              "es": "significa",
+              "gram": "verbo значить, 3.ª pers. sing. presente; «Что значит…?» = ¿qué significa…?",
+              "vocab_id": "v_chto_znachit"
+            },
+            {
+              "t": "снег",
+              "a": "сне́г",
+              "lema": "снег",
+              "es": "nieve",
+              "gram": "sust. masc., nominativo sing.; se pronuncia [сн'эк]",
+              "vocab_id": "v_sneg"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "ru": "Я понимаю.",
+          "ru_acento": "Я́ понима́ю.",
+          "es": "Entiendo.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "понимаю",
+              "a": "понима́ю",
+              "lema": "понимать",
+              "es": "entiendo",
+              "gram": "verbo понимать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_ponimat"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "ru": "Я не понимаю.",
+          "ru_acento": "Я́ не понима́ю.",
+          "es": "No entiendo.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "понимаю",
+              "a": "понима́ю",
+              "lema": "понимать",
+              "es": "entiendo",
+              "gram": "verbo понимать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_ponimat"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "ru": "Я не помню.",
+          "ru_acento": "Я́ не по́мню.",
+          "es": "No me acuerdo.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "не",
+              "a": "не",
+              "lema": "не",
+              "es": "no",
+              "gram": "partícula negativa (delante del verbo); se pronuncia [н'и]",
+              "vocab_id": "v_ne"
+            },
+            {
+              "t": "помню",
+              "a": "по́мню",
+              "lema": "помнить",
+              "es": "recuerdo",
+              "gram": "verbo помнить, 1.ª pers. sing. presente; «Я не помню» = no me acuerdo",
+              "vocab_id": "v_ya_ne_pomnyu"
+            }
+          ]
+        },
+        {
+          "id": "f5",
+          "ru": "Я забыл.",
+          "ru_acento": "Я́ забы́л.",
+          "es": "Lo he olvidado (hombre).",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "забыл",
+              "a": "забы́л",
+              "lema": "забыть",
+              "es": "he olvidado",
+              "gram": "verbo забыть, pasado masc. (frase fija; el pasado llega en el Урок 6)",
+              "vocab_id": "v_ya_zabyl_a"
+            }
+          ]
+        },
+        {
+          "id": "f6",
+          "ru": "Я забыла.",
+          "ru_acento": "Я́ забы́ла.",
+          "es": "Lo he olvidado (mujer).",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "забыла",
+              "a": "забы́ла",
+              "lema": "забыть",
+              "es": "he olvidado",
+              "gram": "verbo забыть, pasado fem. (frase fija; el pasado llega en el Урок 6)",
+              "vocab_id": "v_ya_zabyl_a"
+            }
+          ]
+        },
+        {
+          "id": "f7",
+          "ru": "Я думаю.",
+          "ru_acento": "Я́ ду́маю.",
+          "es": "Estoy pensando.",
+          "tokens": [
+            {
+              "t": "Я",
+              "a": "Я́",
+              "lema": "я",
+              "es": "yo",
+              "gram": "pronombre personal, 1.ª pers. sing., nominativo",
+              "vocab_id": "v_ya"
+            },
+            {
+              "t": "думаю",
+              "a": "ду́маю",
+              "lema": "думать",
+              "es": "pienso",
+              "gram": "verbo думать, 1.ª pers. sing. presente, grupo 1",
+              "vocab_id": "v_dumat"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frases_practica": [
+    {
+      "id": "p1",
+      "ru": "Что ты делаешь? — Я обедаю.",
+      "ru_acento": "Что ты де́лаешь? — Я обе́даю.",
+      "es": "¿Qué haces? — Estoy comiendo.",
+      "alternativas_es": [
+        "¿Qué estás haciendo? — Como."
+      ]
+    },
+    {
+      "id": "p2",
+      "ru": "Мама и сын отдыхают.",
+      "ru_acento": "Ма́ма и сы́н отдыха́ют.",
+      "es": "Mamá y el hijo descansan."
+    },
+    {
+      "id": "p3",
+      "ru": "Я не понимаю.",
+      "ru_acento": "Я не понима́ю.",
+      "es": "No entiendo.",
+      "alternativas_es": [
+        "No lo entiendo."
+      ]
+    },
+    {
+      "id": "p4",
+      "ru": "Как по-русски «snow»?",
+      "ru_acento": "Как по-ру́сски «snow»?",
+      "es": "¿Cómo se dice «snow» en ruso?"
+    },
+    {
+      "id": "p5",
+      "ru": "Что значит «снег»?",
+      "ru_acento": "Что зна́чит «сне́г»?",
+      "es": "¿Qué significa «снег»?"
+    },
+    {
+      "id": "p6",
+      "ru": "Ты знаешь, кто это? — Нет, не знаю.",
+      "ru_acento": "Ты́ зна́ешь, кто́ э́то? — Не́т, не зна́ю.",
+      "es": "¿Sabes quién es? — No, no lo sé."
+    },
+    {
+      "id": "p7",
+      "ru": "Мама не слушает, а читает.",
+      "ru_acento": "Ма́ма не слу́шает, а чита́ет.",
+      "es": "Mamá no escucha, sino que lee.",
+      "alternativas_es": [
+        "Mamá no escucha: lee."
+      ]
+    },
+    {
+      "id": "p8",
+      "ru": "Мы изучаем русский язык.",
+      "ru_acento": "Мы́ изуча́ем ру́сский язы́к.",
+      "es": "Estudiamos ruso.",
+      "alternativas_es": [
+        "Estudiamos la lengua rusa."
+      ]
+    },
+    {
+      "id": "p9",
+      "ru": "Студенты повторяют правило.",
+      "ru_acento": "Студе́нты повторя́ют пра́вило.",
+      "es": "Los estudiantes repiten la regla."
+    },
+    {
+      "id": "p10",
+      "ru": "Он спрашивает, а она отвечает.",
+      "ru_acento": "О́н спра́шивает, а она́ отвеча́ет.",
+      "es": "Él pregunta y ella responde."
+    },
+    {
+      "id": "p11",
+      "ru": "Почему ты не работаешь? — Потому что я отдыхаю.",
+      "ru_acento": "Почему́ ты́ не рабо́таешь? — Потому́ что я отдыха́ю.",
+      "es": "¿Por qué no trabajas? — Porque estoy descansando."
+    },
+    {
+      "id": "p12",
+      "ru": "Вы читаете много, а отдыхаете мало.",
+      "ru_acento": "Вы́ чита́ете мно́го, а отдыха́ете ма́ло.",
+      "es": "Usted lee mucho y descansa poco.",
+      "alternativas_es": [
+        "Leéis mucho y descansáis poco."
+      ]
+    }
+  ]
+}

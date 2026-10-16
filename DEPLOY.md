@@ -36,6 +36,17 @@ La app pide siempre la versión actual de los archivos, así que basta con abrir
 
 La app usa solo rutas relativas, así que funciona igual en GitHub Pages y en el servidor local (`herramientas\servir.ps1`). Para añadir una clase basta con subir su JSON a `data/clases/` y actualizar `data/index.json`; no hay que tocar código.
 
+### Índice de clases (`data/indice.md`)
+
+Antes de publicar clases nuevas, regenera el índice y valida:
+
+```
+python herramientas\indice.py
+powershell -ExecutionPolicy Bypass -File herramientas\validar.ps1
+```
+
+`data/indice.md` resume todas las clases: tabla de clases, temas de gramática con sus repasos, vocabulario con sus `vocab_id`, páginas del libro cubiertas por урок y alertas (misma palabra con distinto `vocab_id`, mismo `vocab_id` con distinta palabra, temas casi iguales escritos distinto). Conviene pasárselo a quien genere la próxima clase para que reutilice los ids y los nombres de los temas. Se publica junto con las clases y no se edita a mano.
+
 ---
 
 ## 2. Sincronización con GitHub (opcional)
